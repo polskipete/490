@@ -5,6 +5,7 @@ require_once('path.inc');
 require_once('get_host_info.inc');
 require_once('rabbitMQLib.inc');
 $username = $_POST['inputUser'];
+$password = $_POST['inputPassword'];
 echo "OUT \n";
 echo($username);
 if (isset($username))
@@ -22,8 +23,8 @@ if (isset($username))
 
 	$request = array();
 	$request['type'] = "Login";
-	$request['username'] = "steve";
-	$request['password'] = "password";
+	$request['username'] = $username;
+	$request['password'] = $password;
 	$request['message'] = $msg;
 	$response = $client->send_request($request);
 	//$response = $client->publish($request);
