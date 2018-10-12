@@ -1,13 +1,17 @@
 #!/usr/bin/php
 <?php
-//bkn, okc
+//All teams abriviation
 $teams = array("atl", "bro", "bos", "cha", "chi", "cle", "dal", "den", "det", "gsw", "hou", "ind", "lac", "lal", "mem", "mia", "mil", "min", "nop", "nyk", "okl", "orl", "phi", "phx", "por", "sac", "sas", "tor", "uta", "was");
 $count = 0;
+//will enclose all curl operations and data
 foreach($teams as $team){
 	echo $team;
 	echo "\n";
+
+	//probably will use for error logging, to make sure each team gets through
 	$count++;
 }
+//check if all 30 teams get through
 echo $count;
 // Get cURL resource
 $ch = curl_init();
@@ -37,13 +41,18 @@ if (!$resp) {
 } else {
 	//echo "Response HTTP Status Code : " . curl_getinfo($ch, CURLINFO_HTTP_CODE);
 	//echo "\nResponse HTTP Body : " . $resp;
-	//$json_data = json_encode($resp);
 	file_put_contents('myfile.json', $resp);
 	$obj = json_decode($resp, true);
-	var_dump($obj);
-	//file_put_contents('my.txt', $obj);
+	//Gets exact player stats from team
+	var_dump($obj['cumulativeplayerstats']['playerstatsentry'][0]);
+	//find out array length of 
+	foreach ($obj as $player){
+		//var_dump($player);
+		$count++;
+	}
+	
 }
-
+echo $count;
 // Close request to clear up some resources
 curl_close($ch);
 
