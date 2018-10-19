@@ -9,14 +9,16 @@ function doLogin($user,$pass)
 	//Db login Variables
         $servername = "localhost";
         $username = "dbAdmin";
-        $password = "password123";
+        $password = "password123!";
 	$dbname = "loginDB";
 	//Try to connect to db and store the results in conn
         $conn = mysqli_connect($servername, $username, $password, $dbname);
 	//Comment if DB login was succesful or not
+	$date = new DateTime();
+	$dateString = $date->format("y:m:d h:i:s");
         if(!$conn)
-        {
-		$error = "DB Connection Failed: ".mysqli_connect_error();
+	{
+		$error = $dateString." DB Connection Failed: ".mysqli_connect_error()."\n";
 		file_put_contents('Errorlog.txt', $error, FILE_APPEND);
 	}
 	else
@@ -36,7 +38,9 @@ function doLogin($user,$pass)
         	//if it does not match return false 
         	else
        		{
-                	printf ('Login failed');
+			printf ('Login failed');
+			$error = $dateString." Login failed"."\n";
+			file_put_contents('Errorlog.txt', $error, FILE_APPEND);
                 	return false;
         	}
 
