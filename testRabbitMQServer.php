@@ -5,6 +5,7 @@ require_once('get_host_info.inc');
 require_once('rabbitMQLib.inc');
 require_once('playerStatsAPI.php');
 $teams = array("atl", "bro", "bos", "cha", "chi", "cle", "dal", "den", "det", "gsw", "hou", "ind", "lac", "lal", "mem", "mia", "mil", "min", "nop", "nyk", "okl", "orl", "phi", "phx", "por", "sac", "sas", "tor", "uta", "was");
+ClearPlayerDB();
 foreach($teams as $team){
 	echo $team;
 	echo "\n";
@@ -14,6 +15,7 @@ foreach($teams as $team){
 	//var_dump($stats);
 	$count++;
 }
+
 //check if all 30 teams get through
 echo $count . "SERVER";
 function doLogin($user,$pass)
@@ -76,6 +78,15 @@ function requestProcessor($request)
   }
   return array("returnCode" => '0', 'message'=>"Server received request and processed");
 }
+function ClearPlayerDB(){
+	$servername = "localhost";
+        $username = "dbAdmin";
+        $password = "password123!";
+        $dbname = "loginDB";
+        $conn = mysqli_connect($servername, $username, $password, $dbname);
+	$drop = "DROP TABLE playerTable";
+	mysqli_query($conn, $drop);
+}
 
 function dataStore($array){
 
@@ -94,6 +105,7 @@ function dataStore($array){
 	}	
         //Try to connect to db and store the results in conn
         $conn = mysqli_connect($servername, $username, $password, $dbname);
+
         //Comment if DB login was succesful or not
         if(!$conn)
         {
@@ -116,7 +128,8 @@ function dataStore($array){
                 $blocks = mysqli_real_escape_string($conn, $test[12]);
                 $fouls = mysqli_real_escape_string($conn, $test[13]);
                 $turnover = mysqli_real_escape_string($conn, $test[14]);
-                
+                $createTable = "CREATE TABLE playerTable(playerID varchar(30), lastName varchar(30), firstName varchar(30), teamID varchar(30), team varchar(30), fieldGoals varchar(30), freethrowAttempt varchar(30), freethrowMade varchar(30), offensiveRebounds varchar(30), defensiveRebounds varchar(30), steals varchar(30), assists varchar(30), blocks varchar(30), fouls varchar(30), turnover varchar(30));";
+		mysqli_query($conn, $createTable);
 
 		$sql = "INSERT INTO playerTable(playerID, lastName, firstName, teamID, team, fieldGoals, freethrowAttempt, freethrowMade, offensiveRebounds, defensiveRebounds, steals, assists, blocks, fouls, turnover) VALUES('$playerID', '$lastname', '$firstname', '$teamID', '$team', '$fieldGoals', '$freethrowAttempt', '$freethrowMade', '$offensiveRebounds', '$defensiveRebounds', '$steals', '$assists', '$blocks', '$fouls', '$turnover')";
                 if(mysqli_query($conn, $sql))
