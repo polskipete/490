@@ -6,22 +6,15 @@
         $username = "dbAdmin";
         $password = "password123!";
         $dbname = "loginDB";
-
-	$test[0] = "12345";
-	$test[1] = "Van Gundy";
-	$test[2] = "Stan";
-	$test[3] = "88";
-        $test[4] = "DET";
-        $test[5] = "0";
-        $test[6] = "0";
-        $test[7] = "0";
-        $test[8] = "0";
-        $test[9] = "0";
-        $test[10] = "0";
-	$test[11] = "0";
-        $test[12] = "0";
-        $test[13] = "2";
-        $test[14] = "0";
+	// $ array will store below function
+	// = requestProcessor();
+	$array = array("12345", "Van Gundy", "Stan", "88", "DET", "0", "0", "0", "0", "0", "0", "0", "0", "2", "0");
+	$i = 0;
+	foreach($array as $stats)
+	{
+                $test[$i] = $stats;
+                $i++;
+	}	
 
 
 
