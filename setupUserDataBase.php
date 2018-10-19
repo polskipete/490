@@ -33,6 +33,7 @@ if ($mydb->errno != 0)
         exit(0);
 }
 
-
+/*CREATE TABLE playerTable(playerID varchar(30), lastName varchar(30), firstName varchar(30), teamID varchar(30), team varchar(30), fieldGoals varchar(30), freethrowAttempt varchar(30), freethrowMade varchar(30), offensiveRebounds varchar(30), defensiveRebounds varchar(30), steals varchar(30), assists varchar(30), blocks varchar(30), fouls varchar(30), turnover varchar(30));
+*/
 
 ?>
