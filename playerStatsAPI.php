@@ -5,7 +5,7 @@ function fetchPlayerData($team){
 	$ch = curl_init();
 
 	// Set url
-	curl_setopt($ch, CURLOPT_URL, 'https://api.mysportsfeeds.com/v2.0/pull/nba/2017-2018-regular/player_stats_totals.json?team=det');
+	curl_setopt($ch, CURLOPT_URL, 'https://api.mysportsfeeds.com/v2.0/pull/nba/2017-2018-regular/player_stats_totals.json?team='.$team);
 
 	// Set method
 	curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
