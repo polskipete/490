@@ -15,15 +15,11 @@
                 $test[$i] = $stats;
                 $i++;
 	}	
-
-
-
-
         //Try to connect to db and store the results in conn
         $conn = mysqli_connect($servername, $username, $password, $dbname);
         //Comment if DB login was succesful or not
         if(!$conn)
-        {
+        {:
                  die("Connection failed: " . mysqli_connect_error());
         }
         else
