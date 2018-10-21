@@ -11,9 +11,9 @@ foreach($teams as $team){
 	echo "\n";
 	$stats = fetchPlayerData($team);
 	storePlayerStats($stats);
+	$count++;
 	//probably will use for error logging, to make sure each team gets thro
 	//var_dump($stats);
-	$count++;
 }
 
 //check if all 30 teams get through
@@ -114,24 +114,27 @@ function dataStore($array){
         else
 	{
 		$playerID = mysqli_real_escape_string($conn, $test[0]);
-		$firstname = mysqli_real_escape_string($conn, $test[2]);
 		$lastname = mysqli_real_escape_string($conn, $test[1]);
+		$firstname = mysqli_real_escape_string($conn, $test[2]);
 		$teamID = mysqli_real_escape_string($conn, $test[3]);
                 $team = mysqli_real_escape_string($conn, $test[4]);
-                $fieldGoals = mysqli_real_escape_string($conn, $test[5]);
-                $freethrowAttempt = mysqli_real_escape_string($conn, $test[6]);
-                $freethrowMade = mysqli_real_escape_string($conn, $test[7]);
-                $offensiveRebounds = mysqli_real_escape_string($conn, $test[8]);
-                $defensiveRebounds = mysqli_real_escape_string($conn, $test[9]);
-                $steals = mysqli_real_escape_string($conn, $test[10]);
-                $assists = mysqli_real_escape_string($conn, $test[11]);
-                $blocks = mysqli_real_escape_string($conn, $test[12]);
-                $fouls = mysqli_real_escape_string($conn, $test[13]);
-                $turnover = mysqli_real_escape_string($conn, $test[14]);
-                $createTable = "CREATE TABLE playerTable(playerID varchar(30), lastName varchar(30), firstName varchar(30), teamID varchar(30), team varchar(30), fieldGoals varchar(30), freethrowAttempt varchar(30), freethrowMade varchar(30), offensiveRebounds varchar(30), defensiveRebounds varchar(30), steals varchar(30), assists varchar(30), blocks varchar(30), fouls varchar(30), turnover varchar(30));";
+		$points = mysqli_real_escape_string($conn, $test[5]);
+                $fieldGoals = mysqli_real_escape_string($conn, $test[6]);
+		$fieldGoalsAtt = mysqli_real_escape_string($conn, $test[7]);
+                $freethrowAttempt = mysqli_real_escape_string($conn, $test[8]);
+                $freethrowMade = mysqli_real_escape_string($conn, $test[9]);
+                $offensiveRebounds = mysqli_real_escape_string($conn, $test[10]);
+                $defensiveRebounds = mysqli_real_escape_string($conn, $test[11]);
+                $steals = mysqli_real_escape_string($conn, $test[12]);
+                $assists = mysqli_real_escape_string($conn, $test[13]);
+                $blocks = mysqli_real_escape_string($conn, $test[14]);
+                $fouls = mysqli_real_escape_string($conn, $test[15]);
+                $turnover = mysqli_real_escape_string($conn, $test[16]);
+		$efficiency = mysqli_real_escape_string($conn, $test[17]);
+                $createTable = "CREATE TABLE playerTable(playerID varchar(30), lastName varchar(30), firstName varchar(30), teamID varchar(30), team varchar(30), points varchar(30), FG varchar(30), FGAtt varchar(30), FTAttempt varchar(30), FTMade varchar(30), offRebounds varchar(30), defRebounds varchar(30), steals varchar(30), assists varchar(30), blocks varchar(30), fouls varchar(30), turnover varchar(30), efficiency varchar(30));";
 		mysqli_query($conn, $createTable);
 
-		$sql = "INSERT INTO playerTable(playerID, lastName, firstName, teamID, team, fieldGoals, freethrowAttempt, freethrowMade, offensiveRebounds, defensiveRebounds, steals, assists, blocks, fouls, turnover) VALUES('$playerID', '$lastname', '$firstname', '$teamID', '$team', '$fieldGoals', '$freethrowAttempt', '$freethrowMade', '$offensiveRebounds', '$defensiveRebounds', '$steals', '$assists', '$blocks', '$fouls', '$turnover')";
+		$sql = "INSERT INTO playerTable(playerID, lastName, firstName, teamID, team, points, FG, FGAtt,FTAttempt, FTMade, offRebounds, defRebounds, steals, assists, blocks, fouls, turnover, efficiency) VALUES('$playerID', '$lastname', '$firstname', '$teamID', '$team', '$points','$fieldGoals', '$fieldGoalsAtt', '$freethrowAttempt', '$freethrowMade', '$offensiveRebounds', '$defensiveRebounds', '$steals', '$assists', '$blocks', '$fouls', '$turnover', '$efficiency')";
                 if(mysqli_query($conn, $sql))
                 {
                         echo "New record created\n";
@@ -194,9 +197,8 @@ function storePlayerStats ($obj){
 			//Points Scored + (.4 * Field Go&l) - (.7 * Field Go&l Attempt) - (.4 * (Free Throw Attempt - Free Throw)) + (.7 * Offensive Rebounds) + (.3 * Defensive Rebounds) + Ste&ls + (.7 * Assists) + (.7 * Blocks) - (.4 * Person&l Fouls) - Turnover
 
 			$efficiency = $points + (0.4 * $fieldGoals) - (0.7 * $fieldGoalsAtt) - (0.4 * ($freeThrowsAtt - $freeThrowsMade)) + (0.7 * $offRebounds) + ( 0.3 * $defRebounds) + $steals + (0.7 * $assists) + (0.7 * $blocks) - (0.4 * $fouls) - $turnover;
-			echo $efficiency . "\n";
 			$playerCount += 1; 
-			$statsArray = array($playerID, $last, $first, $teamID, $team, $fieldGoals, $freeThrowsAtt, $freeThrowsMade, $offRebounds,$defRebounds, $steals, $assists, $blocks, $fouls, $turnover);
+			$statsArray = array($playerID, $last, $first, $teamID, $team, $points, $fieldGoals, $fieldGoalsAtt, $freeThrowsAtt, $freeThrowsMade, $offRebounds,$defRebounds, $steals, $assists, $blocks, $fouls, $turnover, $efficiency);
 			//var_dump($statsArray);
 			//STORE DATA HERE
 			dataStore($statsArray);
