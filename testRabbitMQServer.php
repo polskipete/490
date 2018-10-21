@@ -166,9 +166,12 @@ function storePlayerStats ($obj){
 			$team = $obj["playerStatsTotals"][$playerCount]["player"]["currentTeam"]["abbreviation"];
 	 
 			// Player stats
-
-			// field goals attempted
-			$feildGoals = $obj["playerStatsTotals"][$playerCount]["stats"]["fieldGoals"]["fgAtt"];
+			// points ***
+			$points = $assists = $obj["playerStatsTotals"][$playerCount]["stats"]["offense"]["pts"];
+			// field goals made
+			$fieldGoals = $obj["playerStatsTotals"][$playerCount]["stats"]["fieldGoals"]["fgMade"];
+			// field goals attempted **
+			$fieldGoalsAtt = $obj["playerStatsTotals"][$playerCount]["stats"]["fieldGoals"]["fgAtt"];
 			// free throws attempted
 			$freeThrowsAtt = $obj["playerStatsTotals"][$playerCount]["stats"]["freeThrows"]["ftAtt"];
 			// free throws made
@@ -188,12 +191,12 @@ function storePlayerStats ($obj){
 			// turnover
 			$turnover = $obj["playerStatsTotals"][$playerCount]["stats"]["defense"]["tov"];
 			
-			// Test if data is stored properly on variable
-			//echo $playerID . "\n" . $last . "\n" . $first . "\n" . $teamID . "\n" . $team . "\n" ;
-			//echo $feildGoals . "\n" . $freeThrowsAtt . "\n" . $freeThrowsMade . "\n" . $offRebounds . "\n" . $defRebounds . "\n";
-			//echo $steals . "\n" . $assists . "\n" . $blocks . "\n" . $fouls . "\n" . $turnover . "\n";
+			//Points Scored + (.4 * Field Go&l) - (.7 * Field Go&l Attempt) - (.4 * (Free Throw Attempt - Free Throw)) + (.7 * Offensive Rebounds) + (.3 * Defensive Rebounds) + Ste&ls + (.7 * Assists) + (.7 * Blocks) - (.4 * Person&l Fouls) - Turnover
+
+			$efficiency = $points + (0.4 * $fieldGoals) - (0.7 * $fieldGoalsAtt) - (0.4 * ($freeThrowsAtt - $freeThrowsMade)) + (0.7 * $offRebounds) + ( 0.3 * $defRebounds) + $steals + (0.7 * $assists) + (0.7 * $blocks) - (0.4 * $fouls) - $turnover;
+			echo $efficiency . "\n";
 			$playerCount += 1; 
-			$statsArray = array($playerID, $last, $first, $teamID, $team, $feildGoals, $freeThrowsAtt, $freeThrowsMade, $offRebounds,$defRebounds, $steals, $assists, $blocks, $fouls, $turnover);
+			$statsArray = array($playerID, $last, $first, $teamID, $team, $fieldGoals, $freeThrowsAtt, $freeThrowsMade, $offRebounds,$defRebounds, $steals, $assists, $blocks, $fouls, $turnover);
 			//var_dump($statsArray);
 			//STORE DATA HERE
 			dataStore($statsArray);
