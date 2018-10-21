@@ -1,6 +1,9 @@
 
 <!doctype html>
 <?php
+   // ini_set('display_startup_errors', true);
+   // error_reporting(E_ALL);
+   // ini_set('display_errors', true);
     include('registrationForm.php');
 ?>
 
@@ -31,12 +34,14 @@
                 <label><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" name="password" class="form-control" value="<?php echo $password; ?>">
                 <span class="help-block"><?php echo $password_err; ?></span>
-        </div>
+	</div>
+	<!--
         <div class="form-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
                 <label><b>Confirm Password</b></label>
                 <input type="password" placeholder="Confirm Password" name="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>">
                 <span class="help-block"><?php echo $confirm_password_err; ?></span>
-        </div>
+	</div>
+	--!>
         <div class="form-group">
 		<p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
                 <input type="submit" class="btn btn-primary" value="Submit">
