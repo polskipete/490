@@ -56,6 +56,7 @@ function calculateScore($playerIDs, $teamName)
 		$totalscore += (float)$row[0];	
 	}
 	echo $totalscore;
+	return $totalscore;
 }
 
 
