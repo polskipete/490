@@ -4,16 +4,20 @@ require_once('path.inc');
 require_once('get_host_info.inc');
 require_once('rabbitMQLib.inc');
 require_once('playerStatsAPI.php');
-$teams = array("atl", "bro", "bos", "cha", "chi", "cle", "dal", "den", "det", "gsw", "hou", "ind", "lac", "lal", "mem", "mia", "mil", "min", "nop", "nyk", "okl", "orl", "phi", "phx", "por", "sac", "sas", "tor", "uta", "was");
+//$teams = array("atl", "bro", "bos", "cha", "chi", "cle", "dal", "den", "det", "gsw", "hou", "ind", "lac", "lal", "mem", "mia", "mil", "min", "nop", "nyk", "okl", "orl", "phi", "phx", "por", "sac", "sas", "tor", "uta", "was");
 ClearPlayerDB();
-foreach($teams as $team){
-	echo $team;
-	echo "\n";
-	$stats = fetchPlayerData($team);
-	storePlayerStats($stats);
-	$count++;
-	//probably will use for error logging, to make sure each team gets thro
-	//var_dump($stats);
+function dataPull($teamsName)
+{
+	foreach($teamsName as $team){
+		echo $team;
+		echo "\n";
+		$stats = fetchPlayerData($team);
+		storePlayerStats($stats);
+		$count++;
+		//probably will use for error logging, to make sure each team gets thro
+		//var_dump($stats);
+		
+	}
 }
 
 //check if all 30 teams get through
@@ -63,6 +67,8 @@ function doLogin($user,$pass)
 
 function requestProcessor($request)
 {
+ $teams = array("atl", "bro", "bos", "cha", "chi", "cle", "dal", "den", "det", "gsw", "hou", "ind", "lac", "lal", "mem", "mia", "mil", "min", "nop", "nyk", "okl", "orl", "phi", "phx", "por", "sac", "sas", "tor", "uta", "was");
+
   echo "received request".PHP_EOL;
   var_dump($request);
   if(!isset($request['type']))
@@ -72,9 +78,10 @@ function requestProcessor($request)
   switch ($request['type'])
   {
     case "Login":
-      return doLogin($request['username'],$request['password']);
+	    dataPull($request['array']);
+	    return doLogin($request['username'],$request['password']);
     case "validate_session":
-      return doValidate($request['sessionId']);
+	return doValidate($request['sessionId']);
   }
   return array("returnCode" => '0', 'message'=>"Server received request and processed");
 }
@@ -205,9 +212,9 @@ function storePlayerStats ($obj){
 	}
 }
 
-$server = new rabbitMQServer("testRabbitMQ.ini","testServer");
-
+$server = new rabbitMQServer("testRabbitMQ.ini","teamServer");
 $server->process_requests('requestProcessor');
+
 exit();
 ?>
 

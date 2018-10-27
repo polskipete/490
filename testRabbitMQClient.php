@@ -11,7 +11,7 @@ echo($username);
 if (isset($username))
 {
 	echo "in";
-	$client = new rabbitMQClient("testRabbitMQ.ini","testServer");
+	$client = new rabbitMQClient("testRabbitMQ.ini","teamServer");
 	if (isset($argv[1]))
 	{
 	  $msg = $argv[1];
@@ -26,7 +26,10 @@ if (isset($username))
 	$request['username'] = $username;
 	$request['password'] = $password;
 	$request['message'] = $msg;
+	$request['array'] = array("atl", "bro", "bos", "cha", "chi", "cle", "dal", "den", "det", "gsw", "hou", "ind", "lac", "lal", "mem", "mia", "mil", "min", "nop", "nyk", "okl", "orl", "phi", "phx", "por", "sac", "sas", "tor", "uta", "was");
+
 	$response = $client->send_request($request);
+	
 	//$response = $client->publish($request);
 
 	echo "client received response: ".PHP_EOL;
@@ -35,4 +38,4 @@ if (isset($username))
 
 	echo $argv[0]." END".PHP_EOL;
 }
-
+?>
