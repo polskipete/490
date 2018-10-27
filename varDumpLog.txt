@@ -1,0 +1,5291 @@
+18:10:27 05:49:19 array(3) {
+  ["lastUpdatedOn"]=>
+  string(24) "2018-10-26T18:27:55.688Z"
+  ["playerStatsTotals"]=>
+  array(16) {
+    [0]=>
+    array(3) {
+      ["player"]=>
+      array(20) {
+        ["id"]=>
+        int(9523)
+        ["firstName"]=>
+        string(7) "Bradley"
+        ["lastName"]=>
+        string(4) "Beal"
+        ["primaryPosition"]=>
+        string(2) "SG"
+        ["jerseyNumber"]=>
+        int(3)
+        ["currentTeam"]=>
+        array(2) {
+          ["id"]=>
+          int(94)
+          ["abbreviation"]=>
+          string(3) "WAS"
+        }
+        ["currentRosterStatus"]=>
+        string(6) "ROSTER"
+        ["currentInjury"]=>
+        NULL
+        ["height"]=>
+        string(4) "6'5""
+        ["weight"]=>
+        int(207)
+        ["birthDate"]=>
+        string(10) "1993-06-28"
+        ["age"]=>
+        int(25)
+        ["birthCity"]=>
+        string(13) "St. Louis, MO"
+        ["birthCountry"]=>
+        string(3) "USA"
+        ["rookie"]=>
+        bool(false)
+        ["highSchool"]=>
+        string(36) "Chaminade College Preparatory School"
+        ["college"]=>
+        string(21) "University of Florida"
+        ["handedness"]=>
+        array(1) {
+          ["shoots"]=>
+          string(1) "R"
+        }
+        ["officialImageSrc"]=>
+        NULL
+        ["socialMediaAccounts"]=>
+        array(1) {
+          [0]=>
+          array(2) {
+            ["mediaType"]=>
+            string(7) "TWITTER"
+            ["value"]=>
+            string(14) "RealDealBeal23"
+          }
+        }
+      }
+      ["team"]=>
+      array(2) {
+        ["id"]=>
+        int(94)
+        ["abbreviation"]=>
+        string(3) "WAS"
+      }
+      ["stats"]=>
+      array(7) {
+        ["gamesPlayed"]=>
+        int(82)
+        ["fieldGoals"]=>
+        array(15) {
+          ["fg2PtAtt"]=>
+          int(954)
+          ["fg2PtAttPerGame"]=>
+          float(11.6)
+          ["fg2PtMade"]=>
+          int(484)
+          ["fg2PtMadePerGame"]=>
+          float(5.9)
+          ["fg2PtPct"]=>
+          float(50.7)
+          ["fg3PtAtt"]=>
+          int(530)
+          ["fg3PtAttPerGame"]=>
+          float(6.5)
+          ["fg3PtMade"]=>
+          int(199)
+          ["fg3PtMadePerGame"]=>
+          float(2.4)
+          ["fg3PtPct"]=>
+          float(37.5)
+          ["fgAtt"]=>
+          int(1484)
+          ["fgAttPerGame"]=>
+          float(18.1)
+          ["fgMade"]=>
+          int(683)
+          ["fgMadePerGame"]=>
+          float(8.3)
+          ["fgPct"]=>
+          float(46)
+        }
+        ["freeThrows"]=>
+        array(5) {
+          ["ftAtt"]=>
+          int(369)
+          ["ftAttPerGame"]=>
+          float(4.5)
+          ["ftMade"]=>
+          int(292)
+          ["ftMadePerGame"]=>
+          float(3.6)
+          ["ftPct"]=>
+          float(79.1)
+        }
+        ["rebounds"]=>
+        array(6) {
+          ["offReb"]=>
+          int(60)
+          ["offRebPerGame"]=>
+          float(0.7)
+          ["defReb"]=>
+          int(301)
+          ["defRebPerGame"]=>
+          float(3.7)
+          ["reb"]=>
+          int(362)
+          ["rebPerGame"]=>
+          float(4.4)
+        }
+        ["offense"]=>
+        array(4) {
+          ["ast"]=>
+          int(373)
+          ["astPerGame"]=>
+          float(4.5)
+          ["pts"]=>
+          int(1857)
+          ["ptsPerGame"]=>
+          float(22.6)
+        }
+        ["defense"]=>
+        array(8) {
+          ["tov"]=>
+          int(214)
+          ["tovPerGame"]=>
+          float(2.6)
+          ["stl"]=>
+          int(97)
+          ["stlPerGame"]=>
+          float(1.2)
+          ["blk"]=>
+          int(35)
+          ["blkPerGame"]=>
+          float(0.4)
+          ["blkAgainst"]=>
+          int(62)
+          ["blkAgainstPerGame"]=>
+          float(0.8)
+        }
+        ["miscellaneous"]=>
+        array(26) {
+          ["fouls"]=>
+          int(461)
+          ["foulsPerGame"]=>
+          float(5.6)
+          ["foulsDrawn"]=>
+          int(0)
+          ["foulsDrawnPerGame"]=>
+          float(0)
+          ["foulPers"]=>
+          int(160)
+          ["foulPersPerGame"]=>
+          float(2)
+          ["foulPersDrawn"]=>
+          int(298)
+          ["foulPersDrawnPerGame"]=>
+          float(3.6)
+          ["foulTech"]=>
+          int(3)
+          ["foulTechPerGame"]=>
+          float(0)
+          ["foulTechDrawn"]=>
+          int(1)
+          ["foulTechDrawnPerGame"]=>
+          float(0)
+          ["foulFlag1"]=>
+          int(0)
+          ["foulFlag1PerGame"]=>
+          float(0)
+          ["foulFlag1Drawn"]=>
+          int(0)
+          ["foulFlag1DrawnPerGame"]=>
+          float(0)
+          ["foulFlag2"]=>
+          int(0)
+          ["foulFlag2PerGame"]=>
+          float(0)
+          ["foulFlag2Drawn"]=>
+          int(0)
+          ["foulFlag2DrawnPerGame"]=>
+          float(0)
+          ["ejections"]=>
+          int(0)
+          ["plusMinus"]=>
+          int(180)
+          ["plusMinusPerGame"]=>
+          float(2.2)
+          ["minSeconds"]=>
+          int(178604)
+          ["minSecondsPerGame"]=>
+          float(2178.1)
+          ["gamesStarted"]=>
+          int(82)
+        }
+      }
+    }
+    [1]=>
+    array(3) {
+      ["player"]=>
+      array(20) {
+        ["id"]=>
+        int(13937)
+        ["firstName"]=>
+        string(5) "Scott"
+        ["lastName"]=>
+        string(6) "Brooks"
+        ["primaryPosition"]=>
+        string(1) "C"
+        ["jerseyNumber"]=>
+        NULL
+        ["currentTeam"]=>
+        array(2) {
+          ["id"]=>
+          int(94)
+          ["abbreviation"]=>
+          string(3) "WAS"
+        }
+        ["currentRosterStatus"]=>
+        string(17) "ASSIGNED_TO_OTHER"
+        ["currentInjury"]=>
+        NULL
+        ["height"]=>
+        NULL
+        ["weight"]=>
+        NULL
+        ["birthDate"]=>
+        string(10) "2018-01-25"
+        ["age"]=>
+        int(0)
+        ["birthCity"]=>
+        string(15) "French Camp, CA"
+        ["birthCountry"]=>
+        string(3) "USA"
+        ["rookie"]=>
+        bool(false)
+        ["highSchool"]=>
+        string(10) "East Union"
+        ["college"]=>
+        string(32) "University of California, Irvine"
+        ["handedness"]=>
+        array(1) {
+          ["shoots"]=>
+          NULL
+        }
+        ["officialImageSrc"]=>
+        NULL
+        ["socialMediaAccounts"]=>
+        array(0) {
+        }
+      }
+      ["team"]=>
+      array(2) {
+        ["id"]=>
+        int(94)
+        ["abbreviation"]=>
+        string(3) "WAS"
+      }
+      ["stats"]=>
+      array(7) {
+        ["gamesPlayed"]=>
+        int(1)
+        ["fieldGoals"]=>
+        array(15) {
+          ["fg2PtAtt"]=>
+          int(0)
+          ["fg2PtAttPerGame"]=>
+          float(0)
+          ["fg2PtMade"]=>
+          int(0)
+          ["fg2PtMadePerGame"]=>
+          float(0)
+          ["fg2PtPct"]=>
+          float(0)
+          ["fg3PtAtt"]=>
+          int(0)
+          ["fg3PtAttPerGame"]=>
+          float(0)
+          ["fg3PtMade"]=>
+          int(0)
+          ["fg3PtMadePerGame"]=>
+          float(0)
+          ["fg3PtPct"]=>
+          float(0)
+          ["fgAtt"]=>
+          int(0)
+          ["fgAttPerGame"]=>
+          float(0)
+          ["fgMade"]=>
+          int(0)
+          ["fgMadePerGame"]=>
+          float(0)
+          ["fgPct"]=>
+          float(0)
+        }
+        ["freeThrows"]=>
+        array(5) {
+          ["ftAtt"]=>
+          int(0)
+          ["ftAttPerGame"]=>
+          float(0)
+          ["ftMade"]=>
+          int(0)
+          ["ftMadePerGame"]=>
+          float(0)
+          ["ftPct"]=>
+          float(0)
+        }
+        ["rebounds"]=>
+        array(6) {
+          ["offReb"]=>
+          int(0)
+          ["offRebPerGame"]=>
+          float(0)
+          ["defReb"]=>
+          int(0)
+          ["defRebPerGame"]=>
+          float(0)
+          ["reb"]=>
+          int(0)
+          ["rebPerGame"]=>
+          float(0)
+        }
+        ["offense"]=>
+        array(4) {
+          ["ast"]=>
+          int(0)
+          ["astPerGame"]=>
+          float(0)
+          ["pts"]=>
+          int(0)
+          ["ptsPerGame"]=>
+          float(0)
+        }
+        ["defense"]=>
+        array(8) {
+          ["tov"]=>
+          int(0)
+          ["tovPerGame"]=>
+          float(0)
+          ["stl"]=>
+          int(0)
+          ["stlPerGame"]=>
+          float(0)
+          ["blk"]=>
+          int(0)
+          ["blkPerGame"]=>
+          float(0)
+          ["blkAgainst"]=>
+          int(0)
+          ["blkAgainstPerGame"]=>
+          float(0)
+        }
+        ["miscellaneous"]=>
+        array(26) {
+          ["fouls"]=>
+          int(1)
+          ["foulsPerGame"]=>
+          float(1)
+          ["foulsDrawn"]=>
+          int(0)
+          ["foulsDrawnPerGame"]=>
+          float(0)
+          ["foulPers"]=>
+          int(0)
+          ["foulPersPerGame"]=>
+          float(0)
+          ["foulPersDrawn"]=>
+          int(0)
+          ["foulPersDrawnPerGame"]=>
+          float(0)
+          ["foulTech"]=>
+          int(1)
+          ["foulTechPerGame"]=>
+          float(1)
+          ["foulTechDrawn"]=>
+          int(0)
+          ["foulTechDrawnPerGame"]=>
+          float(0)
+          ["foulFlag1"]=>
+          int(0)
+          ["foulFlag1PerGame"]=>
+          float(0)
+          ["foulFlag1Drawn"]=>
+          int(0)
+          ["foulFlag1DrawnPerGame"]=>
+          float(0)
+          ["foulFlag2"]=>
+          int(0)
+          ["foulFlag2PerGame"]=>
+          float(0)
+          ["foulFlag2Drawn"]=>
+          int(0)
+          ["foulFlag2DrawnPerGame"]=>
+          float(0)
+          ["ejections"]=>
+          int(0)
+          ["plusMinus"]=>
+          int(0)
+          ["plusMinusPerGame"]=>
+          float(0)
+          ["minSeconds"]=>
+          int(0)
+          ["minSecondsPerGame"]=>
+          float(0)
+          ["gamesStarted"]=>
+          int(0)
+        }
+      }
+    }
+    [2]=>
+    array(3) {
+      ["player"]=>
+      array(20) {
+        ["id"]=>
+        int(9366)
+        ["firstName"]=>
+        string(3) "Tim"
+        ["lastName"]=>
+        string(7) "Frazier"
+        ["primaryPosition"]=>
+        string(2) "PG"
+        ["jerseyNumber"]=>
+        int(8)
+        ["currentTeam"]=>
+        array(2) {
+          ["id"]=>
+          int(110)
+          ["abbreviation"]=>
+          string(3) "NOP"
+        }
+        ["currentRosterStatus"]=>
+        string(6) "ROSTER"
+        ["currentInjury"]=>
+        NULL
+        ["height"]=>
+        string(4) "6'1""
+        ["weight"]=>
+        int(170)
+        ["birthDate"]=>
+        string(10) "1990-11-01"
+        ["age"]=>
+        int(27)
+        ["birthCity"]=>
+        string(11) "Houston, TX"
+        ["birthCountry"]=>
+        string(3) "USA"
+        ["rookie"]=>
+        bool(false)
+        ["highSchool"]=>
+        string(13) "Strake Jesuit"
+        ["college"]=>
+        string(29) "Pennsylvania State University"
+        ["handedness"]=>
+        array(1) {
+          ["shoots"]=>
+          string(1) "R"
+        }
+        ["officialImageSrc"]=>
+        NULL
+        ["socialMediaAccounts"]=>
+        array(1) {
+          [0]=>
+          array(2) {
+            ["mediaType"]=>
+            string(7) "TWITTER"
+            ["value"]=>
+            string(9) "Timfraz23"
+          }
+        }
+      }
+      ["team"]=>
+      array(2) {
+        ["id"]=>
+        int(94)
+        ["abbreviation"]=>
+        string(3) "WAS"
+      }
+      ["stats"]=>
+      array(7) {
+        ["gamesPlayed"]=>
+        int(59)
+        ["fieldGoals"]=>
+        array(15) {
+          ["fg2PtAtt"]=>
+          int(116)
+          ["fg2PtAttPerGame"]=>
+          float(2)
+          ["fg2PtMade"]=>
+          int(51)
+          ["fg2PtMadePerGame"]=>
+          float(0.9)
+          ["fg2PtPct"]=>
+          float(44)
+          ["fg3PtAtt"]=>
+          int(56)
+          ["fg3PtAttPerGame"]=>
+          float(0.9)
+          ["fg3PtMade"]=>
+          int(17)
+          ["fg3PtMadePerGame"]=>
+          float(0.3)
+          ["fg3PtPct"]=>
+          float(30.4)
+          ["fgAtt"]=>
+          int(172)
+          ["fgAttPerGame"]=>
+          float(2.9)
+          ["fgMade"]=>
+          int(68)
+          ["fgMadePerGame"]=>
+          float(1.2)
+          ["fgPct"]=>
+          float(39.5)
+        }
+        ["freeThrows"]=>
+        array(5) {
+          ["ftAtt"]=>
+          int(30)
+          ["ftAttPerGame"]=>
+          float(0.5)
+          ["ftMade"]=>
+          int(23)
+          ["ftMadePerGame"]=>
+          float(0.4)
+          ["ftPct"]=>
+          float(76.7)
+        }
+        ["rebounds"]=>
+        array(6) {
+          ["offReb"]=>
+          int(18)
+          ["offRebPerGame"]=>
+          float(0.3)
+          ["defReb"]=>
+          int(98)
+          ["defRebPerGame"]=>
+          float(1.7)
+          ["reb"]=>
+          int(116)
+          ["rebPerGame"]=>
+          float(2)
+        }
+        ["offense"]=>
+        array(4) {
+          ["ast"]=>
+          int(194)
+          ["astPerGame"]=>
+          float(3.3)
+          ["pts"]=>
+          int(176)
+          ["ptsPerGame"]=>
+          float(3)
+        }
+        ["defense"]=>
+        array(8) {
+          ["tov"]=>
+          int(57)
+          ["tovPerGame"]=>
+          float(1)
+          ["stl"]=>
+          int(47)
+          ["stlPerGame"]=>
+          float(0.8)
+          ["blk"]=>
+          int(8)
+          ["blkPerGame"]=>
+          float(0.1)
+          ["blkAgainst"]=>
+          int(15)
+          ["blkAgainstPerGame"]=>
+          float(0.3)
+        }
+        ["miscellaneous"]=>
+        array(26) {
+          ["fouls"]=>
+          int(157)
+          ["foulsPerGame"]=>
+          float(2.7)
+          ["foulsDrawn"]=>
+          int(0)
+          ["foulsDrawnPerGame"]=>
+          float(0)
+          ["foulPers"]=>
+          int(97)
+          ["foulPersPerGame"]=>
+          float(1.6)
+          ["foulPersDrawn"]=>
+          int(59)
+          ["foulPersDrawnPerGame"]=>
+          float(1)
+          ["foulTech"]=>
+          int(1)
+          ["foulTechPerGame"]=>
+          float(0)
+          ["foulTechDrawn"]=>
+          int(1)
+          ["foulTechDrawnPerGame"]=>
+          float(0)
+          ["foulFlag1"]=>
+          int(0)
+          ["foulFlag1PerGame"]=>
+          float(0)
+          ["foulFlag1Drawn"]=>
+          int(0)
+          ["foulFlag1DrawnPerGame"]=>
+          float(0)
+          ["foulFlag2"]=>
+          int(0)
+          ["foulFlag2PerGame"]=>
+          float(0)
+          ["foulFlag2Drawn"]=>
+          int(0)
+          ["foulFlag2DrawnPerGame"]=>
+          float(0)
+          ["ejections"]=>
+          int(0)
+          ["plusMinus"]=>
+          int(-86)
+          ["plusMinusPerGame"]=>
+          float(-1.5)
+          ["minSeconds"]=>
+          int(50276)
+          ["minSecondsPerGame"]=>
+          float(852.1)
+          ["gamesStarted"]=>
+          int(11)
+        }
+      }
+    }
+    [3]=>
+    array(3) {
+      ["player"]=>
+      array(20) {
+        ["id"]=>
+        int(9519)
+        ["firstName"]=>
+        string(6) "Marcin"
+        ["lastName"]=>
+        string(6) "Gortat"
+        ["primaryPosition"]=>
+        string(1) "C"
+        ["jerseyNumber"]=>
+        int(13)
+        ["currentTeam"]=>
+        array(2) {
+          ["id"]=>
+          int(102)
+          ["abbreviation"]=>
+          string(3) "LAC"
+        }
+        ["currentRosterStatus"]=>
+        string(6) "ROSTER"
+        ["currentInjury"]=>
+        NULL
+        ["height"]=>
+        string(5) "6'11""
+        ["weight"]=>
+        int(240)
+        ["birthDate"]=>
+        string(10) "1984-02-17"
+        ["age"]=>
+        int(34)
+        ["birthCity"]=>
+        string(4) "Lodz"
+        ["birthCountry"]=>
+        string(6) "Poland"
+        ["rookie"]=>
+        bool(false)
+        ["highSchool"]=>
+        NULL
+        ["college"]=>
+        NULL
+        ["handedness"]=>
+        array(1) {
+          ["shoots"]=>
+          string(1) "R"
+        }
+        ["officialImageSrc"]=>
+        NULL
+        ["socialMediaAccounts"]=>
+        array(1) {
+          [0]=>
+          array(2) {
+            ["mediaType"]=>
+            string(7) "TWITTER"
+            ["value"]=>
+            string(7) "MGortat"
+          }
+        }
+      }
+      ["team"]=>
+      array(2) {
+        ["id"]=>
+        int(94)
+        ["abbreviation"]=>
+        string(3) "WAS"
+      }
+      ["stats"]=>
+      array(7) {
+        ["gamesPlayed"]=>
+        int(82)
+        ["fieldGoals"]=>
+        array(15) {
+          ["fg2PtAtt"]=>
+          int(560)
+          ["fg2PtAttPerGame"]=>
+          float(6.8)
+          ["fg2PtMade"]=>
+          int(290)
+          ["fg2PtMadePerGame"]=>
+          float(3.5)
+          ["fg2PtPct"]=>
+          float(51.8)
+          ["fg3PtAtt"]=>
+          int(0)
+          ["fg3PtAttPerGame"]=>
+          float(0)
+          ["fg3PtMade"]=>
+          int(0)
+          ["fg3PtMadePerGame"]=>
+          float(0)
+          ["fg3PtPct"]=>
+          float(0)
+          ["fgAtt"]=>
+          int(560)
+          ["fgAttPerGame"]=>
+          float(6.8)
+          ["fgMade"]=>
+          int(290)
+          ["fgMadePerGame"]=>
+          float(3.5)
+          ["fgPct"]=>
+          float(51.8)
+        }
+        ["freeThrows"]=>
+        array(5) {
+          ["ftAtt"]=>
+          int(163)
+          ["ftAttPerGame"]=>
+          float(2)
+          ["ftMade"]=>
+          int(110)
+          ["ftMadePerGame"]=>
+          float(1.3)
+          ["ftPct"]=>
+          float(67.5)
+        }
+        ["rebounds"]=>
+        array(6) {
+          ["offReb"]=>
+          int(180)
+          ["offRebPerGame"]=>
+          float(2.2)
+          ["defReb"]=>
+          int(441)
+          ["defRebPerGame"]=>
+          float(5.4)
+          ["reb"]=>
+          int(622)
+          ["rebPerGame"]=>
+          float(7.6)
+        }
+        ["offense"]=>
+        array(4) {
+          ["ast"]=>
+          int(151)
+          ["astPerGame"]=>
+          float(1.8)
+          ["pts"]=>
+          int(690)
+          ["ptsPerGame"]=>
+          float(8.4)
+        }
+        ["defense"]=>
+        array(8) {
+          ["tov"]=>
+          int(99)
+          ["tovPerGame"]=>
+          float(1.2)
+          ["stl"]=>
+          int(40)
+          ["stlPerGame"]=>
+          float(0.5)
+          ["blk"]=>
+          int(61)
+          ["blkPerGame"]=>
+          float(0.7)
+          ["blkAgainst"]=>
+          int(53)
+          ["blkAgainstPerGame"]=>
+          float(0.6)
+        }
+        ["miscellaneous"]=>
+        array(26) {
+          ["fouls"]=>
+          int(363)
+          ["foulsPerGame"]=>
+          float(4.4)
+          ["foulsDrawn"]=>
+          int(0)
+          ["foulsDrawnPerGame"]=>
+          float(0)
+          ["foulPers"]=>
+          int(175)
+          ["foulPersPerGame"]=>
+          float(2.1)
+          ["foulPersDrawn"]=>
+          int(185)
+          ["foulPersDrawnPerGame"]=>
+          float(2.3)
+          ["foulTech"]=>
+          int(2)
+          ["foulTechPerGame"]=>
+          float(0)
+          ["foulTechDrawn"]=>
+          int(3)
+          ["foulTechDrawnPerGame"]=>
+          float(0)
+          ["foulFlag1"]=>
+          int(0)
+          ["foulFlag1PerGame"]=>
+          float(0)
+          ["foulFlag1Drawn"]=>
+          int(0)
+          ["foulFlag1DrawnPerGame"]=>
+          float(0)
+          ["foulFlag2"]=>
+          int(0)
+          ["foulFlag2PerGame"]=>
+          float(0)
+          ["foulFlag2Drawn"]=>
+          int(0)
+          ["foulFlag2DrawnPerGame"]=>
+          float(0)
+          ["ejections"]=>
+          int(0)
+          ["plusMinus"]=>
+          int(107)
+          ["plusMinusPerGame"]=>
+          float(1.3)
+          ["minSeconds"]=>
+          int(124470)
+          ["minSecondsPerGame"]=>
+          float(1517.9)
+          ["gamesStarted"]=>
+          int(82)
+        }
+      }
+    }
+    [4]=>
+    array(3) {
+      ["player"]=>
+      array(20) {
+        ["id"]=>
+        int(9249)
+        ["firstName"]=>
+        string(3) "Ian"
+        ["lastName"]=>
+        string(7) "Mahinmi"
+        ["primaryPosition"]=>
+        string(1) "C"
+        ["jerseyNumber"]=>
+        int(28)
+        ["currentTeam"]=>
+        array(2) {
+          ["id"]=>
+          int(94)
+          ["abbreviation"]=>
+          string(3) "WAS"
+        }
+        ["currentRosterStatus"]=>
+        string(6) "ROSTER"
+        ["currentInjury"]=>
+        array(2) {
+          ["description"]=>
+          string(11) "back spasms"
+          ["playingProbability"]=>
+          string(12) "QUESTIONABLE"
+        }
+        ["height"]=>
+        string(5) "6'11""
+        ["weight"]=>
+        int(262)
+        ["birthDate"]=>
+        string(10) "1986-11-05"
+        ["age"]=>
+        int(31)
+        ["birthCity"]=>
+        string(5) "Rouen"
+        ["birthCountry"]=>
+        string(6) "France"
+        ["rookie"]=>
+        bool(false)
+        ["highSchool"]=>
+        NULL
+        ["college"]=>
+        NULL
+        ["handedness"]=>
+        array(1) {
+          ["shoots"]=>
+          string(1) "R"
+        }
+        ["officialImageSrc"]=>
+        NULL
+        ["socialMediaAccounts"]=>
+        array(1) {
+          [0]=>
+          array(2) {
+            ["mediaType"]=>
+            string(7) "TWITTER"
+            ["value"]=>
+            string(10) "ianmahinmi"
+          }
+        }
+      }
+      ["team"]=>
+      array(2) {
+        ["id"]=>
+        int(94)
+        ["abbreviation"]=>
+        string(3) "WAS"
+      }
+      ["stats"]=>
+      array(7) {
+        ["gamesPlayed"]=>
+        int(77)
+        ["fieldGoals"]=>
+        array(15) {
+          ["fg2PtAtt"]=>
+          int(245)
+          ["fg2PtAttPerGame"]=>
+          float(3.2)
+          ["fg2PtMade"]=>
+          int(138)
+          ["fg2PtMadePerGame"]=>
+          float(1.8)
+          ["fg2PtPct"]=>
+          float(56.3)
+          ["fg3PtAtt"]=>
+          int(2)
+          ["fg3PtAttPerGame"]=>
+          float(0)
+          ["fg3PtMade"]=>
+          int(0)
+          ["fg3PtMadePerGame"]=>
+          float(0)
+          ["fg3PtPct"]=>
+          float(0)
+          ["fgAtt"]=>
+          int(247)
+          ["fgAttPerGame"]=>
+          float(3.2)
+          ["fgMade"]=>
+          int(138)
+          ["fgMadePerGame"]=>
+          float(1.8)
+          ["fgPct"]=>
+          float(55.9)
+        }
+        ["freeThrows"]=>
+        array(5) {
+          ["ftAtt"]=>
+          int(128)
+          ["ftAttPerGame"]=>
+          float(1.7)
+          ["ftMade"]=>
+          int(90)
+          ["ftMadePerGame"]=>
+          float(1.2)
+          ["ftPct"]=>
+          float(70.3)
+        }
+        ["rebounds"]=>
+        array(6) {
+          ["offReb"]=>
+          int(135)
+          ["offRebPerGame"]=>
+          float(1.8)
+          ["defReb"]=>
+          int(177)
+          ["defRebPerGame"]=>
+          float(2.3)
+          ["reb"]=>
+          int(312)
+          ["rebPerGame"]=>
+          float(4.1)
+        }
+        ["offense"]=>
+        array(4) {
+          ["ast"]=>
+          int(53)
+          ["astPerGame"]=>
+          float(0.7)
+          ["pts"]=>
+          int(366)
+          ["ptsPerGame"]=>
+          float(4.8)
+        }
+        ["defense"]=>
+        array(8) {
+          ["tov"]=>
+          int(101)
+          ["tovPerGame"]=>
+          float(1.3)
+          ["stl"]=>
+          int(38)
+          ["stlPerGame"]=>
+          float(0.5)
+          ["blk"]=>
+          int(42)
+          ["blkPerGame"]=>
+          float(0.5)
+          ["blkAgainst"]=>
+          int(26)
+          ["blkAgainstPerGame"]=>
+          float(0.3)
+        }
+        ["miscellaneous"]=>
+        array(26) {
+          ["fouls"]=>
+          int(348)
+          ["foulsPerGame"]=>
+          float(4.5)
+          ["foulsDrawn"]=>
+          int(0)
+          ["foulsDrawnPerGame"]=>
+          float(0)
+          ["foulPers"]=>
+          int(229)
+          ["foulPersPerGame"]=>
+          float(3)
+          ["foulPersDrawn"]=>
+          int(117)
+          ["foulPersDrawnPerGame"]=>
+          float(1.5)
+          ["foulTech"]=>
+          int(1)
+          ["foulTechPerGame"]=>
+          float(0)
+          ["foulTechDrawn"]=>
+          int(1)
+          ["foulTechDrawnPerGame"]=>
+          float(0)
+          ["foulFlag1"]=>
+          int(0)
+          ["foulFlag1PerGame"]=>
+          float(0)
+          ["foulFlag1Drawn"]=>
+          int(0)
+          ["foulFlag1DrawnPerGame"]=>
+          float(0)
+          ["foulFlag2"]=>
+          int(0)
+          ["foulFlag2PerGame"]=>
+          float(0)
+          ["foulFlag2Drawn"]=>
+          int(0)
+          ["foulFlag2DrawnPerGame"]=>
+          float(0)
+          ["ejections"]=>
+          int(0)
+          ["plusMinus"]=>
+          int(14)
+          ["plusMinusPerGame"]=>
+          float(0.2)
+          ["minSeconds"]=>
+          int(68718)
+          ["minSecondsPerGame"]=>
+          float(892.4)
+          ["gamesStarted"]=>
+          int(0)
+        }
+      }
+    }
+    [5]=>
+    array(3) {
+      ["player"]=>
+      array(20) {
+        ["id"]=>
+        int(9117)
+        ["firstName"]=>
+        string(5) "Chris"
+        ["lastName"]=>
+        string(10) "McCullough"
+        ["primaryPosition"]=>
+        string(2) "PF"
+        ["jerseyNumber"]=>
+        int(1)
+        ["currentTeam"]=>
+        array(2) {
+          ["id"]=>
+          int(94)
+          ["abbreviation"]=>
+          string(3) "WAS"
+        }
+        ["currentRosterStatus"]=>
+        string(6) "ROSTER"
+        ["currentInjury"]=>
+        NULL
+        ["height"]=>
+        string(4) "6'9""
+        ["weight"]=>
+        int(215)
+        ["birthDate"]=>
+        string(10) "1995-02-05"
+        ["age"]=>
+        int(23)
+        ["birthCity"]=>
+        string(9) "Bronx, NY"
+        ["birthCountry"]=>
+        string(3) "USA"
+        ["rookie"]=>
+        bool(false)
+        ["highSchool"]=>
+        string(11) "IMG Academy"
+        ["college"]=>
+        string(19) "Syracuse University"
+        ["handedness"]=>
+        array(1) {
+          ["shoots"]=>
+          string(1) "R"
+        }
+        ["officialImageSrc"]=>
+        NULL
+        ["socialMediaAccounts"]=>
+        array(0) {
+        }
+      }
+      ["team"]=>
+      array(2) {
+        ["id"]=>
+        int(94)
+        ["abbreviation"]=>
+        string(3) "WAS"
+      }
+      ["stats"]=>
+      array(7) {
+        ["gamesPlayed"]=>
+        int(19)
+        ["fieldGoals"]=>
+        array(15) {
+          ["fg2PtAtt"]=>
+          int(34)
+          ["fg2PtAttPerGame"]=>
+          float(1.8)
+          ["fg2PtMade"]=>
+          int(17)
+          ["fg2PtMadePerGame"]=>
+          float(0.9)
+          ["fg2PtPct"]=>
+          float(50)
+          ["fg3PtAtt"]=>
+          int(8)
+          ["fg3PtAttPerGame"]=>
+          float(0.4)
+          ["fg3PtMade"]=>
+          int(1)
+          ["fg3PtMadePerGame"]=>
+          float(0.1)
+          ["fg3PtPct"]=>
+          float(12.5)
+          ["fgAtt"]=>
+          int(42)
+          ["fgAttPerGame"]=>
+          float(2.2)
+          ["fgMade"]=>
+          int(18)
+          ["fgMadePerGame"]=>
+          float(0.9)
+          ["fgPct"]=>
+          float(42.9)
+        }
+        ["freeThrows"]=>
+        array(5) {
+          ["ftAtt"]=>
+          int(14)
+          ["ftAttPerGame"]=>
+          float(0.7)
+          ["ftMade"]=>
+          int(9)
+          ["ftMadePerGame"]=>
+          float(0.5)
+          ["ftPct"]=>
+          float(64.3)
+        }
+        ["rebounds"]=>
+        array(6) {
+          ["offReb"]=>
+          int(7)
+          ["offRebPerGame"]=>
+          float(0.4)
+          ["defReb"]=>
+          int(18)
+          ["defRebPerGame"]=>
+          float(0.9)
+          ["reb"]=>
+          int(25)
+          ["rebPerGame"]=>
+          float(1.3)
+        }
+        ["offense"]=>
+        array(4) {
+          ["ast"]=>
+          int(4)
+          ["astPerGame"]=>
+          float(0.2)
+          ["pts"]=>
+          int(46)
+          ["ptsPerGame"]=>
+          float(2.4)
+        }
+        ["defense"]=>
+        array(8) {
+          ["tov"]=>
+          int(2)
+          ["tovPerGame"]=>
+          float(0.1)
+          ["stl"]=>
+          int(0)
+          ["stlPerGame"]=>
+          float(0)
+          ["blk"]=>
+          int(5)
+          ["blkPerGame"]=>
+          float(0.3)
+          ["blkAgainst"]=>
+          int(1)
+          ["blkAgainstPerGame"]=>
+          float(0.1)
+        }
+        ["miscellaneous"]=>
+        array(26) {
+          ["fouls"]=>
+          int(16)
+          ["foulsPerGame"]=>
+          float(0.8)
+          ["foulsDrawn"]=>
+          int(0)
+          ["foulsDrawnPerGame"]=>
+          float(0)
+          ["foulPers"]=>
+          int(8)
+          ["foulPersPerGame"]=>
+          float(0.4)
+          ["foulPersDrawn"]=>
+          int(8)
+          ["foulPersDrawnPerGame"]=>
+          float(0.4)
+          ["foulTech"]=>
+          int(0)
+          ["foulTechPerGame"]=>
+          float(0)
+          ["foulTechDrawn"]=>
+          int(0)
+          ["foulTechDrawnPerGame"]=>
+          float(0)
+          ["foulFlag1"]=>
+          int(0)
+          ["foulFlag1PerGame"]=>
+          float(0)
+          ["foulFlag1Drawn"]=>
+          int(0)
+          ["foulFlag1DrawnPerGame"]=>
+          float(0)
+          ["foulFlag2"]=>
+          int(0)
+          ["foulFlag2PerGame"]=>
+          float(0)
+          ["foulFlag2Drawn"]=>
+          int(0)
+          ["foulFlag2DrawnPerGame"]=>
+          float(0)
+          ["ejections"]=>
+          int(0)
+          ["plusMinus"]=>
+          int(-16)
+          ["plusMinusPerGame"]=>
+          float(-0.8)
+          ["minSeconds"]=>
+          int(5386)
+          ["minSecondsPerGame"]=>
+          float(283.5)
+          ["gamesStarted"]=>
+          int(0)
+        }
+      }
+    }
+    [6]=>
+    array(3) {
+      ["player"]=>
+      array(20) {
+        ["id"]=>
+        int(9206)
+        ["firstName"]=>
+        string(5) "Jodie"
+        ["lastName"]=>
+        string(5) "Meeks"
+        ["primaryPosition"]=>
+        string(2) "SG"
+        ["jerseyNumber"]=>
+        int(20)
+        ["currentTeam"]=>
+        array(2) {
+          ["id"]=>
+          int(90)
+          ["abbreviation"]=>
+          string(3) "MIL"
+        }
+        ["currentRosterStatus"]=>
+        string(6) "ROSTER"
+        ["currentInjury"]=>
+        array(2) {
+          ["description"]=>
+          string(9) "suspended"
+          ["playingProbability"]=>
+          string(3) "OUT"
+        }
+        ["height"]=>
+        string(4) "6'4""
+        ["weight"]=>
+        int(210)
+        ["birthDate"]=>
+        string(10) "1987-08-20"
+        ["age"]=>
+        int(31)
+        ["birthCity"]=>
+        string(12) "Norcross, GA"
+        ["birthCountry"]=>
+        string(3) "USA"
+        ["rookie"]=>
+        bool(false)
+        ["highSchool"]=>
+        string(8) "Norcross"
+        ["college"]=>
+        string(22) "University of Kentucky"
+        ["handedness"]=>
+        array(1) {
+          ["shoots"]=>
+          string(1) "R"
+        }
+        ["officialImageSrc"]=>
+        NULL
+        ["socialMediaAccounts"]=>
+        array(1) {
+          [0]=>
+          array(2) {
+            ["mediaType"]=>
+            string(7) "TWITTER"
+            ["value"]=>
+            string(8) "Jmeeks20"
+          }
+        }
+      }
+      ["team"]=>
+      array(2) {
+        ["id"]=>
+        int(94)
+        ["abbreviation"]=>
+        string(3) "WAS"
+      }
+      ["stats"]=>
+      array(7) {
+        ["gamesPlayed"]=>
+        int(77)
+        ["fieldGoals"]=>
+        array(15) {
+          ["fg2PtAtt"]=>
+          int(183)
+          ["fg2PtAttPerGame"]=>
+          float(2.4)
+          ["fg2PtMade"]=>
+          int(85)
+          ["fg2PtMadePerGame"]=>
+          float(1.1)
+          ["fg2PtPct"]=>
+          float(46.4)
+          ["fg3PtAtt"]=>
+          int(210)
+          ["fg3PtAttPerGame"]=>
+          float(2.7)
+          ["fg3PtMade"]=>
+          int(72)
+          ["fg3PtMadePerGame"]=>
+          float(0.9)
+          ["fg3PtPct"]=>
+          float(34.3)
+          ["fgAtt"]=>
+          int(393)
+          ["fgAttPerGame"]=>
+          float(5.1)
+          ["fgMade"]=>
+          int(157)
+          ["fgMadePerGame"]=>
+          float(2)
+          ["fgPct"]=>
+          float(39.9)
+        }
+        ["freeThrows"]=>
+        array(5) {
+          ["ftAtt"]=>
+          int(117)
+          ["ftAttPerGame"]=>
+          float(1.5)
+          ["ftMade"]=>
+          int(101)
+          ["ftMadePerGame"]=>
+          float(1.3)
+          ["ftPct"]=>
+          float(86.3)
+        }
+        ["rebounds"]=>
+        array(6) {
+          ["offReb"]=>
+          int(15)
+          ["offRebPerGame"]=>
+          float(0.2)
+          ["defReb"]=>
+          int(111)
+          ["defRebPerGame"]=>
+          float(1.4)
+          ["reb"]=>
+          int(126)
+          ["rebPerGame"]=>
+          float(1.6)
+        }
+        ["offense"]=>
+        array(4) {
+          ["ast"]=>
+          int(70)
+          ["astPerGame"]=>
+          float(0.9)
+          ["pts"]=>
+          int(487)
+          ["ptsPerGame"]=>
+          float(6.3)
+        }
+        ["defense"]=>
+        array(8) {
+          ["tov"]=>
+          int(38)
+          ["tovPerGame"]=>
+          float(0.5)
+          ["stl"]=>
+          int(29)
+          ["stlPerGame"]=>
+          float(0.4)
+          ["blk"]=>
+          int(4)
+          ["blkPerGame"]=>
+          float(0.1)
+          ["blkAgainst"]=>
+          int(20)
+          ["blkAgainstPerGame"]=>
+          float(0.3)
+        }
+        ["miscellaneous"]=>
+        array(26) {
+          ["fouls"]=>
+          int(134)
+          ["foulsPerGame"]=>
+          float(1.7)
+          ["foulsDrawn"]=>
+          int(0)
+          ["foulsDrawnPerGame"]=>
+          float(0)
+          ["foulPers"]=>
+          int(55)
+          ["foulPersPerGame"]=>
+          float(0.7)
+          ["foulPersDrawn"]=>
+          int(78)
+          ["foulPersDrawnPerGame"]=>
+          float(1)
+          ["foulTech"]=>
+          int(0)
+          ["foulTechPerGame"]=>
+          float(0)
+          ["foulTechDrawn"]=>
+          int(0)
+          ["foulTechDrawnPerGame"]=>
+          float(0)
+          ["foulFlag1"]=>
+          int(0)
+          ["foulFlag1PerGame"]=>
+          float(0)
+          ["foulFlag1Drawn"]=>
+          int(1)
+          ["foulFlag1DrawnPerGame"]=>
+          float(0)
+          ["foulFlag2"]=>
+          int(0)
+          ["foulFlag2PerGame"]=>
+          float(0)
+          ["foulFlag2Drawn"]=>
+          int(0)
+          ["foulFlag2DrawnPerGame"]=>
+          float(0)
+          ["ejections"]=>
+          int(0)
+          ["plusMinus"]=>
+          int(-154)
+          ["plusMinusPerGame"]=>
+          float(-2)
+          ["minSeconds"]=>
+          int(67122)
+          ["minSecondsPerGame"]=>
+          float(871.7)
+          ["gamesStarted"]=>
+          int(0)
+        }
+      }
+    }
+    [7]=>
+    array(3) {
+      ["player"]=>
+      array(20) {
+        ["id"]=>
+        int(9520)
+        ["firstName"]=>
+        string(8) "Markieff"
+        ["lastName"]=>
+        string(6) "Morris"
+        ["primaryPosition"]=>
+        string(2) "PF"
+        ["jerseyNumber"]=>
+        int(5)
+        ["currentTeam"]=>
+        array(2) {
+          ["id"]=>
+          int(94)
+          ["abbreviation"]=>
+          string(3) "WAS"
+        }
+        ["currentRosterStatus"]=>
+        string(6) "ROSTER"
+        ["currentInjury"]=>
+        NULL
+        ["height"]=>
+        string(5) "6'10""
+        ["weight"]=>
+        int(245)
+        ["birthDate"]=>
+        string(10) "1989-09-02"
+        ["age"]=>
+        int(29)
+        ["birthCity"]=>
+        string(16) "Philadelphia, PA"
+        ["birthCountry"]=>
+        string(3) "USA"
+        ["rookie"]=>
+        bool(false)
+        ["highSchool"]=>
+        string(12) "APEX Academy"
+        ["college"]=>
+        string(20) "University of Kansas"
+        ["handedness"]=>
+        array(1) {
+          ["shoots"]=>
+          string(1) "R"
+        }
+        ["officialImageSrc"]=>
+        NULL
+        ["socialMediaAccounts"]=>
+        array(1) {
+          [0]=>
+          array(2) {
+            ["mediaType"]=>
+            string(7) "TWITTER"
+            ["value"]=>
+            string(10) "Keefmorris"
+          }
+        }
+      }
+      ["team"]=>
+      array(2) {
+        ["id"]=>
+        int(94)
+        ["abbreviation"]=>
+        string(3) "WAS"
+      }
+      ["stats"]=>
+      array(7) {
+        ["gamesPlayed"]=>
+        int(73)
+        ["fieldGoals"]=>
+        array(15) {
+          ["fg2PtAtt"]=>
+          int(480)
+          ["fg2PtAttPerGame"]=>
+          float(6.6)
+          ["fg2PtMade"]=>
+          int(254)
+          ["fg2PtMadePerGame"]=>
+          float(3.5)
+          ["fg2PtPct"]=>
+          float(52.9)
+          ["fg3PtAtt"]=>
+          int(207)
+          ["fg3PtAttPerGame"]=>
+          float(2.8)
+          ["fg3PtMade"]=>
+          int(76)
+          ["fg3PtMadePerGame"]=>
+          float(1)
+          ["fg3PtPct"]=>
+          float(36.7)
+          ["fgAtt"]=>
+          int(687)
+          ["fgAttPerGame"]=>
+          float(9.4)
+          ["fgMade"]=>
+          int(330)
+          ["fgMadePerGame"]=>
+          float(4.5)
+          ["fgPct"]=>
+          float(48)
+        }
+        ["freeThrows"]=>
+        array(5) {
+          ["ftAtt"]=>
+          int(128)
+          ["ftAttPerGame"]=>
+          float(1.8)
+          ["ftMade"]=>
+          int(105)
+          ["ftMadePerGame"]=>
+          float(1.4)
+          ["ftPct"]=>
+          float(82)
+        }
+        ["rebounds"]=>
+        array(6) {
+          ["offReb"]=>
+          int(76)
+          ["offRebPerGame"]=>
+          float(1)
+          ["defReb"]=>
+          int(335)
+          ["defRebPerGame"]=>
+          float(4.6)
+          ["reb"]=>
+          int(411)
+          ["rebPerGame"]=>
+          float(5.6)
+        }
+        ["offense"]=>
+        array(4) {
+          ["ast"]=>
+          int(142)
+          ["astPerGame"]=>
+          float(1.9)
+          ["pts"]=>
+          int(841)
+          ["ptsPerGame"]=>
+          float(11.5)
+        }
+        ["defense"]=>
+        array(8) {
+          ["tov"]=>
+          int(126)
+          ["tovPerGame"]=>
+          float(1.7)
+          ["stl"]=>
+          int(57)
+          ["stlPerGame"]=>
+          float(0.8)
+          ["blk"]=>
+          int(36)
+          ["blkPerGame"]=>
+          float(0.5)
+          ["blkAgainst"]=>
+          int(32)
+          ["blkAgainstPerGame"]=>
+          float(0.4)
+        }
+        ["miscellaneous"]=>
+        array(26) {
+          ["fouls"]=>
+          int(355)
+          ["foulsPerGame"]=>
+          float(4.9)
+          ["foulsDrawn"]=>
+          int(0)
+          ["foulsDrawnPerGame"]=>
+          float(0)
+          ["foulPers"]=>
+          int(228)
+          ["foulPersPerGame"]=>
+          float(3.1)
+          ["foulPersDrawn"]=>
+          int(121)
+          ["foulPersDrawnPerGame"]=>
+          float(1.7)
+          ["foulTech"]=>
+          int(11)
+          ["foulTechPerGame"]=>
+          float(0.2)
+          ["foulTechDrawn"]=>
+          int(0)
+          ["foulTechDrawnPerGame"]=>
+          float(0)
+          ["foulFlag1"]=>
+          int(0)
+          ["foulFlag1PerGame"]=>
+          float(0)
+          ["foulFlag1Drawn"]=>
+          int(0)
+          ["foulFlag1DrawnPerGame"]=>
+          float(0)
+          ["foulFlag2"]=>
+          int(0)
+          ["foulFlag2PerGame"]=>
+          float(0)
+          ["foulFlag2Drawn"]=>
+          int(0)
+          ["foulFlag2DrawnPerGame"]=>
+          float(0)
+          ["ejections"]=>
+          int(0)
+          ["plusMinus"]=>
+          int(27)
+          ["plusMinusPerGame"]=>
+          float(0.4)
+          ["minSeconds"]=>
+          int(118066)
+          ["minSecondsPerGame"]=>
+          float(1617.3)
+          ["gamesStarted"]=>
+          int(73)
+        }
+      }
+    }
+    [8]=>
+    array(3) {
+      ["player"]=>
+      array(20) {
+        ["id"]=>
+        int(9526)
+        ["firstName"]=>
+        string(5) "Kelly"
+        ["lastName"]=>
+        string(9) "Oubre Jr."
+        ["primaryPosition"]=>
+        string(2) "SF"
+        ["jerseyNumber"]=>
+        int(12)
+        ["currentTeam"]=>
+        array(2) {
+          ["id"]=>
+          int(94)
+          ["abbreviation"]=>
+          string(3) "WAS"
+        }
+        ["currentRosterStatus"]=>
+        string(6) "ROSTER"
+        ["currentInjury"]=>
+        NULL
+        ["height"]=>
+        string(4) "6'7""
+        ["weight"]=>
+        int(205)
+        ["birthDate"]=>
+        string(10) "1995-12-09"
+        ["age"]=>
+        int(22)
+        ["birthCity"]=>
+        string(15) "New Orleans, LA"
+        ["birthCountry"]=>
+        string(3) "USA"
+        ["rookie"]=>
+        bool(false)
+        ["highSchool"]=>
+        string(12) "Findlay Prep"
+        ["college"]=>
+        string(20) "University of Kansas"
+        ["handedness"]=>
+        array(1) {
+          ["shoots"]=>
+          string(1) "L"
+        }
+        ["officialImageSrc"]=>
+        NULL
+        ["socialMediaAccounts"]=>
+        array(1) {
+          [0]=>
+          array(2) {
+            ["mediaType"]=>
+            string(7) "TWITTER"
+            ["value"]=>
+            string(12) "KELLYOUBREJR"
+          }
+        }
+      }
+      ["team"]=>
+      array(2) {
+        ["id"]=>
+        int(94)
+        ["abbreviation"]=>
+        string(3) "WAS"
+      }
+      ["stats"]=>
+      array(7) {
+        ["gamesPlayed"]=>
+        int(81)
+        ["fieldGoals"]=>
+        array(15) {
+          ["fg2PtAtt"]=>
+          int(421)
+          ["fg2PtAttPerGame"]=>
+          float(5.2)
+          ["fg2PtMade"]=>
+          int(192)
+          ["fg2PtMadePerGame"]=>
+          float(2.4)
+          ["fg2PtPct"]=>
+          float(45.6)
+          ["fg3PtAtt"]=>
+          int(369)
+          ["fg3PtAttPerGame"]=>
+          float(4.6)
+          ["fg3PtMade"]=>
+          int(126)
+          ["fg3PtMadePerGame"]=>
+          float(1.6)
+          ["fg3PtPct"]=>
+          float(34.1)
+          ["fgAtt"]=>
+          int(790)
+          ["fgAttPerGame"]=>
+          float(9.8)
+          ["fgMade"]=>
+          int(318)
+          ["fgMadePerGame"]=>
+          float(3.9)
+          ["fgPct"]=>
+          float(40.3)
+        }
+        ["freeThrows"]=>
+        array(5) {
+          ["ftAtt"]=>
+          int(233)
+          ["ftAttPerGame"]=>
+          float(2.9)
+          ["ftMade"]=>
+          int(191)
+          ["ftMadePerGame"]=>
+          float(2.4)
+          ["ftPct"]=>
+          float(82)
+        }
+        ["rebounds"]=>
+        array(6) {
+          ["offReb"]=>
+          int(59)
+          ["offRebPerGame"]=>
+          float(0.7)
+          ["defReb"]=>
+          int(303)
+          ["defRebPerGame"]=>
+          float(3.7)
+          ["reb"]=>
+          int(362)
+          ["rebPerGame"]=>
+          float(4.5)
+        }
+        ["offense"]=>
+        array(4) {
+          ["ast"]=>
+          int(98)
+          ["astPerGame"]=>
+          float(1.2)
+          ["pts"]=>
+          int(953)
+          ["ptsPerGame"]=>
+          float(11.8)
+        }
+        ["defense"]=>
+        array(8) {
+          ["tov"]=>
+          int(90)
+          ["tovPerGame"]=>
+          float(1.1)
+          ["stl"]=>
+          int(80)
+          ["stlPerGame"]=>
+          float(1)
+          ["blk"]=>
+          int(35)
+          ["blkPerGame"]=>
+          float(0.4)
+          ["blkAgainst"]=>
+          int(56)
+          ["blkAgainstPerGame"]=>
+          float(0.7)
+        }
+        ["miscellaneous"]=>
+        array(26) {
+          ["fouls"]=>
+          int(454)
+          ["foulsPerGame"]=>
+          float(5.6)
+          ["foulsDrawn"]=>
+          int(0)
+          ["foulsDrawnPerGame"]=>
+          float(0)
+          ["foulPers"]=>
+          int(234)
+          ["foulPersPerGame"]=>
+          float(2.9)
+          ["foulPersDrawn"]=>
+          int(210)
+          ["foulPersDrawnPerGame"]=>
+          float(2.6)
+          ["foulTech"]=>
+          int(10)
+          ["foulTechPerGame"]=>
+          float(0.1)
+          ["foulTechDrawn"]=>
+          int(2)
+          ["foulTechDrawnPerGame"]=>
+          float(0)
+          ["foulFlag1"]=>
+          int(0)
+          ["foulFlag1PerGame"]=>
+          float(0)
+          ["foulFlag1Drawn"]=>
+          int(0)
+          ["foulFlag1DrawnPerGame"]=>
+          float(0)
+          ["foulFlag2"]=>
+          int(0)
+          ["foulFlag2PerGame"]=>
+          float(0)
+          ["foulFlag2Drawn"]=>
+          int(0)
+          ["foulFlag2DrawnPerGame"]=>
+          float(0)
+          ["ejections"]=>
+          int(0)
+          ["plusMinus"]=>
+          int(-114)
+          ["plusMinusPerGame"]=>
+          float(-1.4)
+          ["minSeconds"]=>
+          int(133842)
+          ["minSecondsPerGame"]=>
+          float(1652.4)
+          ["gamesStarted"]=>
+          int(11)
+        }
+      }
+    }
+    [9]=>
+    array(3) {
+      ["player"]=>
+      array(20) {
+        ["id"]=>
+        int(9524)
+        ["firstName"]=>
+        string(4) "Otto"
+        ["lastName"]=>
+        string(10) "Porter Jr."
+        ["primaryPosition"]=>
+        string(2) "SF"
+        ["jerseyNumber"]=>
+        int(22)
+        ["currentTeam"]=>
+        array(2) {
+          ["id"]=>
+          int(94)
+          ["abbreviation"]=>
+          string(3) "WAS"
+        }
+        ["currentRosterStatus"]=>
+        string(6) "ROSTER"
+        ["currentInjury"]=>
+        NULL
+        ["height"]=>
+        string(4) "6'8""
+        ["weight"]=>
+        int(198)
+        ["birthDate"]=>
+        string(10) "1993-06-03"
+        ["age"]=>
+        int(25)
+        ["birthCity"]=>
+        string(13) "St. Louis, MO"
+        ["birthCountry"]=>
+        string(3) "USA"
+        ["rookie"]=>
+        bool(false)
+        ["highSchool"]=>
+        string(20) "Scott County Central"
+        ["college"]=>
+        string(21) "Georgetown University"
+        ["handedness"]=>
+        array(1) {
+          ["shoots"]=>
+          string(1) "R"
+        }
+        ["officialImageSrc"]=>
+        NULL
+        ["socialMediaAccounts"]=>
+        array(0) {
+        }
+      }
+      ["team"]=>
+      array(2) {
+        ["id"]=>
+        int(94)
+        ["abbreviation"]=>
+        string(3) "WAS"
+      }
+      ["stats"]=>
+      array(7) {
+        ["gamesPlayed"]=>
+        int(77)
+        ["fieldGoals"]=>
+        array(15) {
+          ["fg2PtAtt"]=>
+          int(572)
+          ["fg2PtAttPerGame"]=>
+          float(7.4)
+          ["fg2PtMade"]=>
+          int(307)
+          ["fg2PtMadePerGame"]=>
+          float(4)
+          ["fg2PtPct"]=>
+          float(53.7)
+          ["fg3PtAtt"]=>
+          int(313)
+          ["fg3PtAttPerGame"]=>
+          float(4.1)
+          ["fg3PtMade"]=>
+          int(138)
+          ["fg3PtMadePerGame"]=>
+          float(1.8)
+          ["fg3PtPct"]=>
+          float(44.1)
+          ["fgAtt"]=>
+          int(885)
+          ["fgAttPerGame"]=>
+          float(11.5)
+          ["fgMade"]=>
+          int(445)
+          ["fgMadePerGame"]=>
+          float(5.8)
+          ["fgPct"]=>
+          float(50.3)
+        }
+        ["freeThrows"]=>
+        array(5) {
+          ["ftAtt"]=>
+          int(128)
+          ["ftAttPerGame"]=>
+          float(1.7)
+          ["ftMade"]=>
+          int(106)
+          ["ftMadePerGame"]=>
+          float(1.4)
+          ["ftPct"]=>
+          float(82.8)
+        }
+        ["rebounds"]=>
+        array(6) {
+          ["offReb"]=>
+          int(102)
+          ["offRebPerGame"]=>
+          float(1.3)
+          ["defReb"]=>
+          int(389)
+          ["defRebPerGame"]=>
+          float(5.1)
+          ["reb"]=>
+          int(492)
+          ["rebPerGame"]=>
+          float(6.4)
+        }
+        ["offense"]=>
+        array(4) {
+          ["ast"]=>
+          int(157)
+          ["astPerGame"]=>
+          float(2)
+          ["pts"]=>
+          int(1134)
+          ["ptsPerGame"]=>
+          float(14.7)
+        }
+        ["defense"]=>
+        array(8) {
+          ["tov"]=>
+          int(75)
+          ["tovPerGame"]=>
+          float(1)
+          ["stl"]=>
+          int(117)
+          ["stlPerGame"]=>
+          float(1.5)
+          ["blk"]=>
+          int(39)
+          ["blkPerGame"]=>
+          float(0.5)
+          ["blkAgainst"]=>
+          int(19)
+          ["blkAgainstPerGame"]=>
+          float(0.2)
+        }
+        ["miscellaneous"]=>
+        array(26) {
+          ["fouls"]=>
+          int(268)
+          ["foulsPerGame"]=>
+          float(3.5)
+          ["foulsDrawn"]=>
+          int(0)
+          ["foulsDrawnPerGame"]=>
+          float(0)
+          ["foulPers"]=>
+          int(151)
+          ["foulPersPerGame"]=>
+          float(2)
+          ["foulPersDrawn"]=>
+          int(117)
+          ["foulPersDrawnPerGame"]=>
+          float(1.5)
+          ["foulTech"]=>
+          int(0)
+          ["foulTechPerGame"]=>
+          float(0)
+          ["foulTechDrawn"]=>
+          int(1)
+          ["foulTechDrawnPerGame"]=>
+          float(0)
+          ["foulFlag1"]=>
+          int(0)
+          ["foulFlag1PerGame"]=>
+          float(0)
+          ["foulFlag1Drawn"]=>
+          int(0)
+          ["foulFlag1DrawnPerGame"]=>
+          float(0)
+          ["foulFlag2"]=>
+          int(0)
+          ["foulFlag2PerGame"]=>
+          float(0)
+          ["foulFlag2Drawn"]=>
+          int(0)
+          ["foulFlag2DrawnPerGame"]=>
+          float(0)
+          ["ejections"]=>
+          int(0)
+          ["plusMinus"]=>
+          int(286)
+          ["plusMinusPerGame"]=>
+          float(3.7)
+          ["minSeconds"]=>
+          int(145892)
+          ["minSecondsPerGame"]=>
+          float(1894.7)
+          ["gamesStarted"]=>
+          int(77)
+        }
+      }
+    }
+    [10]=>
+    array(3) {
+      ["player"]=>
+      array(20) {
+        ["id"]=>
+        int(13810)
+        ["firstName"]=>
+        string(5) "Devin"
+        ["lastName"]=>
+        string(8) "Robinson"
+        ["primaryPosition"]=>
+        string(2) "SF"
+        ["jerseyNumber"]=>
+        int(7)
+        ["currentTeam"]=>
+        array(2) {
+          ["id"]=>
+          int(94)
+          ["abbreviation"]=>
+          string(3) "WAS"
+        }
+        ["currentRosterStatus"]=>
+        string(6) "ROSTER"
+        ["currentInjury"]=>
+        NULL
+        ["height"]=>
+        string(4) "6'8""
+        ["weight"]=>
+        int(200)
+        ["birthDate"]=>
+        string(10) "1995-03-07"
+        ["age"]=>
+        int(23)
+        ["birthCity"]=>
+        NULL
+        ["birthCountry"]=>
+        NULL
+        ["rookie"]=>
+        bool(false)
+        ["highSchool"]=>
+        NULL
+        ["college"]=>
+        NULL
+        ["handedness"]=>
+        array(1) {
+          ["shoots"]=>
+          NULL
+        }
+        ["officialImageSrc"]=>
+        NULL
+        ["socialMediaAccounts"]=>
+        array(0) {
+        }
+      }
+      ["team"]=>
+      array(2) {
+        ["id"]=>
+        int(94)
+        ["abbreviation"]=>
+        string(3) "WAS"
+      }
+      ["stats"]=>
+      array(7) {
+        ["gamesPlayed"]=>
+        int(1)
+        ["fieldGoals"]=>
+        array(15) {
+          ["fg2PtAtt"]=>
+          int(3)
+          ["fg2PtAttPerGame"]=>
+          float(3)
+          ["fg2PtMade"]=>
+          int(1)
+          ["fg2PtMadePerGame"]=>
+          float(1)
+          ["fg2PtPct"]=>
+          float(33.3)
+          ["fg3PtAtt"]=>
+          int(0)
+          ["fg3PtAttPerGame"]=>
+          float(0)
+          ["fg3PtMade"]=>
+          int(0)
+          ["fg3PtMadePerGame"]=>
+          float(0)
+          ["fg3PtPct"]=>
+          float(0)
+          ["fgAtt"]=>
+          int(3)
+          ["fgAttPerGame"]=>
+          float(3)
+          ["fgMade"]=>
+          int(1)
+          ["fgMadePerGame"]=>
+          float(1)
+          ["fgPct"]=>
+          float(33.3)
+        }
+        ["freeThrows"]=>
+        array(5) {
+          ["ftAtt"]=>
+          int(0)
+          ["ftAttPerGame"]=>
+          float(0)
+          ["ftMade"]=>
+          int(0)
+          ["ftMadePerGame"]=>
+          float(0)
+          ["ftPct"]=>
+          float(0)
+        }
+        ["rebounds"]=>
+        array(6) {
+          ["offReb"]=>
+          int(2)
+          ["offRebPerGame"]=>
+          float(2)
+          ["defReb"]=>
+          int(3)
+          ["defRebPerGame"]=>
+          float(3)
+          ["reb"]=>
+          int(5)
+          ["rebPerGame"]=>
+          float(5)
+        }
+        ["offense"]=>
+        array(4) {
+          ["ast"]=>
+          int(0)
+          ["astPerGame"]=>
+          float(0)
+          ["pts"]=>
+          int(2)
+          ["ptsPerGame"]=>
+          float(2)
+        }
+        ["defense"]=>
+        array(8) {
+          ["tov"]=>
+          int(0)
+          ["tovPerGame"]=>
+          float(0)
+          ["stl"]=>
+          int(1)
+          ["stlPerGame"]=>
+          float(1)
+          ["blk"]=>
+          int(0)
+          ["blkPerGame"]=>
+          float(0)
+          ["blkAgainst"]=>
+          int(1)
+          ["blkAgainstPerGame"]=>
+          float(1)
+        }
+        ["miscellaneous"]=>
+        array(26) {
+          ["fouls"]=>
+          int(4)
+          ["foulsPerGame"]=>
+          float(4)
+          ["foulsDrawn"]=>
+          int(0)
+          ["foulsDrawnPerGame"]=>
+          float(0)
+          ["foulPers"]=>
+          int(2)
+          ["foulPersPerGame"]=>
+          float(2)
+          ["foulPersDrawn"]=>
+          int(2)
+          ["foulPersDrawnPerGame"]=>
+          float(2)
+          ["foulTech"]=>
+          int(0)
+          ["foulTechPerGame"]=>
+          float(0)
+          ["foulTechDrawn"]=>
+          int(0)
+          ["foulTechDrawnPerGame"]=>
+          float(0)
+          ["foulFlag1"]=>
+          int(0)
+          ["foulFlag1PerGame"]=>
+          float(0)
+          ["foulFlag1Drawn"]=>
+          int(0)
+          ["foulFlag1DrawnPerGame"]=>
+          float(0)
+          ["foulFlag2"]=>
+          int(0)
+          ["foulFlag2PerGame"]=>
+          float(0)
+          ["foulFlag2Drawn"]=>
+          int(0)
+          ["foulFlag2DrawnPerGame"]=>
+          float(0)
+          ["ejections"]=>
+          int(0)
+          ["plusMinus"]=>
+          int(10)
+          ["plusMinusPerGame"]=>
+          float(10)
+          ["minSeconds"]=>
+          int(793)
+          ["minSecondsPerGame"]=>
+          float(793)
+          ["gamesStarted"]=>
+          int(0)
+        }
+      }
+    }
+    [11]=>
+    array(3) {
+      ["player"]=>
+      array(20) {
+        ["id"]=>
+        int(10151)
+        ["firstName"]=>
+        string(5) "Tomas"
+        ["lastName"]=>
+        string(10) "Satoransky"
+        ["primaryPosition"]=>
+        string(2) "PG"
+        ["jerseyNumber"]=>
+        int(31)
+        ["currentTeam"]=>
+        array(2) {
+          ["id"]=>
+          int(94)
+          ["abbreviation"]=>
+          string(3) "WAS"
+        }
+        ["currentRosterStatus"]=>
+        string(6) "ROSTER"
+        ["currentInjury"]=>
+        NULL
+        ["height"]=>
+        string(4) "6'7""
+        ["weight"]=>
+        int(210)
+        ["birthDate"]=>
+        string(10) "1991-10-30"
+        ["age"]=>
+        int(26)
+        ["birthCity"]=>
+        string(6) "Prague"
+        ["birthCountry"]=>
+        string(14) "Czech Republic"
+        ["rookie"]=>
+        bool(false)
+        ["highSchool"]=>
+        NULL
+        ["college"]=>
+        NULL
+        ["handedness"]=>
+        array(1) {
+          ["shoots"]=>
+          string(1) "R"
+        }
+        ["officialImageSrc"]=>
+        NULL
+        ["socialMediaAccounts"]=>
+        array(1) {
+          [0]=>
+          array(2) {
+            ["mediaType"]=>
+            string(7) "TWITTER"
+            ["value"]=>
+            string(10) "satoransky"
+          }
+        }
+      }
+      ["team"]=>
+      array(2) {
+        ["id"]=>
+        int(94)
+        ["abbreviation"]=>
+        string(3) "WAS"
+      }
+      ["stats"]=>
+      array(7) {
+        ["gamesPlayed"]=>
+        int(73)
+        ["fieldGoals"]=>
+        array(15) {
+          ["fg2PtAtt"]=>
+          int(283)
+          ["fg2PtAttPerGame"]=>
+          float(3.9)
+          ["fg2PtMade"]=>
+          int(154)
+          ["fg2PtMadePerGame"]=>
+          float(2.1)
+          ["fg2PtPct"]=>
+          float(54.4)
+          ["fg3PtAtt"]=>
+          int(101)
+          ["fg3PtAttPerGame"]=>
+          float(1.4)
+          ["fg3PtMade"]=>
+          int(47)
+          ["fg3PtMadePerGame"]=>
+          float(0.6)
+          ["fg3PtPct"]=>
+          float(46.5)
+          ["fgAtt"]=>
+          int(384)
+          ["fgAttPerGame"]=>
+          float(5.3)
+          ["fgMade"]=>
+          int(201)
+          ["fgMadePerGame"]=>
+          float(2.8)
+          ["fgPct"]=>
+          float(52.3)
+        }
+        ["freeThrows"]=>
+        array(5) {
+          ["ftAtt"]=>
+          int(96)
+          ["ftAttPerGame"]=>
+          float(1.3)
+          ["ftMade"]=>
+          int(75)
+          ["ftMadePerGame"]=>
+          float(1)
+          ["ftPct"]=>
+          float(78.1)
+        }
+        ["rebounds"]=>
+        array(6) {
+          ["offReb"]=>
+          int(72)
+          ["offRebPerGame"]=>
+          float(1)
+          ["defReb"]=>
+          int(160)
+          ["defRebPerGame"]=>
+          float(2.2)
+          ["reb"]=>
+          int(232)
+          ["rebPerGame"]=>
+          float(3.2)
+        }
+        ["offense"]=>
+        array(4) {
+          ["ast"]=>
+          int(286)
+          ["astPerGame"]=>
+          float(3.9)
+          ["pts"]=>
+          int(524)
+          ["ptsPerGame"]=>
+          float(7.2)
+        }
+        ["defense"]=>
+        array(8) {
+          ["tov"]=>
+          int(83)
+          ["tovPerGame"]=>
+          float(1.1)
+          ["stl"]=>
+          int(51)
+          ["stlPerGame"]=>
+          float(0.7)
+          ["blk"]=>
+          int(14)
+          ["blkPerGame"]=>
+          float(0.2)
+          ["blkAgainst"]=>
+          int(22)
+          ["blkAgainstPerGame"]=>
+          float(0.3)
+        }
+        ["miscellaneous"]=>
+        array(26) {
+          ["fouls"]=>
+          int(242)
+          ["foulsPerGame"]=>
+          float(3.3)
+          ["foulsDrawn"]=>
+          int(0)
+          ["foulsDrawnPerGame"]=>
+          float(0)
+          ["foulPers"]=>
+          int(131)
+          ["foulPersPerGame"]=>
+          float(1.8)
+          ["foulPersDrawn"]=>
+          int(110)
+          ["foulPersDrawnPerGame"]=>
+          float(1.5)
+          ["foulTech"]=>
+          int(0)
+          ["foulTechPerGame"]=>
+          float(0)
+          ["foulTechDrawn"]=>
+          int(2)
+          ["foulTechDrawnPerGame"]=>
+          float(0)
+          ["foulFlag1"]=>
+          int(0)
+          ["foulFlag1PerGame"]=>
+          float(0)
+          ["foulFlag1Drawn"]=>
+          int(0)
+          ["foulFlag1DrawnPerGame"]=>
+          float(0)
+          ["foulFlag2"]=>
+          int(0)
+          ["foulFlag2PerGame"]=>
+          float(0)
+          ["foulFlag2Drawn"]=>
+          int(0)
+          ["foulFlag2DrawnPerGame"]=>
+          float(0)
+          ["ejections"]=>
+          int(0)
+          ["plusMinus"]=>
+          int(82)
+          ["plusMinusPerGame"]=>
+          float(1.1)
+          ["minSeconds"]=>
+          int(98560)
+          ["minSecondsPerGame"]=>
+          float(1350.1)
+          ["gamesStarted"]=>
+          int(30)
+        }
+      }
+    }
+    [12]=>
+    array(3) {
+      ["player"]=>
+      array(20) {
+        ["id"]=>
+        int(9083)
+        ["firstName"]=>
+        string(4) "Mike"
+        ["lastName"]=>
+        string(5) "Scott"
+        ["primaryPosition"]=>
+        string(2) "PF"
+        ["jerseyNumber"]=>
+        int(30)
+        ["currentTeam"]=>
+        array(2) {
+          ["id"]=>
+          int(102)
+          ["abbreviation"]=>
+          string(3) "LAC"
+        }
+        ["currentRosterStatus"]=>
+        string(6) "ROSTER"
+        ["currentInjury"]=>
+        NULL
+        ["height"]=>
+        string(4) "6'8""
+        ["weight"]=>
+        int(237)
+        ["birthDate"]=>
+        string(10) "1988-07-16"
+        ["age"]=>
+        int(30)
+        ["birthCity"]=>
+        string(14) "Chesapeake, VA"
+        ["birthCountry"]=>
+        string(3) "USA"
+        ["rookie"]=>
+        bool(false)
+        ["highSchool"]=>
+        string(10) "Deep Creek"
+        ["college"]=>
+        string(22) "University of Virginia"
+        ["handedness"]=>
+        array(1) {
+          ["shoots"]=>
+          string(1) "R"
+        }
+        ["officialImageSrc"]=>
+        NULL
+        ["socialMediaAccounts"]=>
+        array(1) {
+          [0]=>
+          array(2) {
+            ["mediaType"]=>
+            string(7) "TWITTER"
+            ["value"]=>
+            string(9) "mikescott"
+          }
+        }
+      }
+      ["team"]=>
+      array(2) {
+        ["id"]=>
+        int(94)
+        ["abbreviation"]=>
+        string(3) "WAS"
+      }
+      ["stats"]=>
+      array(7) {
+        ["gamesPlayed"]=>
+        int(76)
+        ["fieldGoals"]=>
+        array(15) {
+          ["fg2PtAtt"]=>
+          int(361)
+          ["fg2PtAttPerGame"]=>
+          float(4.8)
+          ["fg2PtMade"]=>
+          int(210)
+          ["fg2PtMadePerGame"]=>
+          float(2.8)
+          ["fg2PtPct"]=>
+          float(58.2)
+          ["fg3PtAtt"]=>
+          int(163)
+          ["fg3PtAttPerGame"]=>
+          float(2.1)
+          ["fg3PtMade"]=>
+          int(66)
+          ["fg3PtMadePerGame"]=>
+          float(0.9)
+          ["fg3PtPct"]=>
+          float(40.5)
+          ["fgAtt"]=>
+          int(524)
+          ["fgAttPerGame"]=>
+          float(6.9)
+          ["fgMade"]=>
+          int(276)
+          ["fgMadePerGame"]=>
+          float(3.6)
+          ["fgPct"]=>
+          float(52.7)
+        }
+        ["freeThrows"]=>
+        array(5) {
+          ["ftAtt"]=>
+          int(76)
+          ["ftAttPerGame"]=>
+          float(1)
+          ["ftMade"]=>
+          int(50)
+          ["ftMadePerGame"]=>
+          float(0.7)
+          ["ftPct"]=>
+          float(65.8)
+        }
+        ["rebounds"]=>
+        array(6) {
+          ["offReb"]=>
+          int(49)
+          ["offRebPerGame"]=>
+          float(0.6)
+          ["defReb"]=>
+          int(196)
+          ["defRebPerGame"]=>
+          float(2.6)
+          ["reb"]=>
+          int(246)
+          ["rebPerGame"]=>
+          float(3.2)
+        }
+        ["offense"]=>
+        array(4) {
+          ["ast"]=>
+          int(80)
+          ["astPerGame"]=>
+          float(1.1)
+          ["pts"]=>
+          int(668)
+          ["ptsPerGame"]=>
+          float(8.8)
+        }
+        ["defense"]=>
+        array(8) {
+          ["tov"]=>
+          int(79)
+          ["tovPerGame"]=>
+          float(1)
+          ["stl"]=>
+          int(23)
+          ["stlPerGame"]=>
+          float(0.3)
+          ["blk"]=>
+          int(10)
+          ["blkPerGame"]=>
+          float(0.1)
+          ["blkAgainst"]=>
+          int(16)
+          ["blkAgainstPerGame"]=>
+          float(0.2)
+        }
+        ["miscellaneous"]=>
+        array(26) {
+          ["fouls"]=>
+          int(228)
+          ["foulsPerGame"]=>
+          float(3)
+          ["foulsDrawn"]=>
+          int(0)
+          ["foulsDrawnPerGame"]=>
+          float(0)
+          ["foulPers"]=>
+          int(149)
+          ["foulPersPerGame"]=>
+          float(2)
+          ["foulPersDrawn"]=>
+          int(76)
+          ["foulPersDrawnPerGame"]=>
+          float(1)
+          ["foulTech"]=>
+          int(1)
+          ["foulTechPerGame"]=>
+          float(0)
+          ["foulTechDrawn"]=>
+          int(0)
+          ["foulTechDrawnPerGame"]=>
+          float(0)
+          ["foulFlag1"]=>
+          int(0)
+          ["foulFlag1PerGame"]=>
+          float(0)
+          ["foulFlag1Drawn"]=>
+          int(0)
+          ["foulFlag1DrawnPerGame"]=>
+          float(0)
+          ["foulFlag2"]=>
+          int(0)
+          ["foulFlag2PerGame"]=>
+          float(0)
+          ["foulFlag2Drawn"]=>
+          int(0)
+          ["foulFlag2DrawnPerGame"]=>
+          float(0)
+          ["ejections"]=>
+          int(0)
+          ["plusMinus"]=>
+          int(-79)
+          ["plusMinusPerGame"]=>
+          float(-1)
+          ["minSeconds"]=>
+          int(84380)
+          ["minSecondsPerGame"]=>
+          float(1110.3)
+          ["gamesStarted"]=>
+          int(1)
+        }
+      }
+    }
+    [13]=>
+    array(3) {
+      ["player"]=>
+      array(20) {
+        ["id"]=>
+        int(9518)
+        ["firstName"]=>
+        string(5) "Ramon"
+        ["lastName"]=>
+        string(8) "Sessions"
+        ["primaryPosition"]=>
+        string(2) "PG"
+        ["jerseyNumber"]=>
+        int(1)
+        ["currentTeam"]=>
+        array(2) {
+          ["id"]=>
+          int(94)
+          ["abbreviation"]=>
+          string(3) "WAS"
+        }
+        ["currentRosterStatus"]=>
+        string(6) "ROSTER"
+        ["currentInjury"]=>
+        NULL
+        ["height"]=>
+        NULL
+        ["weight"]=>
+        NULL
+        ["birthDate"]=>
+        string(10) "1986-04-10"
+        ["age"]=>
+        int(32)
+        ["birthCity"]=>
+        string(16) "Myrtle Beach, SC"
+        ["birthCountry"]=>
+        string(3) "USA"
+        ["rookie"]=>
+        bool(false)
+        ["highSchool"]=>
+        string(12) "Myrtle Beach"
+        ["college"]=>
+        string(26) "University of Nevada, Reno"
+        ["handedness"]=>
+        array(1) {
+          ["shoots"]=>
+          string(1) "R"
+        }
+        ["officialImageSrc"]=>
+        NULL
+        ["socialMediaAccounts"]=>
+        array(0) {
+        }
+      }
+      ["team"]=>
+      array(2) {
+        ["id"]=>
+        int(94)
+        ["abbreviation"]=>
+        string(3) "WAS"
+      }
+      ["stats"]=>
+      array(7) {
+        ["gamesPlayed"]=>
+        int(15)
+        ["fieldGoals"]=>
+        array(15) {
+          ["fg2PtAtt"]=>
+          int(48)
+          ["fg2PtAttPerGame"]=>
+          float(3.2)
+          ["fg2PtMade"]=>
+          int(19)
+          ["fg2PtMadePerGame"]=>
+          float(1.3)
+          ["fg2PtPct"]=>
+          float(39.6)
+          ["fg3PtAtt"]=>
+          int(15)
+          ["fg3PtAttPerGame"]=>
+          float(1)
+          ["fg3PtMade"]=>
+          int(6)
+          ["fg3PtMadePerGame"]=>
+          float(0.4)
+          ["fg3PtPct"]=>
+          float(40)
+          ["fgAtt"]=>
+          int(63)
+          ["fgAttPerGame"]=>
+          float(4.2)
+          ["fgMade"]=>
+          int(25)
+          ["fgMadePerGame"]=>
+          float(1.7)
+          ["fgPct"]=>
+          float(39.7)
+        }
+        ["freeThrows"]=>
+        array(5) {
+          ["ftAtt"]=>
+          int(42)
+          ["ftAttPerGame"]=>
+          float(2.8)
+          ["ftMade"]=>
+          int(32)
+          ["ftMadePerGame"]=>
+          float(2.1)
+          ["ftPct"]=>
+          float(76.2)
+        }
+        ["rebounds"]=>
+        array(6) {
+          ["offReb"]=>
+          int(5)
+          ["offRebPerGame"]=>
+          float(0.3)
+          ["defReb"]=>
+          int(15)
+          ["defRebPerGame"]=>
+          float(1)
+          ["reb"]=>
+          int(20)
+          ["rebPerGame"]=>
+          float(1.3)
+        }
+        ["offense"]=>
+        array(4) {
+          ["ast"]=>
+          int(50)
+          ["astPerGame"]=>
+          float(3.3)
+          ["pts"]=>
+          int(88)
+          ["ptsPerGame"]=>
+          float(5.9)
+        }
+        ["defense"]=>
+        array(8) {
+          ["tov"]=>
+          int(16)
+          ["tovPerGame"]=>
+          float(1.1)
+          ["stl"]=>
+          int(7)
+          ["stlPerGame"]=>
+          float(0.5)
+          ["blk"]=>
+          int(1)
+          ["blkPerGame"]=>
+          float(0.1)
+          ["blkAgainst"]=>
+          int(6)
+          ["blkAgainstPerGame"]=>
+          float(0.4)
+        }
+        ["miscellaneous"]=>
+        array(26) {
+          ["fouls"]=>
+          int(47)
+          ["foulsPerGame"]=>
+          float(3.1)
+          ["foulsDrawn"]=>
+          int(0)
+          ["foulsDrawnPerGame"]=>
+          float(0)
+          ["foulPers"]=>
+          int(15)
+          ["foulPersPerGame"]=>
+          float(1)
+          ["foulPersDrawn"]=>
+          int(32)
+          ["foulPersDrawnPerGame"]=>
+          float(2.1)
+          ["foulTech"]=>
+          int(0)
+          ["foulTechPerGame"]=>
+          float(0)
+          ["foulTechDrawn"]=>
+          int(0)
+          ["foulTechDrawnPerGame"]=>
+          float(0)
+          ["foulFlag1"]=>
+          int(0)
+          ["foulFlag1PerGame"]=>
+          float(0)
+          ["foulFlag1Drawn"]=>
+          int(0)
+          ["foulFlag1DrawnPerGame"]=>
+          float(0)
+          ["foulFlag2"]=>
+          int(0)
+          ["foulFlag2PerGame"]=>
+          float(0)
+          ["foulFlag2Drawn"]=>
+          int(0)
+          ["foulFlag2DrawnPerGame"]=>
+          float(0)
+          ["ejections"]=>
+          int(0)
+          ["plusMinus"]=>
+          int(-58)
+          ["plusMinusPerGame"]=>
+          float(-3.9)
+          ["minSeconds"]=>
+          int(13522)
+          ["minSecondsPerGame"]=>
+          float(901.5)
+          ["gamesStarted"]=>
+          int(0)
+        }
+      }
+    }
+    [14]=>
+    array(3) {
+      ["player"]=>
+      array(20) {
+        ["id"]=>
+        int(9411)
+        ["firstName"]=>
+        string(5) "Jason"
+        ["lastName"]=>
+        string(5) "Smith"
+        ["primaryPosition"]=>
+        string(2) "PF"
+        ["jerseyNumber"]=>
+        int(14)
+        ["currentTeam"]=>
+        array(2) {
+          ["id"]=>
+          int(94)
+          ["abbreviation"]=>
+          string(3) "WAS"
+        }
+        ["currentRosterStatus"]=>
+        string(6) "ROSTER"
+        ["currentInjury"]=>
+        NULL
+        ["height"]=>
+        string(4) "7'0""
+        ["weight"]=>
+        int(240)
+        ["birthDate"]=>
+        string(10) "1986-03-02"
+        ["age"]=>
+        int(32)
+        ["birthCity"]=>
+        string(11) "Greeley, CO"
+        ["birthCountry"]=>
+        string(3) "USA"
+        ["rookie"]=>
+        bool(false)
+        ["highSchool"]=>
+        string(13) "Platte Valley"
+        ["college"]=>
+        string(25) "Colorado State University"
+        ["handedness"]=>
+        array(1) {
+          ["shoots"]=>
+          string(1) "R"
+        }
+        ["officialImageSrc"]=>
+        NULL
+        ["socialMediaAccounts"]=>
+        array(1) {
+          [0]=>
+          array(2) {
+            ["mediaType"]=>
+            string(7) "TWITTER"
+            ["value"]=>
+            string(13) "JasonSmith014"
+          }
+        }
+      }
+      ["team"]=>
+      array(2) {
+        ["id"]=>
+        int(94)
+        ["abbreviation"]=>
+        string(3) "WAS"
+      }
+      ["stats"]=>
+      array(7) {
+        ["gamesPlayed"]=>
+        int(33)
+        ["fieldGoals"]=>
+        array(15) {
+          ["fg2PtAtt"]=>
+          int(83)
+          ["fg2PtAttPerGame"]=>
+          float(2.5)
+          ["fg2PtMade"]=>
+          int(41)
+          ["fg2PtMadePerGame"]=>
+          float(1.2)
+          ["fg2PtPct"]=>
+          float(49.4)
+          ["fg3PtAtt"]=>
+          int(32)
+          ["fg3PtAttPerGame"]=>
+          float(1)
+          ["fg3PtMade"]=>
+          int(4)
+          ["fg3PtMadePerGame"]=>
+          float(0.1)
+          ["fg3PtPct"]=>
+          float(12.5)
+          ["fgAtt"]=>
+          int(115)
+          ["fgAttPerGame"]=>
+          float(3.5)
+          ["fgMade"]=>
+          int(45)
+          ["fgMadePerGame"]=>
+          float(1.4)
+          ["fgPct"]=>
+          float(39.1)
+        }
+        ["freeThrows"]=>
+        array(5) {
+          ["ftAtt"]=>
+          int(21)
+          ["ftAttPerGame"]=>
+          float(0.6)
+          ["ftMade"]=>
+          int(19)
+          ["ftMadePerGame"]=>
+          float(0.6)
+          ["ftPct"]=>
+          float(90.5)
+        }
+        ["rebounds"]=>
+        array(6) {
+          ["offReb"]=>
+          int(18)
+          ["offRebPerGame"]=>
+          float(0.5)
+          ["defReb"]=>
+          int(35)
+          ["defRebPerGame"]=>
+          float(1.1)
+          ["reb"]=>
+          int(53)
+          ["rebPerGame"]=>
+          float(1.6)
+        }
+        ["offense"]=>
+        array(4) {
+          ["ast"]=>
+          int(14)
+          ["astPerGame"]=>
+          float(0.4)
+          ["pts"]=>
+          int(113)
+          ["ptsPerGame"]=>
+          float(3.4)
+        }
+        ["defense"]=>
+        array(8) {
+          ["tov"]=>
+          int(16)
+          ["tovPerGame"]=>
+          float(0.5)
+          ["stl"]=>
+          int(3)
+          ["stlPerGame"]=>
+          float(0.1)
+          ["blk"]=>
+          int(13)
+          ["blkPerGame"]=>
+          float(0.4)
+          ["blkAgainst"]=>
+          int(8)
+          ["blkAgainstPerGame"]=>
+          float(0.2)
+        }
+        ["miscellaneous"]=>
+        array(26) {
+          ["fouls"]=>
+          int(70)
+          ["foulsPerGame"]=>
+          float(2.1)
+          ["foulsDrawn"]=>
+          int(0)
+          ["foulsDrawnPerGame"]=>
+          float(0)
+          ["foulPers"]=>
+          int(44)
+          ["foulPersPerGame"]=>
+          float(1.3)
+          ["foulPersDrawn"]=>
+          int(26)
+          ["foulPersDrawnPerGame"]=>
+          float(0.8)
+          ["foulTech"]=>
+          int(0)
+          ["foulTechPerGame"]=>
+          float(0)
+          ["foulTechDrawn"]=>
+          int(0)
+          ["foulTechDrawnPerGame"]=>
+          float(0)
+          ["foulFlag1"]=>
+          int(0)
+          ["foulFlag1PerGame"]=>
+          float(0)
+          ["foulFlag1Drawn"]=>
+          int(0)
+          ["foulFlag1DrawnPerGame"]=>
+          float(0)
+          ["foulFlag2"]=>
+          int(0)
+          ["foulFlag2PerGame"]=>
+          float(0)
+          ["foulFlag2Drawn"]=>
+          int(0)
+          ["foulFlag2DrawnPerGame"]=>
+          float(0)
+          ["ejections"]=>
+          int(0)
+          ["plusMinus"]=>
+          int(-82)
+          ["plusMinusPerGame"]=>
+          float(-2.5)
+          ["minSeconds"]=>
+          int(17085)
+          ["minSecondsPerGame"]=>
+          float(517.7)
+          ["gamesStarted"]=>
+          int(2)
+        }
+      }
+    }
+    [15]=>
+    array(3) {
+      ["player"]=>
+      array(20) {
+        ["id"]=>
+        int(9522)
+        ["firstName"]=>
+        string(4) "John"
+        ["lastName"]=>
+        string(4) "Wall"
+        ["primaryPosition"]=>
+        string(2) "PG"
+        ["jerseyNumber"]=>
+        int(2)
+        ["currentTeam"]=>
+        array(2) {
+          ["id"]=>
+          int(94)
+          ["abbreviation"]=>
+          string(3) "WAS"
+        }
+        ["currentRosterStatus"]=>
+        string(6) "ROSTER"
+        ["currentInjury"]=>
+        NULL
+        ["height"]=>
+        string(4) "6'4""
+        ["weight"]=>
+        int(210)
+        ["birthDate"]=>
+        string(10) "1990-09-06"
+        ["age"]=>
+        int(28)
+        ["birthCity"]=>
+        string(11) "Raleigh, NC"
+        ["birthCountry"]=>
+        string(3) "USA"
+        ["rookie"]=>
+        bool(false)
+        ["highSchool"]=>
+        string(19) "Word of God Academy"
+        ["college"]=>
+        string(22) "University of Kentucky"
+        ["handedness"]=>
+        array(1) {
+          ["shoots"]=>
+          string(1) "R"
+        }
+        ["officialImageSrc"]=>
+        NULL
+        ["socialMediaAccounts"]=>
+        array(1) {
+          [0]=>
+          array(2) {
+            ["mediaType"]=>
+            string(7) "TWITTER"
+            ["value"]=>
+            string(8) "JohnWall"
+          }
+        }
+      }
+      ["team"]=>
+      array(2) {
+        ["id"]=>
+        int(94)
+        ["abbreviation"]=>
+        string(3) "WAS"
+      }
+      ["stats"]=>
+      array(7) {
+        ["gamesPlayed"]=>
+        int(41)
+        ["fieldGoals"]=>
+        array(15) {
+          ["fg2PtAtt"]=>
+          int(498)
+          ["fg2PtAttPerGame"]=>
+          float(12.1)
+          ["fg2PtMade"]=>
+          int(218)
+          ["fg2PtMadePerGame"]=>
+          float(5.3)
+          ["fg2PtPct"]=>
+          float(43.8)
+          ["fg3PtAtt"]=>
+          int(167)
+          ["fg3PtAttPerGame"]=>
+          float(4.1)
+          ["fg3PtMade"]=>
+          int(62)
+          ["fg3PtMadePerGame"]=>
+          float(1.5)
+          ["fg3PtPct"]=>
+          float(37.1)
+          ["fgAtt"]=>
+          int(665)
+          ["fgAttPerGame"]=>
+          float(16.2)
+          ["fgMade"]=>
+          int(280)
+          ["fgMadePerGame"]=>
+          float(6.8)
+          ["fgPct"]=>
+          float(42.1)
+        }
+        ["freeThrows"]=>
+        array(5) {
+          ["ftAtt"]=>
+          int(241)
+          ["ftAttPerGame"]=>
+          float(5.9)
+          ["ftMade"]=>
+          int(175)
+          ["ftMadePerGame"]=>
+          float(4.3)
+          ["ftPct"]=>
+          float(72.6)
+        }
+        ["rebounds"]=>
+        array(6) {
+          ["offReb"]=>
+          int(21)
+          ["offRebPerGame"]=>
+          float(0.5)
+          ["defReb"]=>
+          int(126)
+          ["defRebPerGame"]=>
+          float(3.1)
+          ["reb"]=>
+          int(148)
+          ["rebPerGame"]=>
+          float(3.6)
+        }
+        ["offense"]=>
+        array(4) {
+          ["ast"]=>
+          int(393)
+          ["astPerGame"]=>
+          float(9.6)
+          ["pts"]=>
+          int(797)
+          ["ptsPerGame"]=>
+          float(19.4)
+        }
+        ["defense"]=>
+        array(8) {
+          ["tov"]=>
+          int(159)
+          ["tovPerGame"]=>
+          float(3.9)
+          ["stl"]=>
+          int(57)
+          ["stlPerGame"]=>
+          float(1.4)
+          ["blk"]=>
+          int(45)
+          ["blkPerGame"]=>
+          float(1.1)
+          ["blkAgainst"]=>
+          int(44)
+          ["blkAgainstPerGame"]=>
+          float(1.1)
+        }
+        ["miscellaneous"]=>
+        array(26) {
+          ["fouls"]=>
+          int(286)
+          ["foulsPerGame"]=>
+          float(7)
+          ["foulsDrawn"]=>
+          int(0)
+          ["foulsDrawnPerGame"]=>
+          float(0)
+          ["foulPers"]=>
+          int(80)
+          ["foulPersPerGame"]=>
+          float(2)
+          ["foulPersDrawn"]=>
+          int(200)
+          ["foulPersDrawnPerGame"]=>
+          float(4.9)
+          ["foulTech"]=>
+          int(7)
+          ["foulTechPerGame"]=>
+          float(0.2)
+          ["foulTechDrawn"]=>
+          int(2)
+          ["foulTechDrawnPerGame"]=>
+          float(0)
+          ["foulFlag1"]=>
+          int(0)
+          ["foulFlag1PerGame"]=>
+          float(0)
+          ["foulFlag1Drawn"]=>
+          int(0)
+          ["foulFlag1DrawnPerGame"]=>
+          float(0)
+          ["foulFlag2"]=>
+          int(0)
+          ["foulFlag2PerGame"]=>
+          float(0)
+          ["foulFlag2Drawn"]=>
+          int(0)
+          ["foulFlag2DrawnPerGame"]=>
+          float(0)
+          ["ejections"]=>
+          int(0)
+          ["plusMinus"]=>
+          int(128)
+          ["plusMinusPerGame"]=>
+          float(3.1)
+          ["minSeconds"]=>
+          int(84590)
+          ["minSecondsPerGame"]=>
+          float(2063.2)
+          ["gamesStarted"]=>
+          int(41)
+        }
+      }
+    }
+  }
+  ["references"]=>
+  array(3) {
+    ["teamReferences"]=>
+    array(1) {
+      [0]=>
+      array(8) {
+        ["id"]=>
+        int(94)
+        ["city"]=>
+        string(10) "Washington"
+        ["name"]=>
+        string(7) "Wizards"
+        ["abbreviation"]=>
+        string(3) "WAS"
+        ["homeVenue"]=>
+        array(2) {
+          ["id"]=>
+          int(13)
+          ["name"]=>
+          string(17) "Capital One Arena"
+        }
+        ["teamColoursHex"]=>
+        array(0) {
+        }
+        ["socialMediaAccounts"]=>
+        array(0) {
+        }
+        ["officialLogoImageSrc"]=>
+        NULL
+      }
+    }
+    ["playerReferences"]=>
+    array(16) {
+      [0]=>
+      array(20) {
+        ["id"]=>
+        int(9083)
+        ["firstName"]=>
+        string(4) "Mike"
+        ["lastName"]=>
+        string(5) "Scott"
+        ["primaryPosition"]=>
+        string(2) "PF"
+        ["jerseyNumber"]=>
+        int(30)
+        ["currentTeam"]=>
+        array(2) {
+          ["id"]=>
+          int(102)
+          ["abbreviation"]=>
+          string(3) "LAC"
+        }
+        ["currentRosterStatus"]=>
+        string(6) "ROSTER"
+        ["currentInjury"]=>
+        NULL
+        ["height"]=>
+        string(4) "6'8""
+        ["weight"]=>
+        int(237)
+        ["birthDate"]=>
+        string(10) "1988-07-16"
+        ["age"]=>
+        int(30)
+        ["birthCity"]=>
+        string(14) "Chesapeake, VA"
+        ["birthCountry"]=>
+        string(3) "USA"
+        ["rookie"]=>
+        bool(false)
+        ["highSchool"]=>
+        string(10) "Deep Creek"
+        ["college"]=>
+        string(22) "University of Virginia"
+        ["handedness"]=>
+        array(1) {
+          ["shoots"]=>
+          string(1) "R"
+        }
+        ["officialImageSrc"]=>
+        NULL
+        ["socialMediaAccounts"]=>
+        array(1) {
+          [0]=>
+          array(2) {
+            ["mediaType"]=>
+            string(7) "TWITTER"
+            ["value"]=>
+            string(9) "mikescott"
+          }
+        }
+      }
+      [1]=>
+      array(20) {
+        ["id"]=>
+        int(9117)
+        ["firstName"]=>
+        string(5) "Chris"
+        ["lastName"]=>
+        string(10) "McCullough"
+        ["primaryPosition"]=>
+        string(2) "PF"
+        ["jerseyNumber"]=>
+        int(1)
+        ["currentTeam"]=>
+        array(2) {
+          ["id"]=>
+          int(94)
+          ["abbreviation"]=>
+          string(3) "WAS"
+        }
+        ["currentRosterStatus"]=>
+        string(6) "ROSTER"
+        ["currentInjury"]=>
+        NULL
+        ["height"]=>
+        string(4) "6'9""
+        ["weight"]=>
+        int(215)
+        ["birthDate"]=>
+        string(10) "1995-02-05"
+        ["age"]=>
+        int(23)
+        ["birthCity"]=>
+        string(9) "Bronx, NY"
+        ["birthCountry"]=>
+        string(3) "USA"
+        ["rookie"]=>
+        bool(false)
+        ["highSchool"]=>
+        string(11) "IMG Academy"
+        ["college"]=>
+        string(19) "Syracuse University"
+        ["handedness"]=>
+        array(1) {
+          ["shoots"]=>
+          string(1) "R"
+        }
+        ["officialImageSrc"]=>
+        NULL
+        ["socialMediaAccounts"]=>
+        array(0) {
+        }
+      }
+      [2]=>
+      array(20) {
+        ["id"]=>
+        int(9206)
+        ["firstName"]=>
+        string(5) "Jodie"
+        ["lastName"]=>
+        string(5) "Meeks"
+        ["primaryPosition"]=>
+        string(2) "SG"
+        ["jerseyNumber"]=>
+        int(20)
+        ["currentTeam"]=>
+        array(2) {
+          ["id"]=>
+          int(90)
+          ["abbreviation"]=>
+          string(3) "MIL"
+        }
+        ["currentRosterStatus"]=>
+        string(6) "ROSTER"
+        ["currentInjury"]=>
+        array(2) {
+          ["description"]=>
+          string(9) "suspended"
+          ["playingProbability"]=>
+          string(3) "OUT"
+        }
+        ["height"]=>
+        string(4) "6'4""
+        ["weight"]=>
+        int(210)
+        ["birthDate"]=>
+        string(10) "1987-08-20"
+        ["age"]=>
+        int(31)
+        ["birthCity"]=>
+        string(12) "Norcross, GA"
+        ["birthCountry"]=>
+        string(3) "USA"
+        ["rookie"]=>
+        bool(false)
+        ["highSchool"]=>
+        string(8) "Norcross"
+        ["college"]=>
+        string(22) "University of Kentucky"
+        ["handedness"]=>
+        array(1) {
+          ["shoots"]=>
+          string(1) "R"
+        }
+        ["officialImageSrc"]=>
+        NULL
+        ["socialMediaAccounts"]=>
+        array(1) {
+          [0]=>
+          array(2) {
+            ["mediaType"]=>
+            string(7) "TWITTER"
+            ["value"]=>
+            string(8) "Jmeeks20"
+          }
+        }
+      }
+      [3]=>
+      array(20) {
+        ["id"]=>
+        int(9249)
+        ["firstName"]=>
+        string(3) "Ian"
+        ["lastName"]=>
+        string(7) "Mahinmi"
+        ["primaryPosition"]=>
+        string(1) "C"
+        ["jerseyNumber"]=>
+        int(28)
+        ["currentTeam"]=>
+        array(2) {
+          ["id"]=>
+          int(94)
+          ["abbreviation"]=>
+          string(3) "WAS"
+        }
+        ["currentRosterStatus"]=>
+        string(6) "ROSTER"
+        ["currentInjury"]=>
+        array(2) {
+          ["description"]=>
+          string(11) "back spasms"
+          ["playingProbability"]=>
+          string(12) "QUESTIONABLE"
+        }
+        ["height"]=>
+        string(5) "6'11""
+        ["weight"]=>
+        int(262)
+        ["birthDate"]=>
+        string(10) "1986-11-05"
+        ["age"]=>
+        int(31)
+        ["birthCity"]=>
+        string(5) "Rouen"
+        ["birthCountry"]=>
+        string(6) "France"
+        ["rookie"]=>
+        bool(false)
+        ["highSchool"]=>
+        NULL
+        ["college"]=>
+        NULL
+        ["handedness"]=>
+        array(1) {
+          ["shoots"]=>
+          string(1) "R"
+        }
+        ["officialImageSrc"]=>
+        NULL
+        ["socialMediaAccounts"]=>
+        array(1) {
+          [0]=>
+          array(2) {
+            ["mediaType"]=>
+            string(7) "TWITTER"
+            ["value"]=>
+            string(10) "ianmahinmi"
+          }
+        }
+      }
+      [4]=>
+      array(20) {
+        ["id"]=>
+        int(9366)
+        ["firstName"]=>
+        string(3) "Tim"
+        ["lastName"]=>
+        string(7) "Frazier"
+        ["primaryPosition"]=>
+        string(2) "PG"
+        ["jerseyNumber"]=>
+        int(8)
+        ["currentTeam"]=>
+        array(2) {
+          ["id"]=>
+          int(110)
+          ["abbreviation"]=>
+          string(3) "NOP"
+        }
+        ["currentRosterStatus"]=>
+        string(6) "ROSTER"
+        ["currentInjury"]=>
+        NULL
+        ["height"]=>
+        string(4) "6'1""
+        ["weight"]=>
+        int(170)
+        ["birthDate"]=>
+        string(10) "1990-11-01"
+        ["age"]=>
+        int(27)
+        ["birthCity"]=>
+        string(11) "Houston, TX"
+        ["birthCountry"]=>
+        string(3) "USA"
+        ["rookie"]=>
+        bool(false)
+        ["highSchool"]=>
+        string(13) "Strake Jesuit"
+        ["college"]=>
+        string(29) "Pennsylvania State University"
+        ["handedness"]=>
+        array(1) {
+          ["shoots"]=>
+          string(1) "R"
+        }
+        ["officialImageSrc"]=>
+        NULL
+        ["socialMediaAccounts"]=>
+        array(1) {
+          [0]=>
+          array(2) {
+            ["mediaType"]=>
+            string(7) "TWITTER"
+            ["value"]=>
+            string(9) "Timfraz23"
+          }
+        }
+      }
+      [5]=>
+      array(20) {
+        ["id"]=>
+        int(9411)
+        ["firstName"]=>
+        string(5) "Jason"
+        ["lastName"]=>
+        string(5) "Smith"
+        ["primaryPosition"]=>
+        string(2) "PF"
+        ["jerseyNumber"]=>
+        int(14)
+        ["currentTeam"]=>
+        array(2) {
+          ["id"]=>
+          int(94)
+          ["abbreviation"]=>
+          string(3) "WAS"
+        }
+        ["currentRosterStatus"]=>
+        string(6) "ROSTER"
+        ["currentInjury"]=>
+        NULL
+        ["height"]=>
+        string(4) "7'0""
+        ["weight"]=>
+        int(240)
+        ["birthDate"]=>
+        string(10) "1986-03-02"
+        ["age"]=>
+        int(32)
+        ["birthCity"]=>
+        string(11) "Greeley, CO"
+        ["birthCountry"]=>
+        string(3) "USA"
+        ["rookie"]=>
+        bool(false)
+        ["highSchool"]=>
+        string(13) "Platte Valley"
+        ["college"]=>
+        string(25) "Colorado State University"
+        ["handedness"]=>
+        array(1) {
+          ["shoots"]=>
+          string(1) "R"
+        }
+        ["officialImageSrc"]=>
+        NULL
+        ["socialMediaAccounts"]=>
+        array(1) {
+          [0]=>
+          array(2) {
+            ["mediaType"]=>
+            string(7) "TWITTER"
+            ["value"]=>
+            string(13) "JasonSmith014"
+          }
+        }
+      }
+      [6]=>
+      array(20) {
+        ["id"]=>
+        int(9518)
+        ["firstName"]=>
+        string(5) "Ramon"
+        ["lastName"]=>
+        string(8) "Sessions"
+        ["primaryPosition"]=>
+        string(2) "PG"
+        ["jerseyNumber"]=>
+        int(1)
+        ["currentTeam"]=>
+        array(2) {
+          ["id"]=>
+          int(94)
+          ["abbreviation"]=>
+          string(3) "WAS"
+        }
+        ["currentRosterStatus"]=>
+        string(6) "ROSTER"
+        ["currentInjury"]=>
+        NULL
+        ["height"]=>
+        NULL
+        ["weight"]=>
+        NULL
+        ["birthDate"]=>
+        string(10) "1986-04-10"
+        ["age"]=>
+        int(32)
+        ["birthCity"]=>
+        string(16) "Myrtle Beach, SC"
+        ["birthCountry"]=>
+        string(3) "USA"
+        ["rookie"]=>
+        bool(false)
+        ["highSchool"]=>
+        string(12) "Myrtle Beach"
+        ["college"]=>
+        string(26) "University of Nevada, Reno"
+        ["handedness"]=>
+        array(1) {
+          ["shoots"]=>
+          string(1) "R"
+        }
+        ["officialImageSrc"]=>
+        NULL
+        ["socialMediaAccounts"]=>
+        array(0) {
+        }
+      }
+      [7]=>
+      array(20) {
+        ["id"]=>
+        int(9519)
+        ["firstName"]=>
+        string(6) "Marcin"
+        ["lastName"]=>
+        string(6) "Gortat"
+        ["primaryPosition"]=>
+        string(1) "C"
+        ["jerseyNumber"]=>
+        int(13)
+        ["currentTeam"]=>
+        array(2) {
+          ["id"]=>
+          int(102)
+          ["abbreviation"]=>
+          string(3) "LAC"
+        }
+        ["currentRosterStatus"]=>
+        string(6) "ROSTER"
+        ["currentInjury"]=>
+        NULL
+        ["height"]=>
+        string(5) "6'11""
+        ["weight"]=>
+        int(240)
+        ["birthDate"]=>
+        string(10) "1984-02-17"
+        ["age"]=>
+        int(34)
+        ["birthCity"]=>
+        string(4) "Lodz"
+        ["birthCountry"]=>
+        string(6) "Poland"
+        ["rookie"]=>
+        bool(false)
+        ["highSchool"]=>
+        NULL
+        ["college"]=>
+        NULL
+        ["handedness"]=>
+        array(1) {
+          ["shoots"]=>
+          string(1) "R"
+        }
+        ["officialImageSrc"]=>
+        NULL
+        ["socialMediaAccounts"]=>
+        array(1) {
+          [0]=>
+          array(2) {
+            ["mediaType"]=>
+            string(7) "TWITTER"
+            ["value"]=>
+            string(7) "MGortat"
+          }
+        }
+      }
+      [8]=>
+      array(20) {
+        ["id"]=>
+        int(9520)
+        ["firstName"]=>
+        string(8) "Markieff"
+        ["lastName"]=>
+        string(6) "Morris"
+        ["primaryPosition"]=>
+        string(2) "PF"
+        ["jerseyNumber"]=>
+        int(5)
+        ["currentTeam"]=>
+        array(2) {
+          ["id"]=>
+          int(94)
+          ["abbreviation"]=>
+          string(3) "WAS"
+        }
+        ["currentRosterStatus"]=>
+        string(6) "ROSTER"
+        ["currentInjury"]=>
+        NULL
+        ["height"]=>
+        string(5) "6'10""
+        ["weight"]=>
+        int(245)
+        ["birthDate"]=>
+        string(10) "1989-09-02"
+        ["age"]=>
+        int(29)
+        ["birthCity"]=>
+        string(16) "Philadelphia, PA"
+        ["birthCountry"]=>
+        string(3) "USA"
+        ["rookie"]=>
+        bool(false)
+        ["highSchool"]=>
+        string(12) "APEX Academy"
+        ["college"]=>
+        string(20) "University of Kansas"
+        ["handedness"]=>
+        array(1) {
+          ["shoots"]=>
+          string(1) "R"
+        }
+        ["officialImageSrc"]=>
+        NULL
+        ["socialMediaAccounts"]=>
+        array(1) {
+          [0]=>
+          array(2) {
+            ["mediaType"]=>
+            string(7) "TWITTER"
+            ["value"]=>
+            string(10) "Keefmorris"
+          }
+        }
+      }
+      [9]=>
+      array(20) {
+        ["id"]=>
+        int(9522)
+        ["firstName"]=>
+        string(4) "John"
+        ["lastName"]=>
+        string(4) "Wall"
+        ["primaryPosition"]=>
+        string(2) "PG"
+        ["jerseyNumber"]=>
+        int(2)
+        ["currentTeam"]=>
+        array(2) {
+          ["id"]=>
+          int(94)
+          ["abbreviation"]=>
+          string(3) "WAS"
+        }
+        ["currentRosterStatus"]=>
+        string(6) "ROSTER"
+        ["currentInjury"]=>
+        NULL
+        ["height"]=>
+        string(4) "6'4""
+        ["weight"]=>
+        int(210)
+        ["birthDate"]=>
+        string(10) "1990-09-06"
+        ["age"]=>
+        int(28)
+        ["birthCity"]=>
+        string(11) "Raleigh, NC"
+        ["birthCountry"]=>
+        string(3) "USA"
+        ["rookie"]=>
+        bool(false)
+        ["highSchool"]=>
+        string(19) "Word of God Academy"
+        ["college"]=>
+        string(22) "University of Kentucky"
+        ["handedness"]=>
+        array(1) {
+          ["shoots"]=>
+          string(1) "R"
+        }
+        ["officialImageSrc"]=>
+        NULL
+        ["socialMediaAccounts"]=>
+        array(1) {
+          [0]=>
+          array(2) {
+            ["mediaType"]=>
+            string(7) "TWITTER"
+            ["value"]=>
+            string(8) "JohnWall"
+          }
+        }
+      }
+      [10]=>
+      array(20) {
+        ["id"]=>
+        int(9523)
+        ["firstName"]=>
+        string(7) "Bradley"
+        ["lastName"]=>
+        string(4) "Beal"
+        ["primaryPosition"]=>
+        string(2) "SG"
+        ["jerseyNumber"]=>
+        int(3)
+        ["currentTeam"]=>
+        array(2) {
+          ["id"]=>
+          int(94)
+          ["abbreviation"]=>
+          string(3) "WAS"
+        }
+        ["currentRosterStatus"]=>
+        string(6) "ROSTER"
+        ["currentInjury"]=>
+        NULL
+        ["height"]=>
+        string(4) "6'5""
+        ["weight"]=>
+        int(207)
+        ["birthDate"]=>
+        string(10) "1993-06-28"
+        ["age"]=>
+        int(25)
+        ["birthCity"]=>
+        string(13) "St. Louis, MO"
+        ["birthCountry"]=>
+        string(3) "USA"
+        ["rookie"]=>
+        bool(false)
+        ["highSchool"]=>
+        string(36) "Chaminade College Preparatory School"
+        ["college"]=>
+        string(21) "University of Florida"
+        ["handedness"]=>
+        array(1) {
+          ["shoots"]=>
+          string(1) "R"
+        }
+        ["officialImageSrc"]=>
+        NULL
+        ["socialMediaAccounts"]=>
+        array(1) {
+          [0]=>
+          array(2) {
+            ["mediaType"]=>
+            string(7) "TWITTER"
+            ["value"]=>
+            string(14) "RealDealBeal23"
+          }
+        }
+      }
+      [11]=>
+      array(20) {
+        ["id"]=>
+        int(9524)
+        ["firstName"]=>
+        string(4) "Otto"
+        ["lastName"]=>
+        string(10) "Porter Jr."
+        ["primaryPosition"]=>
+        string(2) "SF"
+        ["jerseyNumber"]=>
+        int(22)
+        ["currentTeam"]=>
+        array(2) {
+          ["id"]=>
+          int(94)
+          ["abbreviation"]=>
+          string(3) "WAS"
+        }
+        ["currentRosterStatus"]=>
+        string(6) "ROSTER"
+        ["currentInjury"]=>
+        NULL
+        ["height"]=>
+        string(4) "6'8""
+        ["weight"]=>
+        int(198)
+        ["birthDate"]=>
+        string(10) "1993-06-03"
+        ["age"]=>
+        int(25)
+        ["birthCity"]=>
+        string(13) "St. Louis, MO"
+        ["birthCountry"]=>
+        string(3) "USA"
+        ["rookie"]=>
+        bool(false)
+        ["highSchool"]=>
+        string(20) "Scott County Central"
+        ["college"]=>
+        string(21) "Georgetown University"
+        ["handedness"]=>
+        array(1) {
+          ["shoots"]=>
+          string(1) "R"
+        }
+        ["officialImageSrc"]=>
+        NULL
+        ["socialMediaAccounts"]=>
+        array(0) {
+        }
+      }
+      [12]=>
+      array(20) {
+        ["id"]=>
+        int(9526)
+        ["firstName"]=>
+        string(5) "Kelly"
+        ["lastName"]=>
+        string(9) "Oubre Jr."
+        ["primaryPosition"]=>
+        string(2) "SF"
+        ["jerseyNumber"]=>
+        int(12)
+        ["currentTeam"]=>
+        array(2) {
+          ["id"]=>
+          int(94)
+          ["abbreviation"]=>
+          string(3) "WAS"
+        }
+        ["currentRosterStatus"]=>
+        string(6) "ROSTER"
+        ["currentInjury"]=>
+        NULL
+        ["height"]=>
+        string(4) "6'7""
+        ["weight"]=>
+        int(205)
+        ["birthDate"]=>
+        string(10) "1995-12-09"
+        ["age"]=>
+        int(22)
+        ["birthCity"]=>
+        string(15) "New Orleans, LA"
+        ["birthCountry"]=>
+        string(3) "USA"
+        ["rookie"]=>
+        bool(false)
+        ["highSchool"]=>
+        string(12) "Findlay Prep"
+        ["college"]=>
+        string(20) "University of Kansas"
+        ["handedness"]=>
+        array(1) {
+          ["shoots"]=>
+          string(1) "L"
+        }
+        ["officialImageSrc"]=>
+        NULL
+        ["socialMediaAccounts"]=>
+        array(1) {
+          [0]=>
+          array(2) {
+            ["mediaType"]=>
+            string(7) "TWITTER"
+            ["value"]=>
+            string(12) "KELLYOUBREJR"
+          }
+        }
+      }
+      [13]=>
+      array(20) {
+        ["id"]=>
+        int(10151)
+        ["firstName"]=>
+        string(5) "Tomas"
+        ["lastName"]=>
+        string(10) "Satoransky"
+        ["primaryPosition"]=>
+        string(2) "PG"
+        ["jerseyNumber"]=>
+        int(31)
+        ["currentTeam"]=>
+        array(2) {
+          ["id"]=>
+          int(94)
+          ["abbreviation"]=>
+          string(3) "WAS"
+        }
+        ["currentRosterStatus"]=>
+        string(6) "ROSTER"
+        ["currentInjury"]=>
+        NULL
+        ["height"]=>
+        string(4) "6'7""
+        ["weight"]=>
+        int(210)
+        ["birthDate"]=>
+        string(10) "1991-10-30"
+        ["age"]=>
+        int(26)
+        ["birthCity"]=>
+        string(6) "Prague"
+        ["birthCountry"]=>
+        string(14) "Czech Republic"
+        ["rookie"]=>
+        bool(false)
+        ["highSchool"]=>
+        NULL
+        ["college"]=>
+        NULL
+        ["handedness"]=>
+        array(1) {
+          ["shoots"]=>
+          string(1) "R"
+        }
+        ["officialImageSrc"]=>
+        NULL
+        ["socialMediaAccounts"]=>
+        array(1) {
+          [0]=>
+          array(2) {
+            ["mediaType"]=>
+            string(7) "TWITTER"
+            ["value"]=>
+            string(10) "satoransky"
+          }
+        }
+      }
+      [14]=>
+      array(20) {
+        ["id"]=>
+        int(13810)
+        ["firstName"]=>
+        string(5) "Devin"
+        ["lastName"]=>
+        string(8) "Robinson"
+        ["primaryPosition"]=>
+        string(2) "SF"
+        ["jerseyNumber"]=>
+        int(7)
+        ["currentTeam"]=>
+        array(2) {
+          ["id"]=>
+          int(94)
+          ["abbreviation"]=>
+          string(3) "WAS"
+        }
+        ["currentRosterStatus"]=>
+        string(6) "ROSTER"
+        ["currentInjury"]=>
+        NULL
+        ["height"]=>
+        string(4) "6'8""
+        ["weight"]=>
+        int(200)
+        ["birthDate"]=>
+        string(10) "1995-03-07"
+        ["age"]=>
+        int(23)
+        ["birthCity"]=>
+        NULL
+        ["birthCountry"]=>
+        NULL
+        ["rookie"]=>
+        bool(false)
+        ["highSchool"]=>
+        NULL
+        ["college"]=>
+        NULL
+        ["handedness"]=>
+        array(1) {
+          ["shoots"]=>
+          NULL
+        }
+        ["officialImageSrc"]=>
+        NULL
+        ["socialMediaAccounts"]=>
+        array(0) {
+        }
+      }
+      [15]=>
+      array(20) {
+        ["id"]=>
+        int(13937)
+        ["firstName"]=>
+        string(5) "Scott"
+        ["lastName"]=>
+        string(6) "Brooks"
+        ["primaryPosition"]=>
+        string(1) "C"
+        ["jerseyNumber"]=>
+        NULL
+        ["currentTeam"]=>
+        array(2) {
+          ["id"]=>
+          int(94)
+          ["abbreviation"]=>
+          string(3) "WAS"
+        }
+        ["currentRosterStatus"]=>
+        string(17) "ASSIGNED_TO_OTHER"
+        ["currentInjury"]=>
+        NULL
+        ["height"]=>
+        NULL
+        ["weight"]=>
+        NULL
+        ["birthDate"]=>
+        string(10) "2018-01-25"
+        ["age"]=>
+        int(0)
+        ["birthCity"]=>
+        string(15) "French Camp, CA"
+        ["birthCountry"]=>
+        string(3) "USA"
+        ["rookie"]=>
+        bool(false)
+        ["highSchool"]=>
+        string(10) "East Union"
+        ["college"]=>
+        string(32) "University of California, Irvine"
+        ["handedness"]=>
+        array(1) {
+          ["shoots"]=>
+          NULL
+        }
+        ["officialImageSrc"]=>
+        NULL
+        ["socialMediaAccounts"]=>
+        array(0) {
+        }
+      }
+    }
+    ["playerStatReferences"]=>
+    array(64) {
+      [0]=>
+      array(5) {
+        ["category"]=>
+        string(11) "Field Goals"
+        ["fullName"]=>
+        string(8) "fg2PtAtt"
+        ["description"]=>
+        string(23) "2Pt Field Goal Attempts"
+        ["abbreviation"]=>
+        string(3) "2PA"
+        ["type"]=>
+        string(7) "INTEGER"
+      }
+      [1]=>
+      array(5) {
+        ["category"]=>
+        string(11) "Field Goals"
+        ["fullName"]=>
+        string(15) "fg2PtAttPerGame"
+        ["description"]=>
+        string(30) "2Pt Field Goal Attempts / Game"
+        ["abbreviation"]=>
+        string(5) "2PA/G"
+        ["type"]=>
+        string(7) "DECIMAL"
+      }
+      [2]=>
+      array(5) {
+        ["category"]=>
+        string(11) "Field Goals"
+        ["fullName"]=>
+        string(9) "fg2PtMade"
+        ["description"]=>
+        string(20) "2Pt Field Goals Made"
+        ["abbreviation"]=>
+        string(3) "2PM"
+        ["type"]=>
+        string(7) "INTEGER"
+      }
+      [3]=>
+      array(5) {
+        ["category"]=>
+        string(11) "Field Goals"
+        ["fullName"]=>
+        string(16) "fg2PtMadePerGame"
+        ["description"]=>
+        string(27) "2Pt Field Goals Made / Game"
+        ["abbreviation"]=>
+        string(5) "2PM/G"
+        ["type"]=>
+        string(7) "DECIMAL"
+      }
+      [4]=>
+      array(5) {
+        ["category"]=>
+        string(11) "Field Goals"
+        ["fullName"]=>
+        string(8) "fg2PtPct"
+        ["description"]=>
+        string(16) "2Pt Field Goal %"
+        ["abbreviation"]=>
+        string(3) "2P%"
+        ["type"]=>
+        string(7) "DECIMAL"
+      }
+      [5]=>
+      array(5) {
+        ["category"]=>
+        string(11) "Field Goals"
+        ["fullName"]=>
+        string(8) "fg3PtAtt"
+        ["description"]=>
+        string(23) "3Pt Field Goal Attempts"
+        ["abbreviation"]=>
+        string(3) "3PA"
+        ["type"]=>
+        string(7) "INTEGER"
+      }
+      [6]=>
+      array(5) {
+        ["category"]=>
+        string(11) "Field Goals"
+        ["fullName"]=>
+        string(15) "fg3PtAttPerGame"
+        ["description"]=>
+        string(30) "3Pt Field Goal Attempts / Game"
+        ["abbreviation"]=>
+        string(5) "3PA/G"
+        ["type"]=>
+        string(7) "DECIMAL"
+      }
+      [7]=>
+      array(5) {
+        ["category"]=>
+        string(11) "Field Goals"
+        ["fullName"]=>
+        string(9) "fg3PtMade"
+        ["description"]=>
+        string(20) "3Pt Field Goals Made"
+        ["abbreviation"]=>
+        string(3) "3PM"
+        ["type"]=>
+        string(7) "INTEGER"
+      }
+      [8]=>
+      array(5) {
+        ["category"]=>
+        string(11) "Field Goals"
+        ["fullName"]=>
+        string(16) "fg3PtMadePerGame"
+        ["description"]=>
+        string(27) "3Pt Field Goals Made / Game"
+        ["abbreviation"]=>
+        string(5) "3PM/G"
+        ["type"]=>
+        string(7) "DECIMAL"
+      }
+      [9]=>
+      array(5) {
+        ["category"]=>
+        string(11) "Field Goals"
+        ["fullName"]=>
+        string(8) "fg3PtPct"
+        ["description"]=>
+        string(16) "3Pt Field Goal %"
+        ["abbreviation"]=>
+        string(3) "3P%"
+        ["type"]=>
+        string(7) "DECIMAL"
+      }
+      [10]=>
+      array(5) {
+        ["category"]=>
+        string(11) "Field Goals"
+        ["fullName"]=>
+        string(5) "fgAtt"
+        ["description"]=>
+        string(25) "Total Field Goal Attempts"
+        ["abbreviation"]=>
+        string(3) "FGA"
+        ["type"]=>
+        string(7) "INTEGER"
+      }
+      [11]=>
+      array(5) {
+        ["category"]=>
+        string(11) "Field Goals"
+        ["fullName"]=>
+        string(12) "fgAttPerGame"
+        ["description"]=>
+        string(32) "Total Field Goal Attempts / Game"
+        ["abbreviation"]=>
+        string(5) "FGA/G"
+        ["type"]=>
+        string(7) "DECIMAL"
+      }
+      [12]=>
+      array(5) {
+        ["category"]=>
+        string(11) "Field Goals"
+        ["fullName"]=>
+        string(6) "fgMade"
+        ["description"]=>
+        string(22) "Total Field Goals Made"
+        ["abbreviation"]=>
+        string(3) "FGM"
+        ["type"]=>
+        string(7) "INTEGER"
+      }
+      [13]=>
+      array(5) {
+        ["category"]=>
+        string(11) "Field Goals"
+        ["fullName"]=>
+        string(13) "fgMadePerGame"
+        ["description"]=>
+        string(29) "Total Field Goals Made / Game"
+        ["abbreviation"]=>
+        string(5) "FGM/G"
+        ["type"]=>
+        string(7) "DECIMAL"
+      }
+      [14]=>
+      array(5) {
+        ["category"]=>
+        string(11) "Field Goals"
+        ["fullName"]=>
+        string(5) "fgPct"
+        ["description"]=>
+        string(18) "Total Field Goal %"
+        ["abbreviation"]=>
+        string(3) "FG%"
+        ["type"]=>
+        string(7) "DECIMAL"
+      }
+      [15]=>
+      array(5) {
+        ["category"]=>
+        string(11) "Free Throws"
+        ["fullName"]=>
+        string(5) "ftAtt"
+        ["description"]=>
+        string(19) "Free Throw Attempts"
+        ["abbreviation"]=>
+        string(3) "FTA"
+        ["type"]=>
+        string(7) "INTEGER"
+      }
+      [16]=>
+      array(5) {
+        ["category"]=>
+        string(11) "Free Throws"
+        ["fullName"]=>
+        string(12) "ftAttPerGame"
+        ["description"]=>
+        string(26) "Free Throw Attempts / Game"
+        ["abbreviation"]=>
+        string(5) "FTA/G"
+        ["type"]=>
+        string(7) "DECIMAL"
+      }
+      [17]=>
+      array(5) {
+        ["category"]=>
+        string(11) "Free Throws"
+        ["fullName"]=>
+        string(6) "ftMade"
+        ["description"]=>
+        string(16) "Free Throws Made"
+        ["abbreviation"]=>
+        string(3) "FTM"
+        ["type"]=>
+        string(7) "INTEGER"
+      }
+      [18]=>
+      array(5) {
+        ["category"]=>
+        string(11) "Free Throws"
+        ["fullName"]=>
+        string(13) "ftMadePerGame"
+        ["description"]=>
+        string(23) "Free Throws Made / Game"
+        ["abbreviation"]=>
+        string(5) "FTM/G"
+        ["type"]=>
+        string(7) "DECIMAL"
+      }
+      [19]=>
+      array(5) {
+        ["category"]=>
+        string(11) "Free Throws"
+        ["fullName"]=>
+        string(5) "ftPct"
+        ["description"]=>
+        string(12) "Free Throw %"
+        ["abbreviation"]=>
+        string(3) "FT%"
+        ["type"]=>
+        string(7) "DECIMAL"
+      }
+      [20]=>
+      array(5) {
+        ["category"]=>
+        string(8) "Rebounds"
+        ["fullName"]=>
+        string(6) "offReb"
+        ["description"]=>
+        string(18) "Offensive Rebounds"
+        ["abbreviation"]=>
+        string(4) "OREB"
+        ["type"]=>
+        string(7) "INTEGER"
+      }
+      [21]=>
+      array(5) {
+        ["category"]=>
+        string(8) "Rebounds"
+        ["fullName"]=>
+        string(13) "offRebPerGame"
+        ["description"]=>
+        string(25) "Offensive Rebounds / Game"
+        ["abbreviation"]=>
+        string(6) "OREB/G"
+        ["type"]=>
+        string(7) "DECIMAL"
+      }
+      [22]=>
+      array(5) {
+        ["category"]=>
+        string(8) "Rebounds"
+        ["fullName"]=>
+        string(6) "defReb"
+        ["description"]=>
+        string(18) "Defensive Rebounds"
+        ["abbreviation"]=>
+        string(4) "DREB"
+        ["type"]=>
+        string(7) "INTEGER"
+      }
+      [23]=>
+      array(5) {
+        ["category"]=>
+        string(8) "Rebounds"
+        ["fullName"]=>
+        string(13) "defRebPerGame"
+        ["description"]=>
+        string(25) "Defensive Rebounds / Game"
+        ["abbreviation"]=>
+        string(6) "DREB/G"
+        ["type"]=>
+        string(7) "DECIMAL"
+      }
+      [24]=>
+      array(5) {
+        ["category"]=>
+        string(8) "Rebounds"
+        ["fullName"]=>
+        string(3) "reb"
+        ["description"]=>
+        string(14) "Total Rebounds"
+        ["abbreviation"]=>
+        string(3) "REB"
+        ["type"]=>
+        string(7) "INTEGER"
+      }
+      [25]=>
+      array(5) {
+        ["category"]=>
+        string(8) "Rebounds"
+        ["fullName"]=>
+        string(10) "rebPerGame"
+        ["description"]=>
+        string(21) "Total Rebounds / Game"
+        ["abbreviation"]=>
+        string(5) "REB/G"
+        ["type"]=>
+        string(7) "DECIMAL"
+      }
+      [26]=>
+      array(5) {
+        ["category"]=>
+        string(7) "Offense"
+        ["fullName"]=>
+        string(3) "ast"
+        ["description"]=>
+        string(7) "Assists"
+        ["abbreviation"]=>
+        string(3) "AST"
+        ["type"]=>
+        string(7) "INTEGER"
+      }
+      [27]=>
+      array(5) {
+        ["category"]=>
+        string(7) "Offense"
+        ["fullName"]=>
+        string(10) "astPerGame"
+        ["description"]=>
+        string(14) "Assists / Game"
+        ["abbreviation"]=>
+        string(5) "AST/G"
+        ["type"]=>
+        string(7) "DECIMAL"
+      }
+      [28]=>
+      array(5) {
+        ["category"]=>
+        string(7) "Offense"
+        ["fullName"]=>
+        string(3) "pts"
+        ["description"]=>
+        string(6) "Points"
+        ["abbreviation"]=>
+        string(3) "PTS"
+        ["type"]=>
+        string(7) "INTEGER"
+      }
+      [29]=>
+      array(5) {
+        ["category"]=>
+        string(7) "Offense"
+        ["fullName"]=>
+        string(10) "ptsPerGame"
+        ["description"]=>
+        string(13) "Points / Game"
+        ["abbreviation"]=>
+        string(5) "PTS/G"
+        ["type"]=>
+        string(7) "DECIMAL"
+      }
+      [30]=>
+      array(5) {
+        ["category"]=>
+        string(7) "Defense"
+        ["fullName"]=>
+        string(3) "tov"
+        ["description"]=>
+        string(9) "Turnovers"
+        ["abbreviation"]=>
+        string(3) "TOV"
+        ["type"]=>
+        string(7) "INTEGER"
+      }
+      [31]=>
+      array(5) {
+        ["category"]=>
+        string(7) "Defense"
+        ["fullName"]=>
+        string(10) "tovPerGame"
+        ["description"]=>
+        string(16) "Turnovers / Game"
+        ["abbreviation"]=>
+        string(5) "TOV/G"
+        ["type"]=>
+        string(7) "DECIMAL"
+      }
+      [32]=>
+      array(5) {
+        ["category"]=>
+        string(7) "Defense"
+        ["fullName"]=>
+        string(3) "stl"
+        ["description"]=>
+        string(6) "Steals"
+        ["abbreviation"]=>
+        string(3) "STL"
+        ["type"]=>
+        string(7) "INTEGER"
+      }
+      [33]=>
+      array(5) {
+        ["category"]=>
+        string(7) "Defense"
+        ["fullName"]=>
+        string(10) "stlPerGame"
+        ["description"]=>
+        string(13) "Steals / Game"
+        ["abbreviation"]=>
+        string(5) "STL/G"
+        ["type"]=>
+        string(7) "DECIMAL"
+      }
+      [34]=>
+      array(5) {
+        ["category"]=>
+        string(7) "Defense"
+        ["fullName"]=>
+        string(3) "blk"
+        ["description"]=>
+        string(6) "Blocks"
+        ["abbreviation"]=>
+        string(2) "BS"
+        ["type"]=>
+        string(7) "INTEGER"
+      }
+      [35]=>
+      array(5) {
+        ["category"]=>
+        string(7) "Defense"
+        ["fullName"]=>
+        string(10) "blkPerGame"
+        ["description"]=>
+        string(13) "Blocks / Game"
+        ["abbreviation"]=>
+        string(4) "BS/G"
+        ["type"]=>
+        string(7) "DECIMAL"
+      }
+      [36]=>
+      array(5) {
+        ["category"]=>
+        string(7) "Defense"
+        ["fullName"]=>
+        string(10) "blkAgainst"
+        ["description"]=>
+        string(14) "Blocks Against"
+        ["abbreviation"]=>
+        string(2) "BA"
+        ["type"]=>
+        string(7) "INTEGER"
+      }
+      [37]=>
+      array(5) {
+        ["category"]=>
+        string(7) "Defense"
+        ["fullName"]=>
+        string(17) "blkAgainstPerGame"
+        ["description"]=>
+        string(21) "Blocks Against / Game"
+        ["abbreviation"]=>
+        string(4) "BA/G"
+        ["type"]=>
+        string(7) "DECIMAL"
+      }
+      [38]=>
+      array(5) {
+        ["category"]=>
+        string(13) "Miscellaneous"
+        ["fullName"]=>
+        string(8) "foulPers"
+        ["description"]=>
+        string(14) "Personal Fouls"
+        ["abbreviation"]=>
+        string(2) "PF"
+        ["type"]=>
+        string(7) "INTEGER"
+      }
+      [39]=>
+      array(5) {
+        ["category"]=>
+        string(13) "Miscellaneous"
+        ["fullName"]=>
+        string(15) "foulPersPerGame"
+        ["description"]=>
+        string(21) "Personal Fouls / Game"
+        ["abbreviation"]=>
+        string(4) "PF/G"
+        ["type"]=>
+        string(7) "DECIMAL"
+      }
+      [40]=>
+      array(5) {
+        ["category"]=>
+        string(13) "Miscellaneous"
+        ["fullName"]=>
+        string(9) "plusMinus"
+        ["description"]=>
+        string(10) "Plus/Minus"
+        ["abbreviation"]=>
+        string(3) "+/-"
+        ["type"]=>
+        string(7) "INTEGER"
+      }
+      [41]=>
+      array(5) {
+        ["category"]=>
+        string(13) "Miscellaneous"
+        ["fullName"]=>
+        string(16) "plusMinusPerGame"
+        ["description"]=>
+        string(17) "Plus/Minus / Game"
+        ["abbreviation"]=>
+        string(5) "+/-/G"
+        ["type"]=>
+        string(7) "DECIMAL"
+      }
+      [42]=>
+      array(5) {
+        ["category"]=>
+        string(13) "Miscellaneous"
+        ["fullName"]=>
+        string(10) "minSeconds"
+        ["description"]=>
+        string(14) "Minutes Played"
+        ["abbreviation"]=>
+        string(3) "MIN"
+        ["type"]=>
+        string(7) "INTEGER"
+      }
+      [43]=>
+      array(5) {
+        ["category"]=>
+        string(13) "Miscellaneous"
+        ["fullName"]=>
+        string(17) "minSecondsPerGame"
+        ["description"]=>
+        string(21) "Minutes Played / Game"
+        ["abbreviation"]=>
+        string(5) "MIN/G"
+        ["type"]=>
+        string(7) "DECIMAL"
+      }
+      [44]=>
+      array(5) {
+        ["category"]=>
+        string(13) "Miscellaneous"
+        ["fullName"]=>
+        string(5) "fouls"
+        ["description"]=>
+        string(5) "Fouls"
+        ["abbreviation"]=>
+        string(1) "F"
+        ["type"]=>
+        string(7) "INTEGER"
+      }
+      [45]=>
+      array(5) {
+        ["category"]=>
+        string(13) "Miscellaneous"
+        ["fullName"]=>
+        string(12) "foulsPerGame"
+        ["description"]=>
+        string(12) "Fouls / Game"
+        ["abbreviation"]=>
+        string(3) "F/G"
+        ["type"]=>
+        string(7) "DECIMAL"
+      }
+      [46]=>
+      array(5) {
+        ["category"]=>
+        string(13) "Miscellaneous"
+        ["fullName"]=>
+        string(10) "foulsDrawn"
+        ["description"]=>
+        string(11) "Fouls Drawn"
+        ["abbreviation"]=>
+        string(2) "FD"
+        ["type"]=>
+        string(7) "INTEGER"
+      }
+      [47]=>
+      array(5) {
+        ["category"]=>
+        string(13) "Miscellaneous"
+        ["fullName"]=>
+        string(17) "foulsDrawnPerGame"
+        ["description"]=>
+        string(18) "Fouls Drawn / Game"
+        ["abbreviation"]=>
+        string(4) "FD/G"
+        ["type"]=>
+        string(7) "DECIMAL"
+      }
+      [48]=>
+      array(5) {
+        ["category"]=>
+        string(13) "Miscellaneous"
+        ["fullName"]=>
+        string(13) "foulPersDrawn"
+        ["description"]=>
+        string(20) "Personal Fouls Drawn"
+        ["abbreviation"]=>
+        string(3) "PFD"
+        ["type"]=>
+        string(7) "INTEGER"
+      }
+      [49]=>
+      array(5) {
+        ["category"]=>
+        string(13) "Miscellaneous"
+        ["fullName"]=>
+        string(20) "foulPersDrawnPerGame"
+        ["description"]=>
+        string(27) "Personal Fouls Drawn / Game"
+        ["abbreviation"]=>
+        string(5) "PFD/G"
+        ["type"]=>
+        string(7) "DECIMAL"
+      }
+      [50]=>
+      array(5) {
+        ["category"]=>
+        string(13) "Miscellaneous"
+        ["fullName"]=>
+        string(8) "foulTech"
+        ["description"]=>
+        string(15) "Technical Fouls"
+        ["abbreviation"]=>
+        string(2) "TF"
+        ["type"]=>
+        string(7) "INTEGER"
+      }
+      [51]=>
+      array(5) {
+        ["category"]=>
+        string(13) "Miscellaneous"
+        ["fullName"]=>
+        string(15) "foulTechPerGame"
+        ["description"]=>
+        string(22) "Technical Fouls / Game"
+        ["abbreviation"]=>
+        string(4) "TF/G"
+        ["type"]=>
+        string(7) "DECIMAL"
+      }
+      [52]=>
+      array(5) {
+        ["category"]=>
+        string(13) "Miscellaneous"
+        ["fullName"]=>
+        string(13) "foulTechDrawn"
+        ["description"]=>
+        string(21) "Technical Fouls Drawn"
+        ["abbreviation"]=>
+        string(3) "TFD"
+        ["type"]=>
+        string(7) "INTEGER"
+      }
+      [53]=>
+      array(5) {
+        ["category"]=>
+        string(13) "Miscellaneous"
+        ["fullName"]=>
+        string(20) "foulTechDrawnPerGame"
+        ["description"]=>
+        string(28) "Technical Fouls Drawn / Game"
+        ["abbreviation"]=>
+        string(5) "TFD/G"
+        ["type"]=>
+        string(7) "DECIMAL"
+      }
+      [54]=>
+      array(5) {
+        ["category"]=>
+        string(13) "Miscellaneous"
+        ["fullName"]=>
+        string(9) "foulFlag1"
+        ["description"]=>
+        string(16) "Flagrant 1 Fouls"
+        ["abbreviation"]=>
+        string(3) "FF1"
+        ["type"]=>
+        string(7) "INTEGER"
+      }
+      [55]=>
+      array(5) {
+        ["category"]=>
+        string(13) "Miscellaneous"
+        ["fullName"]=>
+        string(16) "foulFlag1PerGame"
+        ["description"]=>
+        string(23) "Flagrant 1 Fouls / Game"
+        ["abbreviation"]=>
+        string(5) "FF1/G"
+        ["type"]=>
+        string(7) "DECIMAL"
+      }
+      [56]=>
+      array(5) {
+        ["category"]=>
+        string(13) "Miscellaneous"
+        ["fullName"]=>
+        string(14) "foulFlag1Drawn"
+        ["description"]=>
+        string(22) "Flagrant 1 Fouls Drawn"
+        ["abbreviation"]=>
+        string(4) "FF1D"
+        ["type"]=>
+        string(7) "INTEGER"
+      }
+      [57]=>
+      array(5) {
+        ["category"]=>
+        string(13) "Miscellaneous"
+        ["fullName"]=>
+        string(21) "foulFlag1DrawnPerGame"
+        ["description"]=>
+        string(29) "Flagrant 1 Fouls Drawn / Game"
+        ["abbreviation"]=>
+        string(6) "FF1D/G"
+        ["type"]=>
+        string(7) "DECIMAL"
+      }
+      [58]=>
+      array(5) {
+        ["category"]=>
+        string(13) "Miscellaneous"
+        ["fullName"]=>
+        string(9) "foulFlag2"
+        ["description"]=>
+        string(16) "Flagrant 2 Fouls"
+        ["abbreviation"]=>
+        string(3) "FF2"
+        ["type"]=>
+        string(7) "INTEGER"
+      }
+      [59]=>
+      array(5) {
+        ["category"]=>
+        string(13) "Miscellaneous"
+        ["fullName"]=>
+        string(16) "foulFlag2PerGame"
+        ["description"]=>
+        string(23) "Flagrant 2 Fouls / Game"
+        ["abbreviation"]=>
+        string(5) "FF2/G"
+        ["type"]=>
+        string(7) "DECIMAL"
+      }
+      [60]=>
+      array(5) {
+        ["category"]=>
+        string(13) "Miscellaneous"
+        ["fullName"]=>
+        string(14) "foulFlag2Drawn"
+        ["description"]=>
+        string(22) "Flagrant 2 Fouls Drawn"
+        ["abbreviation"]=>
+        string(4) "FF2D"
+        ["type"]=>
+        string(7) "INTEGER"
+      }
+      [61]=>
+      array(5) {
+        ["category"]=>
+        string(13) "Miscellaneous"
+        ["fullName"]=>
+        string(21) "foulFlag2DrawnPerGame"
+        ["description"]=>
+        string(29) "Flagrant 2 Fouls Drawn / Game"
+        ["abbreviation"]=>
+        string(6) "FF2D/G"
+        ["type"]=>
+        string(7) "DECIMAL"
+      }
+      [62]=>
+      array(5) {
+        ["category"]=>
+        string(13) "Miscellaneous"
+        ["fullName"]=>
+        string(9) "ejections"
+        ["description"]=>
+        string(20) "Ejections From Games"
+        ["abbreviation"]=>
+        string(3) "EJE"
+        ["type"]=>
+        string(7) "INTEGER"
+      }
+      [63]=>
+      array(5) {
+        ["category"]=>
+        string(13) "Miscellaneous"
+        ["fullName"]=>
+        string(12) "gamesStarted"
+        ["description"]=>
+        string(13) "Games Started"
+        ["abbreviation"]=>
+        string(2) "GS"
+        ["type"]=>
+        string(7) "INTEGER"
+      }
+    }
+  }
+}

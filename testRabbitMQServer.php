@@ -8,6 +8,9 @@ require_once('playerStatsAPI.php');
 ClearPlayerDB();
 function dataPull($teamsName)
 {
+        $date = new DateTime();
+        $dateString = $date->format("y:m:d h:i:s");
+
 	foreach($teamsName as $team){
 		echo $team;
 		echo "\n";
@@ -15,9 +18,16 @@ function dataPull($teamsName)
 		storePlayerStats($stats);
 		$count++;
 		//probably will use for error logging, to make sure each team gets thro
-		//var_dump($stats);
+		file_put_contents('varDumpLog.txt', $dateString." ");
+                file_put_contents('varDumpLog.txt', varDumpToString($stats), FILE_APPEND);
 		
 	}
+}
+function varDumpToString ($var){
+          ob_start();
+          var_dump($var);
+          $result = ob_get_clean();
+          return $result;
 }
 
 //check if all 30 teams get through
@@ -67,10 +77,15 @@ function doLogin($user,$pass)
 
 function requestProcessor($request)
 {
- $teams = array("atl", "bro", "bos", "cha", "chi", "cle", "dal", "den", "det", "gsw", "hou", "ind", "lac", "lal", "mem", "mia", "mil", "min", "nop", "nyk", "okl", "orl", "phi", "phx", "por", "sac", "sas", "tor", "uta", "was");
+//Moved to client and is passed through rabbitMQ	
+ //$teams = array("atl", "bro", "bos", "cha", "chi", "cle", "dal", "den", "det", "gsw", "hou", "ind", "lac", "lal", "mem", "mia", "mil", "min", "nop", "nyk", "okl", "orl", "phi", "phx", "por", "sac", "sas", "tor", "uta", "was")
 
-  echo "received request".PHP_EOL;
-  var_dump($request);
+        $date = new DateTime();
+	$dateString = $date->format("y:m:d h:i:s");
+
+	echo "received request".PHP_EOL;
+	file_put_contents("varDumpLog.txt", $dateString." ");
+  file_put_contents("varDumpLog.txt", varDumpToString($request), FILE_APPEND);
   if(!isset($request['type']))
   {
     return "ERROR: unsupported message type";
