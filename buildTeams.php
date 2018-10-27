@@ -3,7 +3,7 @@
 //$playerIDs must be an array
 
 //playerIDs roster mock
-$players = array("team1", "9249", "9411");
+$players = array("team1", "9157", "9129", "9167");
 $teamName = $players[0];
 buildTeams($players);
 calculateScore($players, $teamName);
