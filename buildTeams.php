@@ -1,29 +1,30 @@
 #!/usr/bin/php
 <?php
 //$playerIDs must be an array
-
+$sessionMock = "jonathan";
 //playerIDs roster mock
 //MIMICING BUILD PAGE MOCK
-$players = array("team1", "9249", "9411");
+$players = array("9249", "9411");
 //$teamName = $players[0];
-$playersOpp = array("team2", "9510", "9509");
-buildTeams($players);
-buildTeams($playersOpp);
+//$playersOpp = array("9510", "9509");
+buildTeams($players, $sessionMock);
+//buildTeams($playersOpp);
 //calculateScore($players, $teamName);
 // connect to build team page
-function buildTeams($playerIDs)
+function buildTeams($playerIDs, $sessionUser)
 {
         $servername = "localhost";
         $username = "dbAdmin";
         $password = "password123!";
 	$dbname = "loginDB";
         $conn = mysqli_connect($servername, $username, $password, $dbname);
-	$tableName = $playerIDs[0];
+	$tableName = "team$sessionUser";
+	echo $tableName;
 	$sql3 = "drop table ".$tableName;
 	mysqli_query($conn, $sql3);
-	$sql = "CREATE TABLE ".$tableName."(playerID varchar(30), lastName varchar(30), efficiency varchar(30))";	
+	$sql = "CREATE TABLE $tableName(playerID varchar(30), lastName varchar(30), efficiency varchar(30))";	
 	mysqli_query($conn, $sql);
-	array_splice($playerIDs, 0, 1);
+	//array_splice($playerIDs, 0, 1);
 	foreach($playerIDs as $playerID)
 	{
 		$playerStats = "select playerID, lastName, efficiency from playerTable where playerID ='$playerID'";
@@ -34,7 +35,7 @@ function buildTeams($playerIDs)
 		mysqli_query($conn, $sql2);
 		
 	}
-}
+}//
 // connect to match page
 function calculateScore($teamName)
 {
