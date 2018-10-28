@@ -3,10 +3,14 @@
 //$playerIDs must be an array
 
 //playerIDs roster mock
+//MIMICING BUILD PAGE MOCK
 $players = array("team1", "9249", "9411");
-$teamName = $players[0];
+//$teamName = $players[0];
+$playersOpp = array("team2", "9510", "9509");
 buildTeams($players);
-calculateScore($players, $teamName);
+buildTeams($playersOpp);
+//calculateScore($players, $teamName);
+// connect to build team page
 function buildTeams($playerIDs)
 {
         $servername = "localhost";
@@ -31,8 +35,8 @@ function buildTeams($playerIDs)
 		
 	}
 }
-
-function calculateScore($playerIDs, $teamName)
+// connect to match page
+function calculateScore($teamName)
 {
 	
 	$servername = "localhost";
@@ -40,23 +44,23 @@ function calculateScore($playerIDs, $teamName)
         $password = "password123!";
 	$dbname = "loginDB";
         $conn = mysqli_connect($servername, $username, $password, $dbname);
+	$sql = "SELECT efficiency from $teamName";
+	$result = mysqli_query($conn, $sql);
+	$row = mysqli_fetch_all($result);
+	var_dump($row);
+	//echo $row[1][0];
 	$tableName = $teamName;	
-	$totalscore=0;
-	foreach($playerIDs as $playerID)
+	//$totalscore=0;
+	$count= 0;
+	$average = 0;
+	foreach($row as $playerID)
 	{
-		$sql = "select efficiency from ".$tableName." where playerID = '$playerID'";
-		$result = mysqli_query($conn, $sql);
-		if(!$result)
-		{
-			//Error logging to be added here
-			printf("Error: %s\n", mysqli_error($conn));
-		}
-		$row = mysqli_fetch_row($result);
-		echo $row[0]."\n";
-		$totalscore += (float)$row[0];	
+		$average += $row[$count][0];
+		$count++;
 	}
-	echo $totalscore;
-	return $totalscore;
+	$total = $average/($count);
+	//echo "\n".$total."\n";
+	return $total;
 }
 
 

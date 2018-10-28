@@ -3,6 +3,7 @@
 
 include("config.php");
 include("buildTeams.php");
+echo "\n BREAK \n";
 //var_dump( $conn);
 
 //mock data
@@ -20,30 +21,43 @@ do
 	$randomID = rand(1, 5);
 } while($row["userID"] == $randomID);
 
-echo $randomID;
+//echo $randomID;
 
 //store id in a variable to use in function
 $mainUserID = $row["userID"];
-playerMatch();
+playMatch($randomID, $mainUserID, $conn);
 //echo "Result: " . $row['userID'];
 //$
-function playMatch($opponentID, $mainUserID){
-
+function playMatch($opponentID, $mainUserID, $conn){
+	//echo $mainUserID. "\n";
 	// returns score
-	$mainUserScore = calculateScore($mainUserID, $teamName);
-	$opponentUserScore = calculateScore($$opponentID, $teamName);
-
+	$teamName= "team1";
+	$teamNameOpp="team2";
+	$mainUserScore = calculateScore($teamName);
+	//echo $mainUserScore."\n";
+	$opponentUserScore = calculateScore($teamNameOpp);
+	echo $opponentUserScore;
+	$test = 1;
 	// this needs to be updated this is sudo code
 	if ($mainUserScore >= $opponentUserScore){
-		
-		$sql = "SELECT win FROM loginTable WHERE username = '$mainUserID'";
+		$sql = "SELECT win FROM loginTable WHERE userID = '$mainUserID'";
 		$win = mysqli_query($conn, $sql);
 		$userRow = mysqli_fetch_assoc($win);
 		// this might not work
 		$userRow["win"] += 1;
-		// insert new $userRow["win"] into db $userRow["win"]
-		$sql2 = "SELECT loss FROM loginTable WHERE username = '$opponentID'";
-		//Do the same as above for here but with loss instead
+		echo $userRow["win"];
+		$sqlTest = "UPDATE loginTable SET win = '$userRow[win]' where userID = $mainUserID ";
+		$winUpdate = mysqli_query($conn, $sqlTest);
+		
+		//Opp lost
+		$sql = "SELECT loss FROM loginTable WHERE userID = '$opponentID'";
+		$loss = mysqli_query($conn, $sql);
+		$userRow = mysqli_fetch_assoc($loss);
+		// this might not work
+		$userRow["loss"] += 1;
+		echo $userRow["loss"];
+		$sqlTest = "UPDATE loginTable SET loss = '$userRow[loss]' where userID = $opponentID ";
+		$winUpdate = mysqli_query($conn, $sqlTest);
 		
 	}
 	elseif ($mainUserScore >= $opponentUserScore){
