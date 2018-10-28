@@ -51,10 +51,16 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	if(empty($username_err) && empty($password_err)){
 		$user = $_POST[username];
 		$pass = $_POST[password];
+		$userID = $_POST[userID];
+		$testID = (string)$user;
 		$sql = "INSERT INTO loginTable(username, password, win, loss, draw, money) VALUES ('$user', '$pass', '0', '0', '0', '1000')";
-		$sql2 = "UPDATE loginTable SET teamID = userID";		
+		$sql2 = "UPDATE loginTable SET teamID = userID";
+		
+		$tableName = "team$testID";
+		$sql3 = "CREATE TABLE ".$tableName."(playerID varchar(30), lastName varchar(30), efficiency varchar(30))";		
 		if($stmt = mysqli_query($conn, $sql)){
 			mysqli_query($conn, $sql2);
+			mysqli_query($conn, $sql3);
 			mysqli_stmt_bind_param($stmt, "ss", $param_username, $param_password);
 			
 			$param_username = $username;
