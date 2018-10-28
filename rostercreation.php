@@ -1,7 +1,8 @@
 <?php
+	session_start();
 	include('rosterconfig.php');
 
-    $sql = "SELECT *  from playerTable";
+        $sql = "SELECT *  from playerTable";
 	$result = mysqli_query($conn, $sql);
 	$result2 = mysqli_query($conn, $sql);
 	$result3 = mysqli_query($conn, $sql);
@@ -18,6 +19,21 @@
     //echo $row[0];
     //echo $row[1];
     //echo $row[2];
+	
+   //You'd put this code at the top of any "protected" page you create
+   //Always start this first
+   
+   //session_start();
+
+   //if ( isset( $_SESSION['user_id'] ) ) {
+      // Grab user data from the database using the user_id
+      // Let them access the "logged in only" pages
+   //} else {
+      // Redirect them to the login page
+     // header("Location: http://127.0.0.1/490/login.html");
+   //}
+	echo "Welcome ";
+	echo $_SESSION['username'];
 ?>
 
 <!doctype html>
@@ -32,6 +48,13 @@
 
     <link rel="stylesheet" type="text/css" href="login.css">
 
+    <ul>
+          <li><a href="home.php">Home</a></li>
+          <li><a href="rostercreation.php">Team Making</a></li>
+          <li><a href="matchpage.php">Match Making</a></li>
+          <li><a href="history.php">History</a></li>
+          <li><a href="logout.php">Log Out</a></li>
+    </ul> 
 </head>
 <body>
 
@@ -146,9 +169,6 @@
     <div>
         <button class="pure-button pure-button-primary" type="submit" name="submit" id="submit">Submit</button>
     </div>
-
-
-
 </div>
 	
 

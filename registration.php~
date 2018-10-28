@@ -4,12 +4,7 @@
    // ini_set('display_startup_errors', true);
    // error_reporting(E_ALL);
    // ini_set('display_errors', true);
-include('registrationForm.php');
-echo "hello ";
-    session_start();
-    $_GET['username'];
-    echo $_SESSION['username'];
-
+    include('registrationForm.php');
 ?>
 
 <head>
@@ -21,14 +16,6 @@ echo "hello ";
     <title>Registration</title>
 
     <link rel="stylesheet" type="text/css" href="login.css">
-
-    <ul>
-  <!--<li><a href="reroutetemp.php">Home</a></li>
-  <li><a href="reroutetemp.php">Team Making</a></li>
-  <li><a href="reroutetemp.php">Match Making</a></li>
-  <li><a href="reroutetemp.php">History</a></li>-->
-  <li><a href="registration.php">Register Here</a></li>
-</ul>
 
 </head>
 <body>
@@ -60,7 +47,7 @@ echo "hello ";
                 <input type="submit" class="btn btn-primary" value="Submit">
                 <input type="reset" class="btn btn-default" value="Reset">
         </div>
-        <p>Already have an account? <a href="login.html">Login here</a>.</p>
+        <p>Already have an account? <a href="Login.html">Login here</a>.</p>
         </form>
     </div>    
 </body>

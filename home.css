@@ -5,7 +5,7 @@ html, body {
     color: #444;
     -webkit-font-smoothing: antialiased;
     background: #f0f0f0;
-     
+
 }
 
 ul {
@@ -40,7 +40,7 @@ li a:hover {
   width: 50%;
   margin-top: 5%;
   border-style: dotted;
-  
+
 }
 
 .form-login{
@@ -50,3 +50,4 @@ li a:hover {
 
 .form-control{
 }
+

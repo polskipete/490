@@ -28,6 +28,13 @@
 
     <link rel="stylesheet" type="text/css" href="login.css">
 
+    <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="rostercreation.php">Team Making</a></li>
+          <li><a href="matchpage.html">Match Making</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="login.html">Log Out</a></li>
+    </ul> 
 </head>
 
 <body>
@@ -62,33 +69,29 @@
 <?php 
   $sql = "SELECT *  from playerTable where playerID = $Team[3]";
         $result3 = mysqli_query($conn, $sql);
-        while($row1 = mysqli_fetch_array($result3)):;
+        $row1 = mysqli_fetch_array($result3);
         echo "4.".$row1[2]." ".$row1[1];
-        endwhile;
 ?>
 <br>
 <?php
   $sql = "SELECT *  from playerTable where playerID = $Team[4]";
         $result4 = mysqli_query($conn, $sql);
-        while($row1 = mysqli_fetch_array($result4)):;
+        $row1 = mysqli_fetch_array($result4);
         echo "5.".$row1[2]." ".$row1[1];
-        endwhile;
 ?>
 <br>
 <?php 
   $sql = "SELECT *  from playerTable where playerID = $Team[5]";
         $result5 = mysqli_query($conn, $sql);
-        while($row1 = mysqli_fetch_array($result5)):;
+        $row1 = mysqli_fetch_array($result5);
         echo "6.".$row1[2]." ".$row1[1];
-        endwhile;
 ?>
 <br>
 <?php
   $sql = "SELECT *  from playerTable where playerID = $Team[6]";
         $result6 = mysqli_query($conn, $sql);
-        while($row1 = mysqli_fetch_array($result6)):;
+        $row1 = mysqli_fetch_array($result6);
         echo "7.".$row1[2]." ".$row1[1];
-        endwhile;
 ?>
 <br>
 <?php 
@@ -101,17 +104,15 @@
 <?php 
   $sql = "SELECT *  from playerTable where playerID = $Team[8]";
         $result8 = mysqli_query($conn, $sql);
-        while($row1 = mysqli_fetch_array($result8)):;
+        $row1 = mysqli_fetch_array($result8);
         echo "9.".$row1[2]." ".$row1[1];
-        endwhile;
 ?>
 <br>
 <?php 
   $sql = "SELECT *  from playerTable where playerID = $Team[9]";
         $result9 = mysqli_query($conn, $sql);
-        while($row1 = mysqli_fetch_array($result9)):;
+        $row1 = mysqli_fetch_array($result9);
         echo "10.".$row1[2]." ".$row1[1];
-        endwhile;
 ?>
 
 
