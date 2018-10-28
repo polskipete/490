@@ -32,14 +32,14 @@ function playMatch($opponentID, $mainUserID, $conn){
 	//echo $mainUserID. "\n";
 	// returns score
 	$teamName= "team1";
-	$teamNameOpp="team2";
+	$teamNameOpp="team1";
 	$mainUserScore = calculateScore($teamName);
-	//echo $mainUserScore."\n";
+	echo $mainUserScore."\n";
 	$opponentUserScore = calculateScore($teamNameOpp);
 	echo $opponentUserScore;
 	$test = 1;
 	// this needs to be updated this is sudo code
-	if ($mainUserScore >= $opponentUserScore){
+	if ($mainUserScore > $opponentUserScore){
 		$sql = "SELECT win FROM loginTable WHERE userID = '$mainUserID'";
 		$win = mysqli_query($conn, $sql);
 		$userRow = mysqli_fetch_assoc($win);
@@ -60,10 +60,46 @@ function playMatch($opponentID, $mainUserID, $conn){
 		$winUpdate = mysqli_query($conn, $sqlTest);
 		
 	}
-	elseif ($mainUserScore >= $opponentUserScore){
+	elseif ($mainUserScore < $opponentUserScore){
+		$sql = "SELECT loss FROM loginTable WHERE userID = '$mainUserID'";
+		$win = mysqli_query($conn, $sql);
+		$userRow = mysqli_fetch_assoc($win);
+		// this might not work
+		$userRow["loss"] += 1;
+		echo $userRow["loss"];
+		$sqlTest = "UPDATE loginTable SET loss = '$userRow[loss]' where userID = $mainUserID ";
+		$winUpdate = mysqli_query($conn, $sqlTest);
 		
+		//Player win
+		$sql = "SELECT win FROM loginTable WHERE userID = '$opponentID'";
+		$loss = mysqli_query($conn, $sql);
+		$userRow = mysqli_fetch_assoc($win);
+		// this might not work
+		$userRow["win"] += 1;
+		//echo $userRow["win"];
+		$sqlTest = "UPDATE loginTable SET win = '$userRow[win]' where userID = $opponentID ";
+		$winUpdate = mysqli_query($conn, $sqlTest);	
 	}
 	else {
+		echo "DRAW";
+		$sql = "SELECT draw FROM loginTable WHERE userID = '$mainUserID'";
+		$draw = mysqli_query($conn, $sql);
+		$userRow = mysqli_fetch_assoc($draw);
+		// this might not work
+		$userRow["draw"] += 1;
+		echo $userRow["draw"];
+		$sqlTest = "UPDATE loginTable SET draw = '$userRow[draw]' where userID = $mainUserID ";
+		$winUpdate = mysqli_query($conn, $sqlTest);
+		
+		//Player win
+		$sql = "SELECT draw FROM loginTable WHERE userID = '$opponentID'";
+		$draw2 = mysqli_query($conn, $sql);
+		$userRow = mysqli_fetch_assoc($draw);
+		// this might not work
+		$userRow["draw"] += 1;
+		//echo $userRow["win"];
+		$sqlTest = "UPDATE loginTable SET draw = '$userRow[draw]' where userID = $opponentID ";
+		$winUpdate = mysqli_query($conn, $sqlTest);
 	}
 
 }
