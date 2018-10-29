@@ -1,5 +1,6 @@
 #!/usr/bin/php
 <?php
+session_start();
 var_dump($_POST);
 require_once('path.inc');
 require_once('get_host_info.inc');
@@ -34,5 +35,8 @@ if (isset($username))
 	echo "\n\n";
 
 	echo $argv[0]." END".PHP_EOL;
+	
+     	$_SESSION['name'] = $username;
+     	$_SESSION['username'] = $username;
 }
 
