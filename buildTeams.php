@@ -17,7 +17,14 @@ $name= $_SESSION['name'];
 
 	$Team = array($player1,$player2,$player3,$player4,$player5,$player6,$player7,$player8,$player9,$player10);
 	var_dump($Team);
-buildTeams($Team,$name);
+	buildTeams($Team,$name);
+	$_SESSION['team']= $Team;
+	header("Location: http://127.0.0.1/teamdisplay.php"); /* Redirect browser */
+ 
+
+
+
+
 function buildTeams($playerIDs, $sessionUser)
 {
         $servername = "localhost";

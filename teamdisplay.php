@@ -1,5 +1,5 @@
 <?php
-	require_once('rosterconfig.php');
+    require_once('rosterconfig.php');
 	$player1 = $_POST['player1search'];
 	$player2 = $_POST['player2search'];
 	$player3 = $_POST['player3search'];
@@ -13,7 +13,14 @@
 
 	$Team = array($player1,$player2,$player3,$player4,$player5,$player6,$player7,$player8,$player9,$player10);
 	
-	//put team ID in front of array 
+	//put team ID in front of array */
+
+    echo "hello ";
+    session_start();
+    $_GET['username'];
+    echo $_SESSION['username'];
+    $user = $_SESSION['username'];
+	
 
 ?>
 <!doctype html>
@@ -45,18 +52,21 @@
 <hr>
 
 <?php 
-  $sql = "SELECT *  from playerTable where playerID = $Team[0]";
-        $result = mysqli_query($conn, $sql);
-        while($row1 = mysqli_fetch_array($result)):;
-        echo "1.".$row1[2]." ".$row1[1];
-        endwhile;
+  $tableName = "team$user";
+  $sql = "SELECT * from $tableName";
+  $result = mysqli_query($conn, $sql);
+  $row1 = mysqli_fetch_array($result);
+  foreach ($row1 as &$row) {
+    echo $row;
+  }
+        
 ?>	
 <br>
 <?php 
   $sql = "SELECT *  from playerTable where playerID = $Team[1]";
         $result1 = mysqli_query($conn, $sql);
         $row1 = mysqli_fetch_array($result1);
-        echo "2.".$row1[2]." ".$row1[1];
+       // echo "2.".$row1[2]." ".$row1[1];
 ?>
 <br>
 <?php 
