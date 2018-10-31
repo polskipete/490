@@ -3,7 +3,7 @@
 
 session_start();
 include("config.php");
-include("buildTeams.php");
+include("calculateScore.php");
 echo "\n SESSION \n";
 $_GET['username'];
 echo $_SESSION['name'];

@@ -1,17 +1,23 @@
 #!/usr/bin/php
 <?php
-//$playerIDs must be an array
-//$sessionMock = "peter";
-//$sessionMockOpp = "yes";
-//playerIDs roster mock
-//MIMICING BUILD PAGE MOCK
-//$players = array("9249", "9411");
-//$teamName = $players[0];
-//$playersOpp = array("9510", "9509");
-//buildTeams($players, $sessionMock);
-//buildTeams($playersOpp, $sessionMockOpp);
-//calculateScore($players, $teamName);
-// connect to build team page
+session_start();
+$_GET['username'];
+$name= $_SESSION['name'];
+
+	$player1 = $_POST['player1search'];
+	$player2 = $_POST['player2search'];
+	$player3 = $_POST['player3search'];
+	$player4 = $_POST['player4search'];
+	$player5 = $_POST['player5search'];
+	$player6 = $_POST['player6search'];
+	$player7 = $_POST['player7search'];
+	$player8 = $_POST['player8search'];
+	$player9 = $_POST['player9search'];
+	$player10 = $_POST['player10search'];
+
+	$Team = array($player1,$player2,$player3,$player4,$player5,$player6,$player7,$player8,$player9,$player10);
+	var_dump($Team);
+buildTeams($Team,$name);
 function buildTeams($playerIDs, $sessionUser)
 {
         $servername = "localhost";
@@ -37,33 +43,7 @@ function buildTeams($playerIDs, $sessionUser)
 		
 	}
 }//
-// connect to match page
-function calculateScore($teamName)
-{
-	
-	$servername = "localhost";
-        $username = "dbAdmin";
-        $password = "password123!";
-	$dbname = "loginDB";
-        $conn = mysqli_connect($servername, $username, $password, $dbname);
-	$sql = "SELECT efficiency from $teamName";
-	$result = mysqli_query($conn, $sql);
-	$row = mysqli_fetch_all($result);
-	var_dump($row);
-	//echo $row[1][0];
-	$tableName = $teamName;	
-	//$totalscore=0;
-	$count= 0;
-	$average = 0;
-	foreach($row as $playerID)
-	{
-		$average += $row[$count][0];
-		$count++;
-	}
-	$total = $average/10;
-	//echo "\n".$total."\n";
-	return $total;
-}
+
 
 
 
