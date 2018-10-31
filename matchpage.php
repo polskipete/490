@@ -25,7 +25,7 @@
 
 <body>
        
-<form  class="form-inline" method="POST" action="testRabbitMQClient.php">
+<form  class="form-inline" method="POST" action="matchmaking.php">
 
 <div class="container">
    <h2> Match Making Page </h2>
@@ -33,6 +33,7 @@
    <h3> The results will be displayed after </h3>
 
    <button class="btn btn-lg btn-primary btn-block btn-login" type="submit" ="submit" id="submit">Start Match</button>
+
 
 </div>
 </body>

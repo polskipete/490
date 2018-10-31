@@ -1,14 +1,15 @@
 #!/usr/bin/php
 <?php
 //$playerIDs must be an array
-$sessionMock = "jonathan";
+//$sessionMock = "peter";
+//$sessionMockOpp = "yes";
 //playerIDs roster mock
 //MIMICING BUILD PAGE MOCK
-$players = array("9249", "9411");
+//$players = array("9249", "9411");
 //$teamName = $players[0];
 //$playersOpp = array("9510", "9509");
-buildTeams($players, $sessionMock);
-//buildTeams($playersOpp);
+//buildTeams($players, $sessionMock);
+//buildTeams($playersOpp, $sessionMockOpp);
 //calculateScore($players, $teamName);
 // connect to build team page
 function buildTeams($playerIDs, $sessionUser)
@@ -59,7 +60,7 @@ function calculateScore($teamName)
 		$average += $row[$count][0];
 		$count++;
 	}
-	$total = $average/($count);
+	$total = $average/10;
 	//echo "\n".$total."\n";
 	return $total;
 }

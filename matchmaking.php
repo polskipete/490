@@ -1,13 +1,17 @@
 #!/usr/bin/php
 <?php
 
+session_start();
 include("config.php");
 include("buildTeams.php");
-echo "\n BREAK \n";
+echo "\n SESSION \n";
+$_GET['username'];
+echo $_SESSION['name'];
+
 //var_dump( $conn);
 
 //mock data
-$username = "jonathan";
+$username = $_SESSION['name'];
 
 
 
@@ -15,10 +19,19 @@ $sql = "SELECT userID FROM loginTable WHERE username = '$username'";
 $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_assoc($result);
 
-
+$sql= "select MAX(userID) from loginTable;";
+$result = mysqli_query($conn, $sql);
+$countRow = mysqli_fetch_assoc($result);
+$max = intval($countRow['MAX(userID)']);
+echo $max; 
+$sql= "select MIN(userID) from loginTable;";
+$result = mysqli_query($conn, $sql);
+$countRow = mysqli_fetch_assoc($result);
+$min = intval($countRow['MIN(userID)']);
+echo $min;
 do
 {
-	$randomID = rand(1, 5);
+	$randomID = rand($min, $max);
 } while($row["userID"] == $randomID);
 
 //echo $randomID;
@@ -27,12 +40,25 @@ do
 $mainUserID = $row["userID"];
 playMatch($randomID, $mainUserID, $conn);
 //echo "Result: " . $row['userID'];
-//$
+//BUG: SETTING STATS TO ZERO: FIX IDEA GET VALUES AND SWITCH TO INT THEN ADD THEN INSERT INTO TABLES
 function playMatch($opponentID, $mainUserID, $conn){
 	//echo $mainUserID. "\n";
 	// returns score
-	$teamName= "team1";
-	$teamNameOpp="team1";
+	$sql = "SELECT username FROM loginTable WHERE userID = '$mainUserID'";
+		$username = mysqli_query($conn, $sql);
+		$userRow = mysqli_fetch_assoc($username);
+		echo "team".$userRow["username"] . "\n\n\n";
+	$teamName= "team".$userRow["username"];
+
+	
+	$sql = "SELECT username FROM loginTable WHERE userID = '$opponentID'";
+		$username = mysqli_query($conn, $sql);
+		$userRow = mysqli_fetch_assoc($username);
+		echo "team".$userRow["username"] . "\n\n\n";
+	$teamNameOpp= "team".$userRow["username"];
+
+
+
 	$mainUserScore = calculateScore($teamName);
 	echo $mainUserScore."\n";
 	$opponentUserScore = calculateScore($teamNameOpp);
@@ -43,7 +69,6 @@ function playMatch($opponentID, $mainUserID, $conn){
 		$sql = "SELECT win FROM loginTable WHERE userID = '$mainUserID'";
 		$win = mysqli_query($conn, $sql);
 		$userRow = mysqli_fetch_assoc($win);
-		// this might not work
 		$userRow["win"] += 1;
 		echo $userRow["win"];
 		$sqlTest = "UPDATE loginTable SET win = '$userRow[win]' where userID = $mainUserID ";
@@ -63,7 +88,7 @@ function playMatch($opponentID, $mainUserID, $conn){
 	elseif ($mainUserScore < $opponentUserScore){
 		$sql = "SELECT loss FROM loginTable WHERE userID = '$mainUserID'";
 		$win = mysqli_query($conn, $sql);
-		$userRow = mysqli_fetch_assoc($win);
+		$userRow = mysqli_fetch_assoc($loss);
 		// this might not work
 		$userRow["loss"] += 1;
 		echo $userRow["loss"];

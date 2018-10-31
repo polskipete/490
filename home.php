@@ -24,7 +24,7 @@
 
 
 <h2> Hello <?php echo $_SESSION['name'];
- ?> ,... you are a Cunt </h2>
+ ?> </h2>
 
 <div class="container">
 
