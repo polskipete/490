@@ -30,7 +30,7 @@
 
 </head>
 <body>
-	<form  class="form-inline" method="POST" action="testRabbitMQClient.php">
+	<form  class="form-inline" method="POST" action="Client.php">
 	<div class="container">
         <div class="card card-container">
             <img id="profile-img" class="profile-img-card" src="https://qph.fs.quoracdn.net/main-qimg-87001d2ce810c2f48c97032cbc905939" style="width:200.67px;height:150.67px; />
