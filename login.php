@@ -2,9 +2,8 @@
     //include('testRabbitMQServer.php');
     echo "hello ";
     session_start();
-    $_GET['username'];
+    $username = $_GET['username'];
     echo $_SESSION['username'];
-
 ?>
 
 <!doctype html>
