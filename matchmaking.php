@@ -69,40 +69,44 @@ function playMatch($opponentID, $mainUserID, $conn){
 		$sql = "SELECT win FROM loginTable WHERE userID = '$mainUserID'";
 		$win = mysqli_query($conn, $sql);
 		$userRow = mysqli_fetch_assoc($win);
-		$userRow["win"] += 1;
-		echo $userRow["win"];
-		$sqlTest = "UPDATE loginTable SET win = '$userRow[win]' where userID = $mainUserID ";
+		$winInt = ((int)$userRow["win"] + 1);
+		//$userRow["win"] += 1;
+		echo "WINNNNN".$winInt;
+		$sqlTest = "UPDATE loginTable SET win = '$winInt' where userID = $mainUserID ";
 		$winUpdate = mysqli_query($conn, $sqlTest);
 		
 		//Opp lost
 		$sql = "SELECT loss FROM loginTable WHERE userID = '$opponentID'";
 		$loss = mysqli_query($conn, $sql);
 		$userRow = mysqli_fetch_assoc($loss);
+		$lossInt = ((int)$userRow["loss"]) + 1;
 		// this might not work
-		$userRow["loss"] += 1;
-		echo $userRow["loss"];
-		$sqlTest = "UPDATE loginTable SET loss = '$userRow[loss]' where userID = $opponentID ";
+		//$userRow["loss"] += 1;
+		echo "LOSSSSS".$lossInt;
+		$sqlTest = "UPDATE loginTable SET loss = '$lossInt' where userID = $opponentID ";
 		$winUpdate = mysqli_query($conn, $sqlTest);
 		
 	}
 	elseif ($mainUserScore < $opponentUserScore){
 		$sql = "SELECT loss FROM loginTable WHERE userID = '$mainUserID'";
-		$win = mysqli_query($conn, $sql);
+		$loss = mysqli_query($conn, $sql);
 		$userRow = mysqli_fetch_assoc($loss);
+		$lossInt = ((int)$userRow["loss"]) + 1;
 		// this might not work
-		$userRow["loss"] += 1;
-		echo $userRow["loss"];
-		$sqlTest = "UPDATE loginTable SET loss = '$userRow[loss]' where userID = $mainUserID ";
+		//$userRow["loss"] += 1;
+		echo "losssss".$lossInt;
+		$sqlTest = "UPDATE loginTable SET loss = '$lossInt' where userID = $mainUserID ";
 		$winUpdate = mysqli_query($conn, $sqlTest);
 		
 		//Player win
 		$sql = "SELECT win FROM loginTable WHERE userID = '$opponentID'";
-		$loss = mysqli_query($conn, $sql);
+		$win = mysqli_query($conn, $sql);
 		$userRow = mysqli_fetch_assoc($win);
+		$winInt = ((int)$userRow["win"]) + 1;
 		// this might not work
-		$userRow["win"] += 1;
-		//echo $userRow["win"];
-		$sqlTest = "UPDATE loginTable SET win = '$userRow[win]' where userID = $opponentID ";
+		//$userRow["win"] += 1;
+		echo "winnnnn".$winInt;
+		$sqlTest = "UPDATE loginTable SET win = '$winInt' where userID = $opponentID ";
 		$winUpdate = mysqli_query($conn, $sqlTest);	
 	}
 	else {
@@ -110,21 +114,23 @@ function playMatch($opponentID, $mainUserID, $conn){
 		$sql = "SELECT draw FROM loginTable WHERE userID = '$mainUserID'";
 		$draw = mysqli_query($conn, $sql);
 		$userRow = mysqli_fetch_assoc($draw);
+		$drawInt = ((int)$userRow["draw"]) + 1;
 		// this might not work
-		$userRow["draw"] += 1;
-		echo $userRow["draw"];
-		$sqlTest = "UPDATE loginTable SET draw = '$userRow[draw]' where userID = $mainUserID ";
+		//$userRow["draw"] += 1;
+		echo "DRAWWWWW".$drawInt;
+		$sqlTest = "UPDATE loginTable SET draw = '$drawInt' where userID = $mainUserID ";
 		$winUpdate = mysqli_query($conn, $sqlTest);
 		
 		//Player win
-		$sql = "SELECT draw FROM loginTable WHERE userID = '$opponentID'";
-		$draw2 = mysqli_query($conn, $sql);
-		$userRow = mysqli_fetch_assoc($draw);
+		$sqlTwo = "SELECT draw FROM loginTable WHERE userID = '$opponentID'";
+		$drawTwo = mysqli_query($conn, $sqlTwo);
+		$userRowTwo = mysqli_fetch_assoc($drawTwo);
+		$drawIntTwo = ((int)$userRowTwo["draw"]) + 1;
 		// this might not work
-		$userRow["draw"] += 1;
-		//echo $userRow["win"];
-		$sqlTest = "UPDATE loginTable SET draw = '$userRow[draw]' where userID = $opponentID ";
-		$winUpdate = mysqli_query($conn, $sqlTest);
+		//$userRow["draw"] += 1;
+		echo "draw".$drawIntTwo;
+		$sqlTestTwo = "UPDATE loginTable SET draw = '$drawIntTwo' where userID = $opponentID ";
+		$winUpdate = mysqli_query($conn, $sqlTestTwo);
 	}
 
 }
