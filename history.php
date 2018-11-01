@@ -1,10 +1,31 @@
 <?php
     //require_once(testRabbitMQServer.php);
+    require_once('config.php');
     echo "hello ";
     session_start();
     $_GET['username'];
     echo $_SESSION['username'];
+    $user = $_SESSION['username'];
 
+
+  $sql = "SELECT win FROM loginTable WHERE username= '$user';";
+  $result = mysqli_query($conn, $sql);
+  $row1 = mysqli_fetch_all($result);
+  //var_dump($row1);
+  $win = $row1[0][0];
+
+  $sql = "SELECT lose FROM loginTable WHERE username= '$user';";
+  $result2 = mysqli_query($conn, $sql);
+  $row1 = mysqli_fetch_all($result2);
+  //var_dump($row1);
+  $lose = $row1[0][0];
+ 
+  $sql = "SELECT draw FROM loginTable WHERE username= '$user';";
+  $result3 = mysqli_query($conn, $sql);
+  $row1 = mysqli_fetch_all($result3);
+  //var_dump($row1);
+  $draw = $row1[0][0];
+  
 ?>
 
 <!doctype html>
@@ -29,11 +50,15 @@
 
 <form  class="form-inline" method="POST" action="testRabbitMQClient.php">
 
+  
+
+
 <div class="container">
    <h2> History </h2>
    <h3> Below is your Cummulative History </h3>
-   <h3> Wins:  <?php       ?> </h3>
-   <h3> Losses: <?php     ?> </h3>
+   <h3> Wins:  <?php  echo $win;    ?> </h3>
+   <h3> Losses: <?php echo  $lose;  ?> </h3>
+   <h3> Draws: <?php  echo $draw;  ?> </h3>
 
 </div>
 

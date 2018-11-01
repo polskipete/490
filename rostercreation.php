@@ -58,7 +58,7 @@
 </head>
 <body>
 
-<form class="form-inline" method="post" action="teamdisplay.php">
+<form class="form-inline" method="post" action="buildTeams.php">
 
 
 <div class="container">
