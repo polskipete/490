@@ -37,5 +37,6 @@ if (isset($username))
 	
      	$_SESSION['name'] = $username;
      	$_SESSION['username'] = $username;
+	header('Location: home.php');
 }
 

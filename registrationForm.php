@@ -66,12 +66,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 			$param_username = $username;
 			//Hashed password
 			$param_password = password_hash($password, PASSWORD_DEFAULT);
-			
-			/*if(mysqli_stmt_execute($stmt)){
-				header("location: login.html");
-			}else{
-				echo "Something went wrong. Try again later."
-			}*/
+			header('Location: login.php');
 		}
 		mysqli_stmt_close($stmt);
 	}

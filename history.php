@@ -14,11 +14,11 @@
   //var_dump($row1);
   $win = $row1[0][0];
 
-  $sql = "SELECT lose FROM loginTable WHERE username= '$user';";
+  $sql = "SELECT loss FROM loginTable WHERE username= '$user';";
   $result2 = mysqli_query($conn, $sql);
   $row1 = mysqli_fetch_all($result2);
   //var_dump($row1);
-  $lose = $row1[0][0];
+  $loss = $row1[0][0];
  
   $sql = "SELECT draw FROM loginTable WHERE username= '$user';";
   $result3 = mysqli_query($conn, $sql);
@@ -57,7 +57,7 @@
    <h2> History </h2>
    <h3> Below is your Cummulative History </h3>
    <h3> Wins:  <?php  echo $win;    ?> </h3>
-   <h3> Losses: <?php echo  $lose;  ?> </h3>
+   <h3> Losses: <?php echo  $loss;  ?> </h3>
    <h3> Draws: <?php  echo $draw;  ?> </h3>
 
 </div>

@@ -132,6 +132,7 @@ function playMatch($opponentID, $mainUserID, $conn){
 		$sqlTestTwo = "UPDATE loginTable SET draw = '$drawIntTwo' where userID = $opponentID ";
 		$winUpdate = mysqli_query($conn, $sqlTestTwo);
 	}
+	header('Location: history.php');
 
 }
 		
