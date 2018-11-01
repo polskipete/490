@@ -19,7 +19,7 @@ $name= $_SESSION['name'];
 	var_dump($Team);
 	buildTeams($Team,$name);
 	$_SESSION['team']= $Team;
-	header("Location: http://127.0.0.1/teamdisplay.php"); /* Redirect browser */
+	header("Location: teamdisplay.php"); /* Redirect browser */
  
 
 

@@ -52,78 +52,22 @@
 <hr>
 
 <?php 
-  $tableName = "team$user";
-  $sql = "SELECT * from $tableName";
+    $tableName = "team$user";
+    //echo $tableName;
+    echo "\n";
+  $sql = "SELECT lastName from $tableName";
   $result = mysqli_query($conn, $sql);
-  $row1 = mysqli_fetch_array($result);
-  foreach ($row1 as &$row) {
-    echo $row;
-  }
-        
+  $row1 = mysqli_fetch_all($result);
+  //var_dump($row1);
+  $count=0;
+  $count2=1;
+  foreach($row1 as $value){
+  	echo $count2." ".$row1[$count][0];
+?> <br> <?php 
+	$count++;
+        $count2++;
+        }
 ?>	
-<br>
-<?php 
-  $sql = "SELECT *  from playerTable where playerID = $Team[1]";
-        $result1 = mysqli_query($conn, $sql);
-        $row1 = mysqli_fetch_array($result1);
-       // echo "2.".$row1[2]." ".$row1[1];
-?>
-<br>
-<?php 
-  $sql = "SELECT *  from playerTable where playerID = $Team[2]";
-        $result2 = mysqli_query($conn, $sql);
-        $row1 = mysqli_fetch_array($result2);
-        echo "3.".$row1[2]." ".$row1[1];
-?>
-<br>
-<?php 
-  $sql = "SELECT *  from playerTable where playerID = $Team[3]";
-        $result3 = mysqli_query($conn, $sql);
-        $row1 = mysqli_fetch_array($result3);
-        echo "4.".$row1[2]." ".$row1[1];
-?>
-<br>
-<?php
-  $sql = "SELECT *  from playerTable where playerID = $Team[4]";
-        $result4 = mysqli_query($conn, $sql);
-        $row1 = mysqli_fetch_array($result4);
-        echo "5.".$row1[2]." ".$row1[1];
-?>
-<br>
-<?php 
-  $sql = "SELECT *  from playerTable where playerID = $Team[5]";
-        $result5 = mysqli_query($conn, $sql);
-        $row1 = mysqli_fetch_array($result5);
-        echo "6.".$row1[2]." ".$row1[1];
-?>
-<br>
-<?php
-  $sql = "SELECT *  from playerTable where playerID = $Team[6]";
-        $result6 = mysqli_query($conn, $sql);
-        $row1 = mysqli_fetch_array($result6);
-        echo "7.".$row1[2]." ".$row1[1];
-?>
-<br>
-<?php 
-  $sql = "SELECT *  from playerTable where playerID = $Team[7]";
-        $result7 = mysqli_query($conn, $sql);
-        $row1 = mysqli_fetch_array($result7);
-        echo "8.".$row1[2]." ".$row1[1];
-?>
-<br>
-<?php 
-  $sql = "SELECT *  from playerTable where playerID = $Team[8]";
-        $result8 = mysqli_query($conn, $sql);
-        $row1 = mysqli_fetch_array($result8);
-        echo "9.".$row1[2]." ".$row1[1];
-?>
-<br>
-<?php 
-  $sql = "SELECT *  from playerTable where playerID = $Team[9]";
-        $result9 = mysqli_query($conn, $sql);
-        $row1 = mysqli_fetch_array($result9);
-        echo "10.".$row1[2]." ".$row1[1];
-?>
 
 
 </div></div>
