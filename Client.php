@@ -1,4 +1,3 @@
-#!/usr/bin/php
 <?php
 session_start();
 var_dump($_POST);
@@ -12,7 +11,7 @@ echo($username);
 if (isset($username))
 {
 	echo "in";
-	$client = new rabbitMQClient("testRabbitMQ.ini","testServer");
+	$client = new rabbitMQClient("RabbitMQ.ini","testServer");
 	if (isset($argv[1]))
 	{
 	  $msg = $argv[1];
