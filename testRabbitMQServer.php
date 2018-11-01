@@ -63,10 +63,14 @@ function doLogin($user,$pass)
 
 function requestProcessor($request)
 {
+  $date = new DateTime();
+  $dateString = $date->format("y:m:d h:i:s");
   echo "received request".PHP_EOL;
   var_dump($request);
   if(!isset($request['type']))
   {
+    $error = $dateString." RabbitMQ request type invalid\n";
+    file_put_contents('Errorlog.txt', $error, FILE_APPEND);
     return "ERROR: unsupported message type";
   }
   switch ($request['type'])
@@ -94,6 +98,8 @@ function dataStore($array){
         $username = "dbAdmin";
         $password = "password123!";
         $dbname = "loginDB";
+	$date = new DateTime();
+	$dateString = $date->format("y:m:d h:i:s");
 	// $ array will store below function
 	// = requestProcessor();
 	//$array = array("12345", "Van Gundy", "Stan", "88", "DET", "0", "0", "0", "0", "0", "0", "0", "0", "2", "0");
@@ -109,7 +115,8 @@ function dataStore($array){
         //Comment if DB login was succesful or not
         if(!$conn)
         {
-                 die("Connection failed: " . mysqli_connect_error());
+		$error = $dateString." DB Connection Failed: ".mysqli_connect_error()."\n";
+                file_put_contents('Errorlog.txt', $error, FILE_APPEND);
         }
         else
 	{
@@ -136,13 +143,15 @@ function dataStore($array){
 
 		$sql = "INSERT INTO playerTable(playerID, lastName, firstName, teamID, team, points, FG, FGAtt,FTAttempt, FTMade, offRebounds, defRebounds, steals, assists, blocks, fouls, turnover, efficiency) VALUES('$playerID', '$lastname', '$firstname', '$teamID', '$team', '$points','$fieldGoals', '$fieldGoalsAtt', '$freethrowAttempt', '$freethrowMade', '$offensiveRebounds', '$defensiveRebounds', '$steals', '$assists', '$blocks', '$fouls', '$turnover', '$efficiency')";
                 if(mysqli_query($conn, $sql))
-                {
-                        echo "New record created\n";
+                {			                        
+			echo "New record created\n";
                 }       
                 else
                 {
                         echo "Error: ".$sql."<br>".mysqli_error($conn);
-                }
+			$error = $dateString." New record not created ".mysqli_error($conn)."\n";                
+			file_put_contents('Errorlog.txt', $error, FILE_APPEND);
+		}
         }  
 
 
@@ -153,7 +162,12 @@ function dataStore($array){
 
 function storePlayerStats ($obj){
 		$playerCount = 0;
-		
+		$date = new DateTime();
+		$dateString = $date->format("y:m:d h:i:s");
+		if(!$obj)
+		{
+			file_put_contents('Errorlog.txt', $dateString."URL not working\n", FILE_APPEND);
+		}
 		foreach ($obj["playerStatsTotals"] as $player){
 			// all data for one player
 			//var_dump($obj["playerStatsTotals"][$playerCount]);
