@@ -33,7 +33,7 @@ function doLogin($user,$pass)
         if(!$conn)
 	{
 		$error = $dateString." DB Connection Failed: ".mysqli_connect_error()."\n";
-		file_put_contents('Errorlog.txt', $error, FILE_APPEND);
+		file_put_contents('Errorlog.log', $error, FILE_APPEND);
 	}
 	else
 	{
@@ -54,7 +54,7 @@ function doLogin($user,$pass)
        		{
 			printf ('Login failed');
 			$error = $dateString." Login failed"."\n";
-			file_put_contents('Errorlog.txt', $error, FILE_APPEND);
+			file_put_contents('Errorlog.log', $error, FILE_APPEND);
                 	return false;
         	}
 
@@ -70,7 +70,7 @@ function requestProcessor($request)
   if(!isset($request['type']))
   {
     $error = $dateString." RabbitMQ request type invalid\n";
-    file_put_contents('Errorlog.txt', $error, FILE_APPEND);
+    file_put_contents('Errorlog.log', $error, FILE_APPEND);
     return "ERROR: unsupported message type";
   }
   switch ($request['type'])
@@ -116,7 +116,7 @@ function dataStore($array){
         if(!$conn)
         {
 		$error = $dateString." DB Connection Failed: ".mysqli_connect_error()."\n";
-                file_put_contents('Errorlog.txt', $error, FILE_APPEND);
+                file_put_contents('Errorlog.log', $error, FILE_APPEND);
         }
         else
 	{
@@ -150,7 +150,7 @@ function dataStore($array){
                 {
                         echo "Error: ".$sql."<br>".mysqli_error($conn);
 			$error = $dateString." New record not created ".mysqli_error($conn)."\n";                
-			file_put_contents('Errorlog.txt', $error, FILE_APPEND);
+			file_put_contents('Errorlog.log', $error, FILE_APPEND);
 		}
         }  
 
@@ -166,7 +166,7 @@ function storePlayerStats ($obj){
 		$dateString = $date->format("y:m:d h:i:s");
 		if(!$obj)
 		{
-			file_put_contents('Errorlog.txt', $dateString."URL not working\n", FILE_APPEND);
+			file_put_contents('Errorlog.log', $dateString."URL not working\n", FILE_APPEND);
 		}
 		foreach ($obj["playerStatsTotals"] as $player){
 			// all data for one player
