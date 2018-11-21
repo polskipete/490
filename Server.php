@@ -1,5 +1,6 @@
 #!/usr/bin/php
 <?php
+require_once('rosterconfig.php');
 require_once('path.inc');	
 require_once('get_host_info.inc');
 require_once('rabbitMQLib.inc');
@@ -15,6 +16,7 @@ foreach($teams as $team){
 	//probably will use for error logging, to make sure each team gets thro
 	//var_dump($stats);
 }
+
 
 //check if all 30 teams get through
 echo $count . "SERVER";
@@ -78,7 +80,9 @@ function requestProcessor($request)
     case "Login":
       return doLogin($request['username'],$request['password']);
     case "validate_session":
-      return doValidate($request['sessionId']);
+	    return doValidate($request['sessionId']);
+    case "getTeam":
+	    return teamFetch($request['user'], $request['statement']);
   }
   return array("returnCode" => '0', 'message'=>"Server received request and processed");
 }
@@ -92,6 +96,22 @@ function ClearPlayerDB(){
 	mysqli_query($conn, $drop);
 }
 
+function teamFetch($user, $sql)
+{
+        $servername = "localhost";
+        $username = "dbAdmin";
+        $password = "password123!";
+        $dbname = "loginDB";
+        $conn = mysqli_connect($servername, $username, $password, $dbname);
+	if($conn){
+		echo "connection";
+	}
+	echo "\n Passing through Rabbit!";
+	$tableName = "team$user";
+	$result = mysqli_query($conn, $sql);
+	$row1 = mysqli_fetch_all($result);
+	return $row1;
+}
 function dataStore($array){
 
 	$servername = "localhost";
