@@ -9,14 +9,16 @@
 		echo $version;
 		$time = date('Y-m-d G:i:s');
 		echo $time;
-		$sql = "INSERT INTO deploymentTable (version, location, date) VALUES 			('$version','deployment', '$time')";
+		$sql = "INSERT INTO deploymentTable (version, location, date) VALUES 			('$version','$version.tar.gz', '$time')";
 		$add = mysqli_query($conn, $sql);
 	}
 	
 	$filename = "1_0.tar.gz";
-
-	echo chopFilename($filename);
-	addVersion($conn, chopFilename($filename));
+	//mock server shit
+	$path = '../cunt.tar.gz';
+	$name = basename($path);
+	echo chopFilename($name);
+	addVersion($conn, chopFilename($name));
 
 	
 ?>
