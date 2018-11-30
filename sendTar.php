@@ -29,7 +29,7 @@ if(trim($line) == 'update')
 {
 	//Enter update code here
 	echo "Updating!\n";
-	$vstat = "2_0.tar.gz";
+	$vstat = "5_html.tar.gz";
 	//exit;
 }
 if(trim($line) == 'rollback')
@@ -51,7 +51,7 @@ if(trim($line) == 'marc@192.168.1.8')
 	echo "Sending to ".$recipient."\n";
         //exit;
 }
-$send = "sudo scp ".$vstat." ".$recipient.":patches/transferingPatch\n";
+$send = "sudo scp ".$vstat." ".$recipient.":/var/www/html/490/Update\n";
 echo $send;
 exec($send);
 echo "\nThank you, continuing... \n";
