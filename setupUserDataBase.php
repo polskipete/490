@@ -8,8 +8,8 @@
  */
 /* Copy and paste when logged into dbAdmin
  	use loginDB;
-	CREATE TABLE loginTable(username varchar(30), password varchar(30), userID INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, win INT(11), loss INT(11), draw INT(11), teamID INT(11));
-	INSERT INTO loginTable VALUES ('peter', '123456');
+	CREATE TABLE loginTable(username varchar(30), password varchar(30), userID INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, win INT(11), loss INT(11), draw INT(11), teamID INT(11), money INT (11));
+	insert into loginTable (username, password, win, loss, draw, money) VALUES ('peter', '123456', '1', '0', '1', '1000');
 	SELECT * FROM loginTable;
  
  */
