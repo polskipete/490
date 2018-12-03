@@ -1,11 +1,26 @@
 #!/usr/bin/php
 <?php
 
-	//get from .json?
-	echo "Type In Version Number\n";
-	$version = readline("Version Number: ");
+	//get from .json
+	echo "Which version would you like to compress?";
+	$version = readline("html, phpBE, or phpFE: ");
 	readline_add_history($version);
-	$compression = "sudo tar -czvf Update/'$version'.tar.gz /var/www/html/490/html";
+	if($version == "html")
+	{
+	        $compression = "sudo tar -czvf Update/'$version'.tar.gz /var/www/html/490/html";
+
+	}
+        if($version == "phpBE")
+        {
+                $compression = "sudo tar -czvf Update/'$version'.tar.gz /var/www/html/490/phpBE";
+
+	}
+        if($version == "phpFE")
+        {
+                $compression = "sudo tar -czvf Update/'$version'.tar.gz /var/www/html/490/phpFE";
+
+        }
+
 	createTAR($compression, $version);
 
 	function createTAR($compression, $version)
