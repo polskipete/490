@@ -5,7 +5,7 @@
 	echo "Type In Version Number\n";
 	$version = readline("Version Number: ");
 	readline_add_history($version);
-	$compression = "sudo tar -czvf '$version'.tar.gz /var/www/html/490/html";
+	$compression = "sudo tar -czvf Update/'$version'.tar.gz /var/www/html/490/html";
 	createTAR($compression, $version);
 
 	function createTAR($compression, $version)
