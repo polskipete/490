@@ -1,5 +1,6 @@
 #!/usr/bin/php
 <?php
+require_once('rosterconfig.php');
 require_once('path.inc');	
 require_once('get_host_info.inc');
 require_once('rabbitMQLib.inc');
@@ -15,6 +16,7 @@ foreach($teams as $team){
 	//probably will use for error logging, to make sure each team gets thro
 	//var_dump($stats);
 }
+
 
 //check if all 30 teams get through
 echo $count . "SERVER";
@@ -33,7 +35,7 @@ function doLogin($user,$pass)
         if(!$conn)
 	{
 		$error = $dateString." DB Connection Failed: ".mysqli_connect_error()."\n";
-		file_put_contents('Errorlog.txt', $error, FILE_APPEND);
+		file_put_contents('Errorlog.log', $error, FILE_APPEND);
 	}
 	else
 	{
@@ -54,7 +56,7 @@ function doLogin($user,$pass)
        		{
 			printf ('Login failed');
 			$error = $dateString." Login failed"."\n";
-			file_put_contents('Errorlog.txt', $error, FILE_APPEND);
+			file_put_contents('Errorlog.log', $error, FILE_APPEND);
                 	return false;
         	}
 
@@ -70,7 +72,7 @@ function requestProcessor($request)
   if(!isset($request['type']))
   {
     $error = $dateString." RabbitMQ request type invalid\n";
-    file_put_contents('Errorlog.txt', $error, FILE_APPEND);
+    file_put_contents('Errorlog.log', $error, FILE_APPEND);
     return "ERROR: unsupported message type";
   }
   switch ($request['type'])
@@ -78,7 +80,9 @@ function requestProcessor($request)
     case "Login":
       return doLogin($request['username'],$request['password']);
     case "validate_session":
-      return doValidate($request['sessionId']);
+	    return doValidate($request['sessionId']);
+    case "getTeam":
+	    return teamFetch($request['user'], $request['statement']);
   }
   return array("returnCode" => '0', 'message'=>"Server received request and processed");
 }
@@ -92,6 +96,22 @@ function ClearPlayerDB(){
 	mysqli_query($conn, $drop);
 }
 
+function teamFetch($user, $sql)
+{
+        $servername = "localhost";
+        $username = "dbAdmin";
+        $password = "password123!";
+        $dbname = "loginDB";
+        $conn = mysqli_connect($servername, $username, $password, $dbname);
+	if($conn){
+		echo "connection";
+	}
+	echo "\n Passing through Rabbit!";
+	$tableName = "team$user";
+	$result = mysqli_query($conn, $sql);
+	$row1 = mysqli_fetch_all($result);
+	return $row1;
+}
 function dataStore($array){
 
 	$servername = "localhost";
@@ -116,7 +136,7 @@ function dataStore($array){
         if(!$conn)
         {
 		$error = $dateString." DB Connection Failed: ".mysqli_connect_error()."\n";
-                file_put_contents('Errorlog.txt', $error, FILE_APPEND);
+                file_put_contents('Errorlog.log', $error, FILE_APPEND);
         }
         else
 	{
@@ -150,7 +170,7 @@ function dataStore($array){
                 {
                         echo "Error: ".$sql."<br>".mysqli_error($conn);
 			$error = $dateString." New record not created ".mysqli_error($conn)."\n";                
-			file_put_contents('Errorlog.txt', $error, FILE_APPEND);
+			file_put_contents('Errorlog.log', $error, FILE_APPEND);
 		}
         }  
 
@@ -166,7 +186,7 @@ function storePlayerStats ($obj){
 		$dateString = $date->format("y:m:d h:i:s");
 		if(!$obj)
 		{
-			file_put_contents('Errorlog.txt', $dateString."URL not working\n", FILE_APPEND);
+			file_put_contents('Errorlog.log', $dateString."URL not working\n", FILE_APPEND);
 		}
 		foreach ($obj["playerStatsTotals"] as $player){
 			// all data for one player
