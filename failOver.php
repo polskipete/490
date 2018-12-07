@@ -24,6 +24,8 @@ do{
                 echo $count ."\n";
              
         }
+sleep(15);
+echo ("\n Sleep done")
 }while ($loop);
 ?>
 

@@ -2,14 +2,17 @@
 <?php 
 	$file = fileGetName();
 	$destination = transferChop($file);
-	transfer($file, $destination);
+	transfer($file);
 	extraction($file, $destination);
-	function transfer($file, $destination){
-		$transfer = "sudo mv Update/$file ./";
+	exec("sudo rm /var/www/html/490/$file");
+	function transfer($file){
+		//echo $file;
+		$transfer = "sudo mv /var/www/html/490/Update/$file /var/www/html/490/";
 		exec($transfer);
 	}
 	function extraction($file, $destination){
-		$extract = "sudo tar -xvf $file -C $destination/";
+		echo $file . "\n" . $destination;
+		$extract = "sudo tar -xvf /var/www/html/490/$file -C /var/www/html/490/$destination";
 		exec($extract);
 	}
 	function transferChop($filename){
@@ -19,8 +22,12 @@
 		return $round3;
 	}
 	function fileGetName(){
-		$path = 'Update/';
+		$path = '/var/www/html/490/Update/';
 		$file = array_diff(scandir($path), array('.','..'));
+		//echo $file[2];
+		if($file[2] == ""){
+			exit();
+		}
 		return $file[2];
 	}
 ?>
