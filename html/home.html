@@ -1,0 +1,43 @@
+<!doctype html>
+<?php
+     session_start();
+     $_SESSION['name'] = 'John Snow';
+     $_SESSION['username'] = 'JSnow03';
+     echo "cunt3";
+     require_once(testRabbitMQServer.php);
+     $user = $_POST['user'];
+     $pass = $_POST['pass'];
+?>
+
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="stylesheet" type="text/css" href="home.css">
+
+<title>Home Page</title>
+
+<ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="rostercreation.php">Team Making</a></li>
+  <li><a href="matchpage.php">Match Making</a></li>
+  <li><a href="history.html">History</a></li>
+  <li><a href="login.html">Log Out</a></li>
+</ul> 
+
+</head>
+<body>
+<h2> <?php echo $_SESSION['username']; ?> </h2>
+<h1> <?php 
+	echo "cunt"; 
+	?> cunt 2 </h1>
+
+<div class="container">
+
+
+
+	
+</div>
+</body>
+</html>
+
