@@ -29,8 +29,10 @@
 		return $newFile;
 	}
 	function getFileName(){
-		$path = 'patches/transferingPatch';
+		$path = '/var/www/html/490/deployment/patches/transferingPatch';
 		$file = array_diff(scandir($path), array('.', '..'));
+		echo $file[2];
+		if($file[2]==''){exit();}
 		return $file[2];	
 	}
 	function getFileType($filename){
@@ -42,7 +44,9 @@
 		return $round2 = substr ($round1, 0, strrpos($round1,'.'));
 	}	
 	function moveFile($newFileName, $filename){
-		$movePatch = "\n sudo mv patches/transferingPatch/$filename patches/$newFileName";
+		echo "\n" . $filename . "\n";
+		echo $newFileName;
+		$movePatch = "\n sudo mv /var/www/html/490/deployment/patches/transferingPatch/$filename /var/www/html/490/deployment/patches/$newFileName";
 		exec($movePatch);
 
 	}

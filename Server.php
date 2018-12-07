@@ -56,7 +56,7 @@ function doLogin($user,$pass)
        		{
 			printf ('Login failed');
 			$error = $dateString." Login failed"."\n";
-			file_put_contents('Errorlog.log', $error, FILE_APPEND);
+			//file_put_contents('Errorlog.log', $error, FILE_APPEND);
                 	return false;
         	}
 
