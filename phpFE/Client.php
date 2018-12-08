@@ -1,9 +1,9 @@
 <?php
 session_start();
-var_dump($_POST);
-require_once('path.inc');
-require_once('get_host_info.inc');
-require_once('rabbitMQLib.inc');
+//var_dump($_POST);
+require_once('../path.inc');
+require_once('../get_host_info.inc');
+require_once('../rabbitMQLib.inc');
 $username = $_POST['inputUser'];
 $password = $_POST['inputPassword'];
 echo "OUT \n";
@@ -37,6 +37,6 @@ if (isset($username))
 	
      	$_SESSION['name'] = $username;
      	$_SESSION['username'] = $username;
-	header('Location: home.php');
+	header('Location: main.php');
 }
 

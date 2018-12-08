@@ -1,9 +1,13 @@
+<?php
+	session_start();
+?>
 <!-- Header -->
+
   <header class="w3-container" style="padding-top:22px">
     <h5><b><i class="fa fa-dashboard"></i> My Team Making</b></h5>
   </header> 
 
-  <!--<form class="form-inline" method="post" action="buildTeams.php">-->
+  <form class="form-inline" method="post" action="buildTeams.php">
 
 
 	<div class="w3-container">

@@ -1,10 +1,21 @@
 <?php
-    require_once('config.php');
+    require_once('../phpBE/config.php');
     echo "hello ";
     session_start();
     $_GET['username'];
     echo $_SESSION['username'];
     $user = $_SESSION['username'];
+
+    $_SESSION["player1"] = "Individual Player 1";
+    $_SESSION["player2"] = "Individual Player 2";
+    $_SESSION["player3"] = "Individual Player 3";
+    $_SESSION["player4"] = "Individual Player 4";
+    $_SESSION["player5"] = "Individual Player 5";
+    $_SESSION["player6"] = "Individual Player 6";
+    $_SESSION["player7"] = "Individual Player 7";
+    $_SESSION["player8"] = "Individual Player 8";
+    $_SESSION["player9"] = "Individual Player 9";
+    $_SESSION["player10"] = "Individual Player 10";
 
     $sql = "SELECT money FROM loginTable WHERE username= '$user';";
     $result = mysqli_query($conn, $sql);
@@ -155,34 +166,34 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
         <h5>Current Team:</h5>
         <table class="w3-table w3-striped w3-white">
           <tr>
-            <td>Individual Player 1</td>
+            <td><?phpecho $_SESSION["player1"];?></td>
           </tr>
           <tr>
-            <td>Individual Player 2</td>
+            <td><?phpecho $_SESSION["player2"];?></td>
           </tr>
           <tr>
-            <td>Individual Player 3</td>
+            <td><?phpecho $_SESSION["player3"];?></td>
           </tr>
           <tr>
-            <td>Individual Player 4</td>
+            <td><?phpecho $_SESSION["player4"];?></td>
           </tr>
           <tr>
-            <td>Individual Player 5</td>
+            <td><?phpecho $_SESSION["player5"];?></td>
           </tr>
           <tr>
-            <td>Individual Player 6</td>
+            <td><?phpecho $_SESSION["player6"];?></td>
           </tr>
           <tr>
-            <td>Individual Player 7</td>
+            <td><?phpecho $_SESSION["player7"];?></td>
           </tr>
           <tr>
-            <td>Individual Player 8</td>
+            <td><?phpecho $_SESSION["player8"];?></td>
           </tr>
           <tr>
-            <td>Individual Player 9</td>
+            <td><?phpecho $_SESSION["player9"];?></td>
           </tr>
           <tr>
-            <td>Individual Player 10</td>
+            <td><?phpecho $_SESSION["player10"];?></td>
           </tr>
         </table>
       </div>

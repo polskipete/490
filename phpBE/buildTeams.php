@@ -19,8 +19,18 @@ $name= $_SESSION['name'];
 	var_dump($Team);
 	buildTeams($Team,$name);
 	$_SESSION['team']= $Team;
+	$_SESSION["player1"] = $player1;
+    	$_SESSION["player2"] = $player2;
+    	$_SESSION["player3"] = $player3;
+    	$_SESSION["player4"] = $player4;
+    	$_SESSION["player5"] = $player5;
+    	$_SESSION["player6"] = $player6;
+    	$_SESSION["player7"] = $player7;
+    	$_SESSION["player8"] = $player8;
+    	$_SESSION["player9"] = $player9;
+    	$_SESSION["player10"] = $player10;
 	header("Location: teamdisplay.php"); /* Redirect browser */
- 
+ 	
 
 
 
