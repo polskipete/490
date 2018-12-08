@@ -54,6 +54,7 @@ function registerFunction($Server){
 			$password = trim($_POST["password"]);
 		}
 		
+<<<<<<< HEAD
 
 		if(empty($username_err) && empty($password_err)){
 			$user = $_POST[username];
@@ -63,6 +64,17 @@ function registerFunction($Server){
 			echo "Fcuk";
 			$sql = "INSERT INTO loginTable(username, password, win, loss, draw, money) VALUES ('$user', '$pass', '0', '0', '0', '1000')";
 			$sql2 = "UPDATE loginTable SET teamID = userID";
+=======
+		$tableName = "team$testID";
+		$tableName2 = "history$username";
+		$sql3 = "CREATE TABLE ".$tableName."(playerID varchar(30), lastName varchar(30), efficiency varchar(30))";
+		$sql4 = "CREATE TABLE ".$tableName2."(money int(11), lossOrGain varchar(30), date DATE)";		
+		if($stmt = mysqli_query($conn, $sql)){
+			mysqli_query($conn, $sql2);
+			mysqli_query($conn, $sql3);
+			mysqli_query($conn, $sql4);
+			mysqli_stmt_bind_param($stmt, "ss", $param_username, $param_password);
+>>>>>>> eb73f1207350989dc16801482cf90fdf78d734bc
 			
 			$tableName = "team$testID";
 			$sql3 = "CREATE TABLE ".$tableName."(playerID varchar(30), lastName varchar(30), efficiency varchar(30))";		
