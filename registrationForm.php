@@ -57,10 +57,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 		$sql2 = "UPDATE loginTable SET teamID = userID";
 		
 		$tableName = "team$testID";
-		$sql3 = "CREATE TABLE ".$tableName."(playerID varchar(30), lastName varchar(30), efficiency varchar(30))";		
+		$tableName2 = "history$username";
+		$sql3 = "CREATE TABLE ".$tableName."(playerID varchar(30), lastName varchar(30), efficiency varchar(30))";
+		$sql4 = "CREATE TABLE ".$tableName2>"(money varchar(30), loss/gain varchar(30), date DATE)";		
 		if($stmt = mysqli_query($conn, $sql)){
 			mysqli_query($conn, $sql2);
 			mysqli_query($conn, $sql3);
+			mysqli_query($conn, $sql4);
 			mysqli_stmt_bind_param($stmt, "ss", $param_username, $param_password);
 			
 			$param_username = $username;
