@@ -155,34 +155,34 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
         <h5>Current Team:</h5>
         <table class="w3-table w3-striped w3-white">
           <tr>
-            <td>Individual Player 1</td>
+            <td><?phpecho $_SESSION["player1"];?></td>
           </tr>
           <tr>
-            <td>Individual Player 2</td>
+            <td><?phpecho $_SESSION["player2"];?></td>
           </tr>
           <tr>
-            <td>Individual Player 3</td>
+            <td><?phpecho $_SESSION["player3"];?></td>
           </tr>
           <tr>
-            <td>Individual Player 4</td>
+            <td><?phpecho $_SESSION["player4"];?></td>
           </tr>
           <tr>
-            <td>Individual Player 5</td>
+            <td><?phpecho $_SESSION["player5"];?></td>
           </tr>
           <tr>
-            <td>Individual Player 6</td>
+            <td><?phpecho $_SESSION["player6"];?></td>
           </tr>
           <tr>
-            <td>Individual Player 7</td>
+            <td><?phpecho $_SESSION["player7"];?></td>
           </tr>
           <tr>
-            <td>Individual Player 8</td>
+            <td><?phpecho $_SESSION["player8"];?></td>
           </tr>
           <tr>
-            <td>Individual Player 9</td>
+            <td><?phpecho $_SESSION["player9"];?></td>
           </tr>
           <tr>
-            <td>Individual Player 10</td>
+            <td><?phpecho $_SESSION["player10"];?></td>
           </tr>
         </table>
       </div>
@@ -207,7 +207,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <h5><b><i class="fa fa-dashboard"></i> My Team Making</b></h5>
   </header> 
 
-  <form class="form-inline" method="post" action="buildTeams.php">
+  <form class="form-inline" method="post" action="../phpBE/buildTeams.php">
 
 	<div class="w3-container">
 	    <h1>Team Selection</h1>
