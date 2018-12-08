@@ -1,5 +1,5 @@
 <?php
-    require_once('config.php');
+    require_once('../phpBE/config.php');
     echo "hello ";
     session_start();
     $_GET['username'];
