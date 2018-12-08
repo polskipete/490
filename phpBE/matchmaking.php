@@ -4,6 +4,7 @@
 session_start();
 include("config.php");
 include("calculateScore.php");
+include("registrationForm.php");
 echo "\n SESSION \n";
 $_GET['username'];
 echo $_SESSION['name'];

@@ -59,7 +59,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 		$tableName = "team$testID";
 		$tableName2 = "history$username";
 		$sql3 = "CREATE TABLE ".$tableName."(playerID varchar(30), lastName varchar(30), efficiency varchar(30))";
-		$sql4 = "CREATE TABLE ".$tableName2."(money int(11), lossOrGain varchar(30), date DATE)";		
+		$sql4 = "CREATE TABLE ".$tableName2."(username varchar(30), money int(11), loss_win_draw varchar(30), date DATE)";		
 		if($stmt = mysqli_query($conn, $sql)){
 			mysqli_query($conn, $sql2);
 			mysqli_query($conn, $sql3);
