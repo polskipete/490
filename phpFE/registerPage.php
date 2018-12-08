@@ -31,7 +31,7 @@
      <form action="registrationForm.php" method="post" class="form1">
       <input class="un " type="text" align="center" placeholder="Username" name="inputUser" id="inputUser">
       <input class="pass" type="password" align="center" placeholder="Password" name="inputPassword" id="inputPassword">
-      <button class="submit" align="center">Submit</button>
+      <button class="submit" align="center" type="submit" id="submit">Submit</button>
       <p class="forgot" align="center">Already have an account? <a href="loginpage.php">Click Here</p>
     </div>
      
