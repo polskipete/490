@@ -49,6 +49,29 @@
     $result12 = mysqli_query($conn, $sql);
     $result13 = mysqli_query($conn, $sql);
 
+    if(empty($_SESSION["player1"]))
+    {
+	$_SESSION["player1"] = "Team Player 1";
+    } elseif(empty($_SESSION["player1"])){
+	$_SESSION["player2"] = "Team Player 2";
+    } elseif(empty($_SESSION["player1"])){
+	$_SESSION["player3"] = "Team Player 3";
+    } elseif(empty($_SESSION["player1"])){
+	$_SESSION["player4"] = "Team Player 4";
+    } elseif(empty($_SESSION["player1"])){
+	$_SESSION["player5"] = "Team Player 5";
+    } elseif(empty($_SESSION["player1"])){
+	$_SESSION["player6"] = "Team Player 6";
+    } elseif(empty($_SESSION["player1"])){
+	$_SESSION["player7"] = "Team Player 7";
+    } elseif(empty($_SESSION["player1"])){
+	$_SESSION["player8"] = "Team Player 8";
+    } elseif(empty($_SESSION["player1"])){
+	$_SESSION["player9"] = "Team Player 9";
+    } elseif(empty($_SESSION["player1"])){
+	$_SESSION["player10"] = "Team Player 10";
+    }
+
 ?>
 <!DOCTYPE html>
 <html>
