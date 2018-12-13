@@ -49,24 +49,27 @@ function playMatch($opponentID, $mainUserID, $conn){
 		$userRow = mysqli_fetch_assoc($username);
 		echo "team".$userRow["username"] . "\n\n\n";
 	$teamName= "team".$userRow["username"];
-
+	$historyName= "history".$userRow["username"];
 	
 	$sql = "SELECT username FROM loginTable WHERE userID = '$opponentID'";
 		$username = mysqli_query($conn, $sql);
 		$userRow = mysqli_fetch_assoc($username);
 		echo "team".$userRow["username"] . "\n\n\n";
 	$teamNameOpp= "team".$userRow["username"];
-
+	$historyNameOpp= "history".$userRow["username"];
 
 
 	$mainUserScore = calculateScore($teamName);
 	echo $mainUserScore."\n";
 	$opponentUserScore = calculateScore($teamNameOpp);
 	echo $opponentUserScore;
+
+	
 	//$test = 1;
 	//Mock Data
 	//$mainUserID= 2;
 	// this needs to be updated this is sudo code
+	$time = date('Y-m-d G:i:s');
 	if ($mainUserScore > $opponentUserScore){
 		$sql = "SELECT win FROM loginTable WHERE userID = '$mainUserID'";
 		$sql2 = "SELECT money FROM loginTable WHERE userID = '$mainUserID'";
@@ -79,7 +82,7 @@ function playMatch($opponentID, $mainUserID, $conn){
 		//$userRow["win"] += 1;
 		$sqlTest = "UPDATE loginTable SET win = '$winInt' where userID = $mainUserID ";
 		$sqlMoneyUpdate = "UPDATE loginTable SET money = '$moneyAdd' where userID = $mainUserID";
-		$sqlHistory = "INSERT INTO MockHistory(username, money, loss_win_draw) VALUES('Thomas', '$moneyAdd', 'win')";
+		$sqlHistory = "INSERT INTO $historyName(money, date, loss_win_draw) VALUES('$moneyAdd', '$time', 'win')";
 		$winUpdate = mysqli_query($conn, $sqlTest);
 		$sqlMoneyUpdate = mysqli_query($conn, $sqlMoneyUpdate);
 		$historyUpdate = mysqli_query($conn, $sqlHistory);
@@ -97,7 +100,7 @@ function playMatch($opponentID, $mainUserID, $conn){
 		//$userRow["loss"] += 1;
 		$sqlTest = "UPDATE loginTable SET loss = '$lossInt' where userID = $opponentID ";
 		$sqlMoneyUpdate = "UPDATE loginTable SET money = '$moneyAdd' where userID = $opponentID";
-		$sqlHistory = "INSERT INTO MockHistory(username, money, loss_win_draw) VALUES('Dmitri', '$moneyAdd', 'loss')";
+		$sqlHistory = "INSERT INTO $historyNameOpp(money, date, loss_win_draw) VALUES('$moneyAdd', '$time', 'loss')";
 		//$sqlHistory2 = "UPDATE MockHistory SET lossOrGain = 'loss' WHERE username = 'Jonathan'";
 		$winUpdate = mysqli_query($conn, $sqlTest);
 		$sqlMoneyUpdate = mysqli_query($conn, $sqlMoneyUpdate);
@@ -118,7 +121,7 @@ function playMatch($opponentID, $mainUserID, $conn){
 		//$userRow["loss"] += 1;
 		$sqlTest = "UPDATE loginTable SET loss = '$lossInt' where userID = $mainUserID ";
 		$sqlMoneyUpdate = "UPDATE loginTable SET money = '$moneyAdd' where userID = $mainUserID";
-		$sqlHistory = "INSERT INTO MockHistory(username, money, loss_win_draw) VALUES('Thomas', '$moneyAdd', 'loss')";
+		$sqlHistory = "INSERT INTO $historyName(money, date, loss_win_draw) VALUES('$moneyAdd', '$time', 'loss')";
 		$winUpdate = mysqli_query($conn, $sqlTest);
 		$sqlMoneyUpdate = mysqli_query($conn, $sqlMoneyUpdate);
 		$historyUpdate = mysqli_query($conn, $sqlHistory);
@@ -136,7 +139,7 @@ function playMatch($opponentID, $mainUserID, $conn){
 		//$userRow["win"] += 1;
 		$sqlTest = "UPDATE loginTable SET win = '$winInt' where userID = $opponentID ";
 		$sqlMoneyUpdate = "UPDATE loginTable SET money = '$moneyAdd' where userID = $opponentID";
-		$sqlHistory = "INSERT INTO MockHistory(username, money, loss_win_draw) VALUES('Dmitri', '$moneyAdd', 'win')";
+		$sqlHistory = "INSERT INTO $historyNameOpp(money, date, loss_win_draw) VALUES('$moneyAdd', '$time', 'win')";
 		$winUpdate = mysqli_query($conn, $sqlTest);
 		$sqlMoneyUpdate = mysqli_query($conn, $sqlMoneyUpdate);
 		$historyUpdate = mysqli_query($conn, $sqlHistory);	
@@ -154,7 +157,7 @@ function playMatch($opponentID, $mainUserID, $conn){
 		//$userRow["draw"] += 1;
 		$sqlTest = "UPDATE loginTable SET draw = '$drawInt' where userID = $mainUserID ";
 		$sqlMoneyUpdate = "UPDATE loginTable SET money = '$moneyAdd' where userID = $mainUserID";
-		$sqlHistory = "INSERT INTO MockHistory(username, money, loss_win_draw) VALUES('Thomas', '$moneyAdd', 'draw')";
+		$sqlHistory = "INSERT INTO $historyName(money, date, loss_win_draw) VALUES('$moneyAdd', '$time', 'draw')";
 		$winUpdate = mysqli_query($conn, $sqlTest);
 		$sqlMoneyUpdate = mysqli_query($conn, $sqlMoneyUpdate);
 		$historyUpdate = mysqli_query($conn, $sqlHistory);
@@ -172,7 +175,7 @@ function playMatch($opponentID, $mainUserID, $conn){
 		//$userRow["draw"] += 1;
 		$sqlTestTwo = "UPDATE loginTable SET draw = '$drawIntTwo' where userID = $opponentID ";
 		$sqlMoneyUpdate = "UPDATE loginTable SET money = '$moneyAdd' where userID = $opponentID";
-		$sqlHistory = "INSERT INTO MockHistory(username, money, loss_win_draw) VALUES('Dmitri', '$moneyAdd', 'draw')";
+		$sqlHistory = "INSERT INTO $historyNameOpp(money, date, loss_win_draw) VALUES('$moneyAdd', '$time', 'draw')";
 		$winUpdate = mysqli_query($conn, $sqlTestTwo);
 		$sqlMoneyUpdate = mysqli_query($conn, $sqlMoneyUpdate);
 		$historyUpdate = mysqli_query($conn, $sqlHistory);
