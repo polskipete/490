@@ -116,7 +116,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
     <a href="#" class="w3-bar-item w3-button w3-padding" onclick="main_close(); team_close(); tutorial_close(); match_close(); list_close(); history_open();"><i class=" "></i>    History</a>
 
-    <a href="#" class="w3-bar-item w3-button w3-padding w3-red"><i class=" "></i>    Log Out</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding w3-red" onclick='location.href="/490/phpFE/loginpage.php"'><i class=" "></i>    Log Out</a>
 
     <a href="#" class="w3-bar-item w3-button w3-padding w3-Pale-Blue" onclick="main_close(); match_close(); team_close(); history_close(); list_close(); tutorial_open()"><i class=" "></i> Need Help? Click for Tutorial </a>
 
