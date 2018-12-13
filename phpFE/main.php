@@ -353,7 +353,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 		<button class="pure-button pure-button-primary" type="submit" name="submit" id="submit">Submit</button>
 	    </div>
 	</div>
-
+	</form>
 </div>
 
 <!-- -------------------------------------------------------------------------------------------------------------------Match Making Page-->
@@ -370,8 +370,9 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
        <h3> When you hit start match below you will be randomly paired up with another team and you will vs them </h3>
        <h3> The results will be displayed on the next page </h3>
        <h3> Your Current Team Efficiency: 444 </h3>
-       <button class="btn btn-lg btn-primary btn-block btn-login" type="submit" ="submit" id="submit">Start Match</button>
+       <button class="btn btn-lg btn-primary btn-block btn-login" type="submit" name="submit" id="submit">Start Match</button>
   </div>
+</form>
 </div>
 <!-------------------------------------------------------------------------------------------------------------------History-->
 <!-- !HISTORY! -->

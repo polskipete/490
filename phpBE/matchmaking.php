@@ -2,8 +2,8 @@
 <?php
 
 session_start();
-include("config.php");
-include("calculateScore.php");
+include("./config.php");
+include("./calculateScore.php");
 echo "\n SESSION \n";
 $_GET['username'];
 echo $_SESSION['name'];
@@ -63,9 +63,9 @@ function playMatch($opponentID, $mainUserID, $conn){
 	echo $mainUserScore."\n";
 	$opponentUserScore = calculateScore($teamNameOpp);
 	echo $opponentUserScore;
-	$test = 1;
+	//$test = 1;
 	//Mock Data
-	$mainUserID= 2;
+	//$mainUserID= 2;
 	// this needs to be updated this is sudo code
 	if ($mainUserScore > $opponentUserScore){
 		$sql = "SELECT win FROM loginTable WHERE userID = '$mainUserID'";
@@ -177,7 +177,7 @@ function playMatch($opponentID, $mainUserID, $conn){
 		$sqlMoneyUpdate = mysqli_query($conn, $sqlMoneyUpdate);
 		$historyUpdate = mysqli_query($conn, $sqlHistory);
 	}
-	//header('Location: history.php');
+	header('Location: ../phpFE/main.php');
 
 }
 		
