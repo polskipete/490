@@ -49,27 +49,9 @@
     $result12 = mysqli_query($conn, $sql);
     $result13 = mysqli_query($conn, $sql);
 
-    if(empty($_SESSION["player1"]))
+    if($_SESSION['player1'] == '')
     {
-	$_SESSION["player1"] = "Team Player 1";
-    } elseif(empty($_SESSION["player1"])){
-	$_SESSION["player2"] = "Team Player 2";
-    } elseif(empty($_SESSION["player1"])){
-	$_SESSION["player3"] = "Team Player 3";
-    } elseif(empty($_SESSION["player1"])){
-	$_SESSION["player4"] = "Team Player 4";
-    } elseif(empty($_SESSION["player1"])){
-	$_SESSION["player5"] = "Team Player 5";
-    } elseif(empty($_SESSION["player1"])){
-	$_SESSION["player6"] = "Team Player 6";
-    } elseif(empty($_SESSION["player1"])){
-	$_SESSION["player7"] = "Team Player 7";
-    } elseif(empty($_SESSION["player1"])){
-	$_SESSION["player8"] = "Team Player 8";
-    } elseif(empty($_SESSION["player1"])){
-	$_SESSION["player9"] = "Team Player 9";
-    } elseif(empty($_SESSION["player1"])){
-	$_SESSION["player10"] = "Team Player 10";
+	$_SESSION['player1'] = 'Team Player 1';
     }
 
 ?>
@@ -110,7 +92,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <a href="#" class="w3-bar-item w3-button w3-padding w3-blue" onclick="team_close(); match_close(); main_open()"><i class="fa fa-  fa-fw"></i>Home Page</a>
     <a href="#" class="w3-bar-item w3-button w3-padding" onclick="main_close(); team_close(); match_open()"><i class=" "></i>    Match Making</a>
     <a href="#" class="w3-bar-item w3-button w3-padding" onclick="main_close(); match_close(); team_open()"><i class=" "></i>    Team Making</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding w3-red"><i class=" "></i>    Log Out</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding w3-red" onclick='location.href="/490/phpFE/loginpage.php"'><i class=" "></i>    Log Out</a>
     <!--<a href="#" class="w3-bar-item w3-button w3-padding"><i class=" "></i>    History</a>
     <a href="#" class="w3-bar-item w3-button w3-padding"><i class=" "></i>    Setting</a>-->
     <br><br>
