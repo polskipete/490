@@ -11,7 +11,7 @@
     $row1 = mysqli_fetch_all($result);
     //var_dump($row1);
     $money = $row1[0][0];
-    
+
     $sql = "SELECT win FROM loginTable WHERE username= '$user';";
     $result1 = mysqli_query($conn, $sql);
     $row1 = mysqli_fetch_all($result1);
@@ -30,9 +30,9 @@
     //var_dump($row1);
     $draw = $row1[0][0];
     
-    $win = $_SESSION['win'];
-    $loss = $_SESSION['loss'];
-    $draw = $_SESSION['draw'];
+    //$win = $_SESSION['win'];
+    //$loss = $_SESSION['loss'];
+    //$draw = $_SESSION['draw'];
     $total = ($win + $loss + $draw);
 
     include('rosterconfig.php');
@@ -48,27 +48,28 @@
     $result11 = mysqli_query($conn, $sql);
     $result12 = mysqli_query($conn, $sql);
     $result13 = mysqli_query($conn, $sql);
-
+	
     if(empty($_SESSION["player1"]))
     {
 	$_SESSION["player1"] = "Team Player 1";
-    } elseif(empty($_SESSION["player1"])){
+    } 
+	if(empty($_SESSION["player1"])){
 	$_SESSION["player2"] = "Team Player 2";
-    } elseif(empty($_SESSION["player1"])){
+    }   if(empty($_SESSION["player1"])){
 	$_SESSION["player3"] = "Team Player 3";
-    } elseif(empty($_SESSION["player1"])){
+    }   if(empty($_SESSION["player1"])){
 	$_SESSION["player4"] = "Team Player 4";
-    } elseif(empty($_SESSION["player1"])){
+    }  if(empty($_SESSION["player1"])){
 	$_SESSION["player5"] = "Team Player 5";
-    } elseif(empty($_SESSION["player1"])){
+    }  if(empty($_SESSION["player1"])){
 	$_SESSION["player6"] = "Team Player 6";
-    } elseif(empty($_SESSION["player1"])){
+    }  if(empty($_SESSION["player1"])){
 	$_SESSION["player7"] = "Team Player 7";
-    } elseif(empty($_SESSION["player1"])){
+    }  if(empty($_SESSION["player1"])){
 	$_SESSION["player8"] = "Team Player 8";
-    } elseif(empty($_SESSION["player1"])){
+    }  if(empty($_SESSION["player1"])){
 	$_SESSION["player9"] = "Team Player 9";
-    } elseif(empty($_SESSION["player1"])){
+    }  if(empty($_SESSION["player1"])){
 	$_SESSION["player10"] = "Team Player 10";
     }
 
@@ -189,34 +190,34 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
         <h5>Current Team:</h5>
         <table class="w3-table w3-striped w3-white">
           <tr>
-            <td><?phpecho $_SESSION["player1"];?></td>
+            <td><?php echo $_SESSION["player1"]; echo $_SESSION["player1_j"];?></td>
           </tr>
           <tr>
-            <td><?phpecho $_SESSION["player2"];?></td>
+            <td><?php echo $_SESSION["player2"];echo $_SESSION["player2_j"];?></td>
           </tr>
           <tr>
-            <td><?phpecho $_SESSION["player3"];?></td>
+            <td><?php echo $_SESSION["player3"];echo $_SESSION["player3_j"];?></td>
           </tr>
           <tr>
-            <td><?phpecho $_SESSION["player4"];?></td>
+            <td><?php echo $_SESSION["player4"];echo $_SESSION["player4_j"];?></td>
           </tr>
           <tr>
-            <td><?phpecho $_SESSION["player5"];?></td>
+            <td><?php echo $_SESSION["player5"];echo $_SESSION["player5_j"];?></td>
           </tr>
           <tr>
-            <td><?phpecho $_SESSION["player6"];?></td>
+            <td><?php echo $_SESSION["player6"];echo $_SESSION["player6_j"];?></td>
           </tr>
           <tr>
-            <td><?phpecho $_SESSION["player7"];?></td>
+            <td><?php echo $_SESSION["player7"];echo $_SESSION["player7_j"];?></td>
           </tr>
           <tr>
-            <td><?phpecho $_SESSION["player8"];?></td>
+            <td><?php echo $_SESSION["player8"];echo $_SESSION["player8_j"];?></td>
           </tr>
           <tr>
-            <td><?phpecho $_SESSION["player9"];?></td>
+            <td><?php echo $_SESSION["player9"];echo $_SESSION["player9_j"];?></td>
           </tr>
           <tr>
-            <td><?phpecho $_SESSION["player10"];?></td>
+            <td><?php echo $_SESSION["player10"];echo $_SESSION["player10_j"];?></td>
           </tr>
         </table>
       </div>

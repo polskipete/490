@@ -1,6 +1,7 @@
 #!/usr/bin/php
 <?php
 session_start();
+include('config.php');
 $_GET['username'];
 $name= $_SESSION['name'];
 
@@ -16,17 +17,132 @@ $name= $_SESSION['name'];
 	$player10 = $_POST['player10search'];
 
 	$Team = array($player1,$player2,$player3,$player4,$player5,$player6,$player7,$player8,$player9,$player10);
-	$_SESSION['team']= $Team;
-	$_SESSION["player1"] = $player1;
-    	$_SESSION["player2"] = $player2;
-    	$_SESSION["player3"] = $player3;
-    	$_SESSION["player4"] = $player4;
-    	$_SESSION["player5"] = $player5;
-    	$_SESSION["player6"] = $player6;
-    	$_SESSION["player7"] = $player7;
-    	$_SESSION["player8"] = $player8;
-    	$_SESSION["player9"] = $player9;
-    	$_SESSION["player10"] = $player10;
+	$_SESSION['team']= $Team;	
+	
+	$player_id='hi';
+	$count = 1;
+	
+		$sql = "SELECT firstName,lastName FROM playerTable WHERE playerID = $player1";
+		$username = mysqli_query($conn, $sql);
+		$userRow = mysqli_fetch_assoc($username);
+		$_SESSION["player1"] = $userRow['lastName']." ".$userRow['firstName'];
+
+		$sql = "SELECT efficiency FROM playerTable WHERE playerID = $player1";
+		$username = mysqli_query($conn, $sql);
+		$userRow2 = mysqli_fetch_assoc($username);
+		$_SESSION["player1_j"] = $userRow2['efficiency']; 
+	
+    		//--------------------------------------------------------------------------------
+		
+		$sql = "SELECT firstName,lastName FROM playerTable WHERE playerID = $player2";
+		$username = mysqli_query($conn, $sql);
+		$userRow = mysqli_fetch_assoc($username);
+		$_SESSION["player2"] = $userRow['lastName']." ".$userRow['firstName'];
+
+		$sql = "SELECT efficiency FROM playerTable WHERE playerID = $player2";
+		$username = mysqli_query($conn, $sql);
+		$userRow2 = mysqli_fetch_assoc($username);
+		$_SESSION["player2_j"] = $userRow2['efficiency']; 
+	
+    		//--------------------------------------------------------------------------------
+
+		$sql = "SELECT firstName,lastName FROM playerTable WHERE playerID = $player3";
+		$username = mysqli_query($conn, $sql);
+		$userRow = mysqli_fetch_assoc($username);
+		$_SESSION["player3"] = $userRow['lastName']." ".$userRow['firstName'];
+
+		$sql = "SELECT efficiency FROM playerTable WHERE playerID = $player3";
+		$username = mysqli_query($conn, $sql);
+		$userRow2 = mysqli_fetch_assoc($username);
+		$_SESSION["player3_j"] = $userRow2['efficiency']; 
+	
+    		//--------------------------------------------------------------------------------
+
+		$sql = "SELECT firstName,lastName FROM playerTable WHERE playerID = $player4";
+		$username = mysqli_query($conn, $sql);
+		$userRow = mysqli_fetch_assoc($username);
+		$_SESSION["player4"] = $userRow['lastName']." ".$userRow['firstName'];
+
+		$sql = "SELECT efficiency FROM playerTable WHERE playerID = $player4";
+		$username = mysqli_query($conn, $sql);
+		$userRow2 = mysqli_fetch_assoc($username);
+		$_SESSION["player4_j"] = $userRow2['efficiency']; 
+	
+    		//--------------------------------------------------------------------------------
+
+		$sql = "SELECT firstName,lastName FROM playerTable WHERE playerID = $player5";
+		$username = mysqli_query($conn, $sql);
+		$userRow = mysqli_fetch_assoc($username);
+		$_SESSION["player5"] = $userRow['lastName']." ".$userRow['firstName'];
+
+		$sql = "SELECT efficiency FROM playerTable WHERE playerID = $player5";
+		$username = mysqli_query($conn, $sql);
+		$userRow2 = mysqli_fetch_assoc($username);
+		$_SESSION["player5_j"] = $userRow2['efficiency']; 
+	
+    		//--------------------------------------------------------------------------------
+
+		$sql = "SELECT firstName,lastName FROM playerTable WHERE playerID = $player6";
+		$username = mysqli_query($conn, $sql);
+		$userRow = mysqli_fetch_assoc($username);
+		$_SESSION["player6"] = $userRow['lastName']." ".$userRow['firstName'];
+
+		$sql = "SELECT efficiency FROM playerTable WHERE playerID = $player6";
+		$username = mysqli_query($conn, $sql);
+		$userRow2 = mysqli_fetch_assoc($username);
+		$_SESSION["player6_j"] = $userRow2['efficiency']; 
+	
+    		//--------------------------------------------------------------------------------
+
+		$sql = "SELECT firstName,lastName FROM playerTable WHERE playerID = $player7";
+		$username = mysqli_query($conn, $sql);
+		$userRow = mysqli_fetch_assoc($username);
+		$_SESSION["player7"] = $userRow['lastName']." ".$userRow['firstName'];
+
+		$sql = "SELECT efficiency FROM playerTable WHERE playerID = $player7";
+		$username = mysqli_query($conn, $sql);
+		$userRow2 = mysqli_fetch_assoc($username);
+		$_SESSION["player7_j"] = $userRow2['efficiency']; 
+	
+    		//--------------------------------------------------------------------------------
+
+		$sql = "SELECT firstName,lastName FROM playerTable WHERE playerID = $player8";
+		$username = mysqli_query($conn, $sql);
+		$userRow = mysqli_fetch_assoc($username);
+		$_SESSION["player8"] = $userRow['lastName']." ".$userRow['firstName'];
+
+		$sql = "SELECT efficiency FROM playerTable WHERE playerID = $player8";
+		$username = mysqli_query($conn, $sql);
+		$userRow2 = mysqli_fetch_assoc($username);
+		$_SESSION["player8_j"] = $userRow2['efficiency']; 
+	
+    		//--------------------------------------------------------------------------------
+
+		$sql = "SELECT firstName,lastName FROM playerTable WHERE playerID = $player9";
+		$username = mysqli_query($conn, $sql);
+		$userRow = mysqli_fetch_assoc($username);
+		$_SESSION["player9"] = $userRow['lastName']." ".$userRow['firstName'];
+
+		$sql = "SELECT efficiency FROM playerTable WHERE playerID = $player9";
+		$username = mysqli_query($conn, $sql);
+		$userRow2 = mysqli_fetch_assoc($username);
+		$_SESSION["player9_j"] = $userRow2['efficiency']; 
+	
+    		//--------------------------------------------------------------------------------
+
+		$sql = "SELECT firstName,lastName FROM playerTable WHERE playerID = $player10";
+		$username = mysqli_query($conn, $sql);
+		$userRow = mysqli_fetch_assoc($username);
+		$_SESSION["player10"] = $userRow['lastName']." ".$userRow['firstName'];
+
+		$sql = "SELECT efficiency FROM playerTable WHERE playerID = $player10";
+		$username = mysqli_query($conn, $sql);
+		$userRow2 = mysqli_fetch_assoc($username);
+		$_SESSION["player10_j"] = $userRow2['efficiency']; 
+	
+    		//--------------------------------------------------------------------------------
+	
+	
 	var_dump($Team);
 	buildTeams($Team,$name);
 	$_SESSION['team']= $Team;
