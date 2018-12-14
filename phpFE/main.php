@@ -386,37 +386,54 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       <div class="w3-container">
         <table class="w3-table w3-striped w3-white">
           <tr>
-            <td><?phpecho $_SESSION["result"];?></td>
-	    <td><?phpecho $_SESSION[""];?></td>
-	    <td><?phpecho $_SESSION["player1"];?></td>
-	    <td><?phpecho $_SESSION["player1"];?></td>
+            <td><?php echo $_SESSION["matchm1"];?></td>
+	    <td><?php echo $_SESSION["matchl1"];?></td>
+	    <td><?php echo $_SESSION["matchd1"];?></td>
           </tr>
           <tr>
-            <td><?phpecho $_SESSION["player2"];?></td>
+            <td><?php echo $_SESSION["matchm2"];?></td>
+	    <td><?php echo $_SESSION["matchl2"];?></td>
+	    <td><?php echo $_SESSION["matchd2"];?></td>
           </tr>
           <tr>
-            <td><?phpecho $_SESSION["player3"];?></td>
+            <td><?php echo $_SESSION["matchm3"];?></td>
+	    <td><?php echo $_SESSION["matchl3"];?></td>
+	    <td><?php echo $_SESSION["matchd3"];?></td>
           </tr>
           <tr>
-            <td><?phpecho $_SESSION["player4"];?></td>
+            <td><?php echo $_SESSION["matchm4"];?></td>
+	    <td><?php echo $_SESSION["matchl4"];?></td>
+	    <td><?php echo $_SESSION["matchd4"];?></td>
           </tr>
           <tr>
-            <td><?phpecho $_SESSION["player5"];?></td>
+            <td><?php echo $_SESSION["matchm5"];?></td>
+	    <td><?php echo $_SESSION["matchl5"];?></td>
+	    <td><?php echo $_SESSION["matchd5"];?></td>
           </tr>
           <tr>
-            <td><?phpecho $_SESSION["player6"];?></td>
+            <td><?php echo $_SESSION["matchm6"];?></td>
+	    <td><?php echo $_SESSION["matchl6"];?></td>
+	    <td><?php echo $_SESSION["matchd6"];?></td>
           </tr>
           <tr>
-            <td><?phpecho $_SESSION["player7"];?></td>
+            <td><?php echo $_SESSION["matchm7"];?></td>
+	    <td><?php echo $_SESSION["matchl7"];?></td>
+	    <td><?php echo $_SESSION["matchd7"];?></td>
           </tr>
           <tr>
-            <td><?phpecho $_SESSION["player8"];?></td>
+            <td><?php echo $_SESSION["matchm8"];?></td>
+	    <td><?php echo $_SESSION["matchl8"];?></td>
+	    <td><?php echo $_SESSION["matchd8"];?></td>
           </tr>
           <tr>
-            <td><?phpecho $_SESSION["player9"];?></td>
+            <td><?php echo $_SESSION["matchm9"];?></td>
+	    <td><?php echo $_SESSION["matchl9"];?></td>
+	    <td><?php echo $_SESSION["matchd9"];?></td>
           </tr>
           <tr>
-            <td><?phpecho $_SESSION["player10"];?></td>
+            <td><?php echo $_SESSION["matchm10"];?></td>
+	    <td><?php echo $_SESSION["matchl10"];?></td>
+	    <td><?php echo $_SESSION["matchd10"];?></td>
           </tr>
         </table>
       </div>

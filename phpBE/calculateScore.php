@@ -11,7 +11,7 @@ function calculateScore($teamName)
 	$sql = "SELECT efficiency from $teamName";
 	$result = mysqli_query($conn, $sql);
 	$row = mysqli_fetch_all($result);
-	var_dump($row);
+	//var_dump($row);
 	//echo $row[1][0];
 	$tableName = $teamName;	
 	//$totalscore=0;

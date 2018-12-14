@@ -23,7 +23,7 @@ $sql= "select MAX(userID) from loginTable;";
 $result = mysqli_query($conn, $sql);
 $countRow = mysqli_fetch_assoc($result);
 $max = intval($countRow['MAX(userID)']);
-echo $max; 
+//echo $max; 
 $sql= "select MIN(userID) from loginTable;";
 $result = mysqli_query($conn, $sql);
 $countRow = mysqli_fetch_assoc($result);
@@ -47,14 +47,14 @@ function playMatch($opponentID, $mainUserID, $conn){
 	$sql = "SELECT username FROM loginTable WHERE userID = '$mainUserID'";
 		$username = mysqli_query($conn, $sql);
 		$userRow = mysqli_fetch_assoc($username);
-		echo "team".$userRow["username"] . "\n\n\n";
+		//echo "team".$userRow["username"] . "\n\n\n";
 	$teamName= "team".$userRow["username"];
 	$historyName= "history".$userRow["username"];
 	
 	$sql = "SELECT username FROM loginTable WHERE userID = '$opponentID'";
 		$username = mysqli_query($conn, $sql);
 		$userRow = mysqli_fetch_assoc($username);
-		echo "team".$userRow["username"] . "\n\n\n";
+		//echo "team".$userRow["username"] . "\n\n\n";
 	$teamNameOpp= "team".$userRow["username"];
 	$historyNameOpp= "history".$userRow["username"];
 
@@ -180,6 +180,103 @@ function playMatch($opponentID, $mainUserID, $conn){
 		$sqlMoneyUpdate = mysqli_query($conn, $sqlMoneyUpdate);
 		$historyUpdate = mysqli_query($conn, $sqlHistory);
 	}
+
+	//----------------------------------------------------------------------------------------------------------------------------HISTORY SECTION
+		
+		//$_SESSION["hmoney"] = $moneyAdd;
+		//$_SESSION["hdate"] = $time;
+
+		//$sql = "select loss_win_draw from $historyName";
+		//$h_lwd = mysqli_query($conn, $sql);
+		//$userRow2 = mysqli_fetch_assoc($h_lwd);
+		//$_SESSION["h_lwd"] = $userRow2['loss_win_draw']; 
+
+		//$recent_h = array($_SESSION["hmoney"],$_SESSION["hdate"],$_SESSION["h_lwd"]);
+		//$_SESSION["recent_h"] = $recent_h;
+
+		//echo ("money1:   "); echo ($_SESSION["hmoney"]);
+		//echo ("date1:   "); echo ($_SESSION["hdate"]);
+		//echo ("win-loss3:   "); echo ($_SESSION["h_lwd"]);
+		
+		$sql = "SELECT max(matchID) FROM $historyName;";
+		$maxcount = mysqli_query($conn, $sql);
+		$hRow = mysqli_fetch_assoc($maxcount);
+		var_dump ($hRow);
+		$maxhistory = $hRow["max(matchID)"];
+		//echo ($maxhistory);
+		
+		//------------------------------------------------------------------------------------------------
+
+		$count = 10;
+		$count1 = 1;
+		$maxhis = $maxhistory;
+	
+		while ($count>0){
+			$sql = "SELECT date FROM $historyName where matchID = $maxhistory"; 
+			$match = mysqli_query($conn, $sql);
+			$ha_row = mysqli_fetch_assoc($match);
+			//var_dump ($ha_row);
+			$dhistory = $ha_row["date"];
+			//echo($dhistory);
+			$_SESSION["matchd"."$count1"] = $dhistory;
+			//echo($_SESSION["match"."$count1"]);
+			$count--;
+			$maxhistory--;
+			$count1++;
+		}
+		
+		$maxhistory = $maxhis;
+		
+		//------------------------------------------------------------------------------------------------
+
+		$count = 10;
+		$count1 = 1;
+		$maxhis = $maxhistory;
+	
+		while ($count>0){
+			$sql = "SELECT loss_win_draw FROM $historyName where matchID = $maxhistory"; 
+			$match = mysqli_query($conn, $sql);
+			$hd_row = mysqli_fetch_assoc($match);
+			//var_dump ($ha_row);
+			$mhistory = $hd_row["loss_win_draw"];
+			//echo($mhistory);
+			$_SESSION["matchl"."$count1"] = $mhistory;
+			//echo($_SESSION["match"."$count1"]);
+			$count--;
+			$maxhistory--;
+			$count1++;
+		}
+		
+		$maxhistory = $maxhis;
+		
+		//------------------------------------------------------------------------------------------------
+
+		$count = 10;
+		$count1 = 1;
+		$maxhis = $maxhistory;
+	
+		while ($count>0){
+
+			$sql = "SELECT money FROM $historyName where matchID = $maxhistory"; 
+			$match = mysqli_query($conn, $sql);
+			$hm_row = mysqli_fetch_assoc($match);
+
+			//var_dump ($ha_row);
+			$mhistory = $hm_row["money"];
+			//echo($mhistory);
+			$_SESSION["matchm"."$count1"] = $mhistory;
+			//echo($_SESSION["match"."$count1"]);
+			$count--;
+			$maxhistory--;
+			$count1++;
+		}
+		
+		//echo ($_SESSION["matchm1"]);
+		//echo ($_SESSION["matchl1"]);
+		//echo ($_SESSION["matchd1"]);
+
+	//----------------------------------------------------------------------------------------------------------------------------
+	
 	header('Location: ../phpFE/main.php');
 
 }
