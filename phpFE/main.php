@@ -121,7 +121,13 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
     <a href="#" class="w3-bar-item w3-button w3-padding w3-Pale-Blue" onclick="main_close(); match_close(); team_close(); history_close(); list_close(); tutorial_open()"><i class=" "></i> Need Help? Click for Tutorial </a>
 
-    <a href="#" class="w3-bar-item w3-button w3-padding w3-light-grey" onclick="main_close(); match_close(); team_close(); history_close(); tutorial_close(); list_open();"><i class=" "></i> Don't know what players are in the league? <br> 	Click for full list </a>
+	<!-- <audio controls>
+  		<source src="song2.ogg" type="audio/ogg">
+  		<source src="song.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio> 
+	-->
+    <!--<a href="#" class="w3-bar-item w3-button w3-padding w3-light-grey" onclick="main_close(); match_close(); team_close(); history_close(); tutorial_close(); list_open();"><i class=" "></i> Don't know what players are in the league? <br> 	Click for full list </a>-->
 
     <!--<a href="#" class="w3-bar-item w3-button w3-padding"><i class=" "></i>    Setting</a>-->
     <br><br>
@@ -189,35 +195,38 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       <div class="w3-container">
         <h5>Current Team:</h5>
         <table class="w3-table w3-striped w3-white">
+	  <tr>
+	    <th> <u> Player Names: </u> </th>
+    	    <th> <u> Efficiency: </u> </th>
           <tr>
-            <td><?php echo $_SESSION["player1"]; echo $_SESSION["player1_j"];?></td>
+            <td><?php echo $_SESSION["player1"]; ?> </td> <td align="center"> <?php echo $_SESSION["player1_j"];?></td>
           </tr>
           <tr>
-            <td><?php echo $_SESSION["player2"];echo $_SESSION["player2_j"];?></td>
+            <td><?php echo $_SESSION["player2"]; ?> </td> <td align="center"> <?php echo $_SESSION["player2_j"];?></td>
           </tr>
           <tr>
-            <td><?php echo $_SESSION["player3"];echo $_SESSION["player3_j"];?></td>
+            <td><?php echo $_SESSION["player3"]; ?> </td> <td align="center"> <?php echo $_SESSION["player3_j"];?></td>
           </tr>
           <tr>
-            <td><?php echo $_SESSION["player4"];echo $_SESSION["player4_j"];?></td>
+            <td><?php echo $_SESSION["player4"]; ?> </td> <td align="center"> <?php echo $_SESSION["player4_j"];?></td>
           </tr>
           <tr>
-            <td><?php echo $_SESSION["player5"];echo $_SESSION["player5_j"];?></td>
+            <td><?php echo $_SESSION["player5"]; ?> </td> <td align="center"> <?php echo $_SESSION["player5_j"];?></td>
           </tr>
           <tr>
-            <td><?php echo $_SESSION["player6"];echo $_SESSION["player6_j"];?></td>
+            <td><?php echo $_SESSION["player6"]; ?> </td> <td align="center"> <?php echo $_SESSION["player6_j"];?></td>
           </tr>
           <tr>
-            <td><?php echo $_SESSION["player7"];echo $_SESSION["player7_j"];?></td>
+            <td><?php echo $_SESSION["player7"]; ?> </td> <td align="center"> <?php echo $_SESSION["player7_j"];?></td>
           </tr>
           <tr>
-            <td><?php echo $_SESSION["player8"];echo $_SESSION["player8_j"];?></td>
+            <td><?php echo $_SESSION["player8"]; ?> </td> <td align="center"> <?php echo $_SESSION["player8_j"];?></td>
           </tr>
           <tr>
-            <td><?php echo $_SESSION["player9"];echo $_SESSION["player9_j"];?></td>
+            <td><?php echo $_SESSION["player9"]; ?> </td> <td align="center"> <?php echo $_SESSION["player9_j"];?></td>
           </tr>
           <tr>
-            <td><?php echo $_SESSION["player10"];echo $_SESSION["player10_j"];?></td>
+            <td><?php echo $_SESSION["player10"]; ?> </td> <td align="center"> <?php echo $_SESSION["player10_j"];?></td>
           </tr>
         </table>
       </div>
@@ -370,7 +379,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <div class="w3-container">
        <h3> When you hit start match below you will be randomly paired up with another team and you will vs them </h3>
        <h3> The results will be displayed on the next page </h3>
-       <h3> Your Current Team Efficiency: 444 </h3>
+       <h3> Your Current Team Efficiency: <?php echo $_SESSION['total_efficiency']; ?> </h3>
        <button class="btn btn-lg btn-primary btn-block btn-login" type="submit" name="submit" id="submit">Start Match</button>
   </div>
 </form>
@@ -385,55 +394,60 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   </header> 
       <div class="w3-container">
         <table class="w3-table w3-striped w3-white">
+	  <tr>
+            <th> <u> Money </u> </th>
+	    <th> <u> Date </u> </th>
+	    <th> <u> Loss ~ Win ~ Draw </u> </th>
+          </tr>
           <tr>
             <td><?php echo $_SESSION["matchm1"];?></td>
-	    <td><?php echo $_SESSION["matchl1"];?></td>
 	    <td><?php echo $_SESSION["matchd1"];?></td>
+	    <td><?php echo $_SESSION["matchl1"];?></td>
           </tr>
           <tr>
             <td><?php echo $_SESSION["matchm2"];?></td>
-	    <td><?php echo $_SESSION["matchl2"];?></td>
 	    <td><?php echo $_SESSION["matchd2"];?></td>
+	    <td><?php echo $_SESSION["matchl2"];?></td>
           </tr>
           <tr>
             <td><?php echo $_SESSION["matchm3"];?></td>
-	    <td><?php echo $_SESSION["matchl3"];?></td>
 	    <td><?php echo $_SESSION["matchd3"];?></td>
+	    <td><?php echo $_SESSION["matchl3"];?></td>
           </tr>
           <tr>
             <td><?php echo $_SESSION["matchm4"];?></td>
-	    <td><?php echo $_SESSION["matchl4"];?></td>
 	    <td><?php echo $_SESSION["matchd4"];?></td>
+	    <td><?php echo $_SESSION["matchl4"];?></td>
           </tr>
           <tr>
             <td><?php echo $_SESSION["matchm5"];?></td>
-	    <td><?php echo $_SESSION["matchl5"];?></td>
 	    <td><?php echo $_SESSION["matchd5"];?></td>
+	    <td><?php echo $_SESSION["matchl5"];?></td>
           </tr>
           <tr>
             <td><?php echo $_SESSION["matchm6"];?></td>
-	    <td><?php echo $_SESSION["matchl6"];?></td>
 	    <td><?php echo $_SESSION["matchd6"];?></td>
+	    <td><?php echo $_SESSION["matchl6"];?></td>
           </tr>
           <tr>
             <td><?php echo $_SESSION["matchm7"];?></td>
-	    <td><?php echo $_SESSION["matchl7"];?></td>
 	    <td><?php echo $_SESSION["matchd7"];?></td>
+	    <td><?php echo $_SESSION["matchl7"];?></td>
           </tr>
           <tr>
             <td><?php echo $_SESSION["matchm8"];?></td>
-	    <td><?php echo $_SESSION["matchl8"];?></td>
 	    <td><?php echo $_SESSION["matchd8"];?></td>
+	    <td><?php echo $_SESSION["matchl8"];?></td>
           </tr>
           <tr>
             <td><?php echo $_SESSION["matchm9"];?></td>
-	    <td><?php echo $_SESSION["matchl9"];?></td>
 	    <td><?php echo $_SESSION["matchd9"];?></td>
+	    <td><?php echo $_SESSION["matchl9"];?></td>
           </tr>
           <tr>
             <td><?php echo $_SESSION["matchm10"];?></td>
-	    <td><?php echo $_SESSION["matchl10"];?></td>
 	    <td><?php echo $_SESSION["matchd10"];?></td>
+	    <td><?php echo $_SESSION["matchl10"];?></td>
           </tr>
         </table>
       </div>
@@ -451,11 +465,15 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
  
   <div class="w3-container">
        <h2>
-	          1. You’ve been gifted with 1,000 coins, please go purchase your team on the Team Making Tab.
-	     <br> 2. Once you create your team and go back to the home page you will see your team and efficency displayed. 
+	          1. Welcome to the Alpaca Cohort Basketball Fantasy League.
+	     <br> 2. Once you create your team and go back to the home page you will see your team and efficency displayed.
+ 	     <br>	<img src="buile.png" alt="Team Build Page">
 	     <br> 3. At the top of the home page tab then you will see you current count for wins, losses, and draws. 
+	     <br>	<img src="dash.png" alt="Win-Loss-Draw Dashboard">
 	     <br> 4. If you go to the matchmaking page to verse another team. Your new results will be displayed. 
+	     <br>	<img src="match.png" alt="Match Making Page">
 	     <br> 5. To log out just hit the red logout button on the main screen.
+	     <br>	<img src="logout.png" alt="Log Out Button">
 	     <br> 6. We hope you enjoyed our fantasy web app, thank you. </h2>
 </div>
 </div>
@@ -472,7 +490,8 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
        <h2>
 	    NBA TEAM LIST HERE
 				 </h2>
-</div>
+  </div>
+
 </div>
 
 <!-------------------------------------------------------------------------------------------------------------------Scripts-->
